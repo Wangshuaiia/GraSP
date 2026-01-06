@@ -1,0 +1,1478 @@
+[
+    {
+        "url": "http://www.freebase.com/view/en/george_washington_carver",
+        "question": "where was george washington carver from?",
+        "answers": [
+            "Diamond"
+        ],
+        "topic_entity": {
+            "m.03djm": "George Washington Carver"
+        },
+        "qid_topic_entity": {
+            "Q296898": "George Washington Carver"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/communist_party_of_china",
+        "question": "who was the leader of the first communist party of china?",
+        "answers": [
+            "Chen Duxiu"
+        ],
+        "topic_entity": {
+            "m.02189": "Communist Party of China"
+        },
+        "qid_topic_entity": {
+            "Q17427": "Communist Party of China"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/justin_bieber",
+        "question": "what are the songs that justin bieber wrote?",
+        "answers": [
+            "Catching Feelings",
+            "Down to Earth",
+            "Beauty and a Beat",
+            "All Around The World (featuring Ludacris)",
+            "Die in Your Arms",
+            "As Long As You Love Me (featuring Big Sean)",
+            "Baby",
+            "Believe",
+            "Be Alright",
+            "Boyfriend"
+        ],
+        "topic_entity": {
+            "m.06w2sn5": "Justin Bieber"
+        },
+        "qid_topic_entity": {
+            "Q34086": "Justin Bieber"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/brazil",
+        "question": "what is the official language of brazil now?",
+        "answers": [
+            "Portuguese Language"
+        ],
+        "topic_entity": {
+            "m.015fr": "Brazil"
+        },
+        "qid_topic_entity": {
+            "Q155": "Brazil"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/italy",
+        "question": "what are the mountains in northern italy called?",
+        "answers": [
+            "Alps"
+        ],
+        "topic_entity": {
+            "m.01cg88": "Apennine Mountains"
+        },
+        "qid_topic_entity": {
+            "Q1285": "Apennine Mountains"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/michael_jackson",
+        "question": "what school did michael jackson go to high school?",
+        "answers": [
+            "Montclair College Preparatory School"
+        ],
+        "topic_entity": {
+            "m.09889g": "Michael Jackson"
+        },
+        "qid_topic_entity": {
+            "Q2831": "Michael Jackson"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/spain",
+        "question": "what are the four main languages spoken in spain?",
+        "answers": [
+            "Basque Language",
+            "Galician Language",
+            "Catalan language",
+            "Occitan language"
+        ],
+        "topic_entity": {
+            "m.06mkj": "Spain"
+        },
+        "qid_topic_entity": {
+            "Q29": "Spain"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/khloe_kardashian",
+        "question": "who is khloe kardashian's husband?",
+        "answers": [
+            "Lamar Odom"
+        ],
+        "topic_entity": {
+            "m.043p2f2": "Khloé Kardashian"
+        },
+        "qid_topic_entity": {
+            "Q231270": "Khloé Kardashian"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/islam",
+        "question": "who do islamic people pray to?",
+        "answers": [
+            "Allah"
+        ],
+        "topic_entity": {
+            "m.0flw86": "Islam"
+        },
+        "qid_topic_entity": {
+            "Q432": "Islam"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/scarlett_johansson",
+        "question": "who did scarlett johansson date?",
+        "answers": [
+            "Justin Timberlake",
+            "Josh Hartnett",
+            "Benicio del Toro",
+            "Jared Leto",
+            "Derek Jeter"
+        ],
+        "topic_entity": {
+            "m.02114t": "Scarlett Johansson"
+        },
+        "qid_topic_entity": {
+            "Q34436": "Scarlett Johansson"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/henry_hudson",
+        "question": "what lands did henry hudson discover?",
+        "answers": [
+            "Hudson Bay"
+        ],
+        "topic_entity": {
+            "m.0c065": "Henry Hudson"
+        },
+        "qid_topic_entity": {
+            "Q179167": "Henry Hudson"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/theodore_roosevelt",
+        "question": "where was teddy roosevelt's house?",
+        "answers": [
+            "New York City"
+        ],
+        "topic_entity": {
+            "m.07hyk": "Theodore Roosevelt"
+        },
+        "qid_topic_entity": {
+            "Q33866": "Theodore Roosevelt"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/kate_chopin",
+        "question": "who was kate chopin?",
+        "answers": [
+            "Writer"
+        ],
+        "topic_entity": {
+            "m.0d8pw": "Kate Chopin"
+        },
+        "qid_topic_entity": {
+            "Q230476": "Kate Chopin"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/james_k_polk",
+        "question": "what did james k polk do before he was president?",
+        "answers": [
+            "Lawyer"
+        ],
+        "topic_entity": {
+            "m.042f1": "James K. Polk"
+        },
+        "qid_topic_entity": {
+            "Q11891": "James K. Polk"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/george_wilson_1981",
+        "question": "what does george wilson do for a living?",
+        "answers": [
+            "American football player"
+        ],
+        "topic_entity": {
+            "m.0gmk9p": "George Wilson"
+        },
+        "qid_topic_entity": {
+            "Q5546416": "George Wilson"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/winnipeg",
+        "question": "where is the mts iceplex in winnipeg?",
+        "answers": [
+            "Canada"
+        ],
+        "topic_entity": {
+            "m.0g5r_z_": "MTS Iceplex"
+        },
+        "qid_topic_entity": {
+            "UnknownQID": "MTS Iceplex"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/selena_gomez",
+        "question": "who was selena gomez in barney and friends?",
+        "answers": [
+            "Gianna"
+        ],
+        "topic_entity": {
+            "m.0gs6vr": "Selena Gomez",
+            "m.01f4yy": "Barney & Friends"
+        },
+        "qid_topic_entity": {
+            "Q83287": "Selena Gomez",
+            "Q213588": "Barney & Friends"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/new_york_knicks",
+        "question": "when was the last time the ny knicks won a playoff game?",
+        "answers": [
+            "1973 NBA Finals"
+        ],
+        "topic_entity": {
+            "m.0jm3v": "New York Knicks"
+        },
+        "qid_topic_entity": {
+            "Q131364": "New York Knicks"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/angelina_jolie",
+        "question": "who is angelina jolies brother?",
+        "answers": [
+            "James Haven"
+        ],
+        "topic_entity": {
+            "m.0f4vbz": "Angelina Jolie"
+        },
+        "qid_topic_entity": {
+            "Q13909": "Angelina Jolie"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/united_kingdom",
+        "question": "what countries included in the uk?",
+        "answers": [
+            "Scotland",
+            "England",
+            "Wales",
+            "Northern Ireland"
+        ],
+        "topic_entity": {
+            "m.07ssc": "United Kingdom"
+        },
+        "qid_topic_entity": {
+            "Q145": "United Kingdom"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/martin_luther_king_jr",
+        "question": "what school did martin luther king jr received his doctorate degree from?",
+        "answers": [
+            "Boston University"
+        ],
+        "topic_entity": {
+            "m.051cc": "Martin Luther King, Jr."
+        },
+        "qid_topic_entity": {
+            "Q8027": "Martin Luther King, Jr."
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/michael_crabtree",
+        "question": "what did michael crabtree do?",
+        "answers": [
+            "Wide receiver"
+        ],
+        "topic_entity": {
+            "m.03ccsym": "Michael Crabtree"
+        },
+        "qid_topic_entity": {
+            "Q2351787": "Michael Crabtree"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/arizona",
+        "question": "who is my state senator arizona?",
+        "answers": [
+            "John McCain"
+        ],
+        "topic_entity": {
+            "m.0vmt": "Arizona"
+        },
+        "qid_topic_entity": {
+            "Q816": "Arizona"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/chris_hemsworth",
+        "question": "who does chris hemsworth have a baby with?",
+        "answers": [
+            "Elsa Pataky"
+        ],
+        "topic_entity": {
+            "m.04jnqj": "Chris Hemsworth"
+        },
+        "qid_topic_entity": {
+            "Q54314": "Chris Hemsworth"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/florida",
+        "question": "what counties in florida have the lowest property taxes?",
+        "answers": [
+            "JoJo's Bizarre Adventure",
+            "Xanth"
+        ],
+        "topic_entity": {
+            "m.02xry": "Florida"
+        },
+        "qid_topic_entity": {
+            "Q812": "Florida"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/barack_obama",
+        "question": "what did obama do before he was elected president?",
+        "answers": [
+            "Illinois State Senator"
+        ],
+        "topic_entity": {
+            "m.02mjmr": "Barack Obama"
+        },
+        "qid_topic_entity": {
+            "Q76": "Barack Obama"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/montreal",
+        "question": "what province is montreal canada located?",
+        "answers": [
+            "Québec"
+        ],
+        "topic_entity": {
+            "m.052p7": "Montreal"
+        },
+        "qid_topic_entity": {
+            "Q340": "Montreal"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/queensland",
+        "question": "where did queensland get its name from?",
+        "answers": [
+            "Queen Victoria"
+        ],
+        "topic_entity": {
+            "m.0g39h": "Queensland"
+        },
+        "qid_topic_entity": {
+            "Q36074": "Queensland"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/boston_red_sox",
+        "question": "when was the last time the red sox won 100 games?",
+        "answers": [
+            "1912 Major League Baseball Season"
+        ],
+        "topic_entity": {
+            "m.01d5z": "Boston Red Sox"
+        },
+        "qid_topic_entity": {
+            "Q213959": "Boston Red Sox"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/elena_gilbert",
+        "question": "who plays elena gilbert on vampire diaries?",
+        "answers": [
+            "Nina Dobrev"
+        ],
+        "topic_entity": {
+            "m.0790rw8": "Elena Gilbert"
+        },
+        "qid_topic_entity": {
+            "Q908634": "Elena Gilbert"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/barack_obama",
+        "question": "where obama went to school?",
+        "answers": [
+            "Occidental College",
+            "Harvard Law School",
+            "Noelani Elementary School",
+            "Punahou School",
+            "State Elementary School Menteng 01",
+            "St. Francis of Assisi Catholic School",
+            "Columbia University"
+        ],
+        "topic_entity": {
+            "m.02mjmr": "Barack Obama"
+        },
+        "qid_topic_entity": {
+            "Q76": "Barack Obama"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/peter_tjajkovskij",
+        "question": "what did peter tchaikovsky do?",
+        "answers": [
+            "Composer"
+        ],
+        "topic_entity": {
+            "m.063tn": "Pyotr Ilyich Tchaikovsky"
+        },
+        "qid_topic_entity": {
+            "Q7315": "Pyotr Ilyich Tchaikovsky"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/hawaii",
+        "question": "who are the senators of hawaii 2012?",
+        "answers": [
+            "Daniel Inouye",
+            "Spark Matsunaga",
+            "Hiram Fong",
+            "Brian Schatz",
+            "Daniel Kahikina Akaka",
+            "Oren E. Long",
+            "Mazie Hirono"
+        ],
+        "topic_entity": {
+            "m.03gh4": "Hawaii"
+        },
+        "qid_topic_entity": {
+            "Q782": "Hawaii"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/werner_heisenberg",
+        "question": "what did werner heisenberg discover?",
+        "answers": [
+            "Matrix mechanics"
+        ],
+        "topic_entity": {
+            "m.0825l": "Werner Heisenberg"
+        },
+        "qid_topic_entity": {
+            "Q40904": "Werner Heisenberg"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/giuliana_depandi",
+        "question": "where did giuliana rancic grow up?",
+        "answers": [
+            "Naples"
+        ],
+        "topic_entity": {
+            "m.0b0tw3": "Giuliana Rancic"
+        },
+        "qid_topic_entity": {
+            "Q1281335": "Giuliana Rancic"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/raul_ibanez",
+        "question": "what team is raul ibanez on?",
+        "answers": [
+            "Seattle Mariners"
+        ],
+        "topic_entity": {
+            "m.06xvwt": "Raúl Ibañez"
+        },
+        "qid_topic_entity": {
+            "Q1132012": "Raúl Ibañez"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/william_morris",
+        "question": "where did william morris go to college?",
+        "answers": [
+            "Marlborough College",
+            "Exeter College, Oxford",
+            "University of Oxford"
+        ],
+        "topic_entity": {
+            "m.08304": "William Morris"
+        },
+        "qid_topic_entity": {
+            "Q182589": "William Morris"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/adam_morrison",
+        "question": "what year did adam morrison get drafted?",
+        "answers": [
+            "2006 NBA Draft"
+        ],
+        "topic_entity": {
+            "m.08_g4q": "Adam Morrison"
+        },
+        "qid_topic_entity": {
+            "Q350464": "Adam Morrison"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/riley_finn",
+        "question": "who plays riley on buffy the vampire slayer?",
+        "answers": [
+            "Marc Blucas"
+        ],
+        "topic_entity": {
+            "m.01j9hw": "Riley Finn"
+        },
+        "qid_topic_entity": {
+            "Q2721925": "Riley Finn"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/isabella_of_castile",
+        "question": "who was queen isabella's mother?",
+        "answers": [
+            "Maria of Aragon, Queen of Portugal"
+        ],
+        "topic_entity": {
+            "m.0jd6m": "Isabella I of Castile"
+        },
+        "qid_topic_entity": {
+            "Q45859": "Isabella I of Castile"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/michigan",
+        "question": "what timezone is the state of michigan and?",
+        "answers": [
+            "Central Time Zone",
+            "North American Eastern Time Zone",
+            "UTC-5"
+        ],
+        "topic_entity": {
+            "m.04rrx": "Michigan"
+        },
+        "qid_topic_entity": {
+            "Q1166": "Michigan"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/atlanta",
+        "question": "what to do today in atlanta with kids?",
+        "answers": [
+            "Atlanta History Center",
+            "Atlanta Cyclorama & Civil War Museum",
+            "Atlanta Ballet",
+            "Fernbank Museum of Natural History",
+            "Woodruff Arts Center",
+            "Zoo Atlanta",
+            "Atlanta Symphony Orchestra",
+            "Centennial Olympic Park",
+            "Martin Luther King, Jr., National Historic Site",
+            "Fernbank Science Center"
+        ],
+        "topic_entity": {
+            "m.013yq": "Atlanta"
+        },
+        "qid_topic_entity": {
+            "Q23556": "Atlanta"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/united_states",
+        "question": "what kind of government did the united states have after the revolution?",
+        "answers": [
+            "Presidential system",
+            "Federal republic",
+            "Representative democracy",
+            "Two-party system",
+            "Constitutional republic",
+            "Republic"
+        ],
+        "topic_entity": {
+            "m.09c7w0": "United States"
+        },
+        "qid_topic_entity": {
+            "Q30": "United States"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/hilo",
+        "question": "what time in hilo hawaii?",
+        "answers": [
+            "Hawaii–Aleutian Time Zone"
+        ],
+        "topic_entity": {
+            "m.0r_ch": "Hilo"
+        },
+        "qid_topic_entity": {
+            "Q216258": "Hilo"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/midlothian",
+        "question": "where is midlothian scotland?",
+        "answers": [
+            "United Kingdom",
+            "Scotland",
+            "United Kingdom, with Dependencies and Territories"
+        ],
+        "topic_entity": {
+            "m.011w8v": "Midlothian"
+        },
+        "qid_topic_entity": {
+            "Q206934": "Midlothian"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/andrew_jackson",
+        "question": "what victory was andrew jackson most famous for?",
+        "answers": [
+            "Battle of Horseshoe Bend",
+            "Second Seminole War",
+            "Battle of Talladega",
+            "War of 1812",
+            "Battles of Emuckfaw and Enotachopo Creek",
+            "Battle of New Orleans",
+            "Napoleonic Wars",
+            "Creek War",
+            "Battle of Pensacola"
+        ],
+        "topic_entity": {
+            "m.0rlz": "Andrew Jackson"
+        },
+        "qid_topic_entity": {
+            "Q11817": "Andrew Jackson"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/matt_stone",
+        "question": "what characters does matt stone do?",
+        "answers": [
+            "Kyle / Kenny / Jesus"
+        ],
+        "topic_entity": {
+            "m.01_x6d": "Matt Stone"
+        },
+        "qid_topic_entity": {
+            "Q44410": "Matt Stone"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/libya",
+        "question": "who is in charge of libya now?",
+        "answers": [
+            "President of the General National Congress of Libya"
+        ],
+        "topic_entity": {
+            "m.04gqr": "Libya"
+        },
+        "qid_topic_entity": {
+            "Q1016": "Libya"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/ohio",
+        "question": "who is the current ohio state senator?",
+        "answers": [
+            "Rob Portman"
+        ],
+        "topic_entity": {
+            "m.07t58": "United States Senate"
+        },
+        "qid_topic_entity": {
+            "Q66096": "United States Senate"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/ibrahim_afellay",
+        "question": "where is ibrahim afellay from?",
+        "answers": [
+            "Utrecht"
+        ],
+        "topic_entity": {
+            "m.08w78j": "Ibrahim Afellay"
+        },
+        "qid_topic_entity": {
+            "Q165014": "Ibrahim Afellay"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/lebron_james",
+        "question": "what position did lebron james play?",
+        "answers": [
+            "Point forward",
+            "Small forward"
+        ],
+        "topic_entity": {
+            "m.01jz6d": "LeBron James"
+        },
+        "qid_topic_entity": {
+            "Q36159": "LeBron James"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/desmond_tutu",
+        "question": "where does archbishop desmond tutu live?",
+        "answers": [
+            "South Africa"
+        ],
+        "topic_entity": {
+            "m.02d5w": "Desmond Tutu"
+        },
+        "qid_topic_entity": {
+            "Q43033": "Desmond Tutu"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/greenland",
+        "question": "which country does greenland belong to?",
+        "answers": [
+            "Denmark"
+        ],
+        "topic_entity": {
+            "m.035v3": "Greenland"
+        },
+        "qid_topic_entity": {
+            "Q4148644": "Greenland"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/fukushima_i_nuclear_power_plant",
+        "question": "where is the fukushima daiichi nuclear plant located?",
+        "answers": [
+            "Japan",
+            "Okuma"
+        ],
+        "topic_entity": {
+            "m.02vkzy2": "Fukushima Daiichi Nuclear Power Plant"
+        },
+        "qid_topic_entity": {
+            "Q114295": "Fukushima Daiichi Nuclear Power Plant"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/charles_darwin",
+        "question": "what was the title of the book charles darwin wrote?",
+        "answers": [
+            "A student's introduction to Charles Darwin",
+            "The Structure and Distribution of Coral Reefs",
+            "On evolution",
+            "s introduction to Charles Darwin\" ",
+            "The Expression of the Emotions in Man and Animals",
+            "The origin of species : complete and fully illustrated",
+            "The Origin of Species",
+            "The Life of Erasmus Darwin",
+            "The Autobiography of Charles Darwin",
+            "The Descent of Man, and Selection in Relation to Sex"
+        ],
+        "topic_entity": {
+            "m.01lwx": "Charles Darwin"
+        },
+        "qid_topic_entity": {
+            "Q1035": "Charles Darwin"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/pennsylvania_state_university",
+        "question": "what is penn state's main campus?",
+        "answers": [
+            "University Park"
+        ],
+        "topic_entity": {
+            "m.04hgpt": "Pennsylvania State University"
+        },
+        "qid_topic_entity": {
+            "Q739627": "Pennsylvania State University"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/warren_g_harding",
+        "question": "what is warren g harding most known for?",
+        "answers": [
+            "President of the United States"
+        ],
+        "topic_entity": {
+            "m.081t6": "Warren G Harding"
+        },
+        "qid_topic_entity": {
+            "Q35286": "Warren G Harding"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/lebron_james",
+        "question": "what was lebron james first team?",
+        "answers": [
+            "Cleveland Cavaliers"
+        ],
+        "topic_entity": {
+            "m.01jz6d": "LeBron James"
+        },
+        "qid_topic_entity": {
+            "Q36159": "LeBron James"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/osama_bin_laden",
+        "question": "where bin laden got killed?",
+        "answers": [
+            "Abbottabad"
+        ],
+        "topic_entity": {
+            "m.05mg9": "Osama bin Laden"
+        },
+        "qid_topic_entity": {
+            "Q1317": "Osama bin Laden"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/elvis_costello",
+        "question": "where was elvis costello born?",
+        "answers": [
+            "Paddington"
+        ],
+        "topic_entity": {
+            "m.02vr7": "Elvis Costello"
+        },
+        "qid_topic_entity": {
+            "Q206939": "Elvis Costello"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/thailand",
+        "question": "what type of currency do they use in thailand?",
+        "answers": [
+            "Thai baht"
+        ],
+        "topic_entity": {
+            "m.07f1x": "Thailand"
+        },
+        "qid_topic_entity": {
+            "Q869": "Thailand"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/philippines",
+        "question": "what form of government do we have in the philippines?",
+        "answers": [
+            "Constitutional republic",
+            "Presidential system",
+            "Republic",
+            "Unitary state"
+        ],
+        "topic_entity": {
+            "m.05v8c": "Philippines"
+        },
+        "qid_topic_entity": {
+            "Q928": "Philippines"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/john_mayer",
+        "question": "where did john mayer go to college?",
+        "answers": [
+            "Berklee College of Music"
+        ],
+        "topic_entity": {
+            "m.01s21dg": "John Mayer"
+        },
+        "qid_topic_entity": {
+            "Q215215": "John Mayer"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/samsung_group",
+        "question": "where are samsung based?",
+        "answers": [
+            "Seoul"
+        ],
+        "topic_entity": {
+            "m.07gv72": "Samsung Group"
+        },
+        "qid_topic_entity": {
+            "Q20716": "Samsung Group"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/stephen_hawking",
+        "question": "what did stephen hawking become famous for?",
+        "answers": [
+            "Author",
+            "Mathematician",
+            "Professor",
+            "Writer",
+            "Cosmologist",
+            "Physicist",
+            "Actor",
+            "Astronomer",
+            "Scientist",
+            "Science writer"
+        ],
+        "topic_entity": {
+            "m.01tdnyh": "Stephen Hawking"
+        },
+        "qid_topic_entity": {
+            "Q17714": "Stephen Hawking"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/charles_darwin",
+        "question": "what book did charles darwin wrote in 1859?",
+        "answers": [
+            "The Origin of Species"
+        ],
+        "topic_entity": {
+            "m.01lwx": "Charles Darwin"
+        },
+        "qid_topic_entity": {
+            "Q1035": "Charles Darwin"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/dan_white",
+        "question": "who was dan white?",
+        "answers": [
+            "Firefighter",
+            "Politician",
+            "Police officer"
+        ],
+        "topic_entity": {
+            "m.02dzj8": "Dan White"
+        },
+        "qid_topic_entity": {
+            "Q1263456": "Dan White"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/minneapolis_lakers",
+        "question": "when did the lakers 3 peat?",
+        "answers": [
+            "2000"
+        ],
+        "topic_entity": {
+            "UnknownMID": "Minneapolis Lakers"
+        },
+        "qid_topic_entity": {
+            "Q6016725": "Minneapolis Lakers"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/central_america",
+        "question": "what are the seven nations of central america?",
+        "answers": [
+            "Honduras",
+            "El Salvador",
+            "Panama",
+            "Costa Rica",
+            "Guatemala",
+            "Gran Colombia",
+            "Belize"
+        ],
+        "topic_entity": {
+            "m.01tzh": "Central America"
+        },
+        "qid_topic_entity": {
+            "Q27611": "Central America"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/louis_armstrong",
+        "question": "what music did louis armstrong play?",
+        "answers": [
+            "Jazz"
+        ],
+        "topic_entity": {
+            "m.04n32": "Louis Armstrong"
+        },
+        "qid_topic_entity": {
+            "Q1779": "Louis Armstrong"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/bernie_mac",
+        "question": "what did bernie mac died of?",
+        "answers": [
+            "Pneumonia"
+        ],
+        "topic_entity": {
+            "m.02lj6p": "Bernie Mac"
+        },
+        "qid_topic_entity": {
+            "Q176323": "Bernie Mac"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/illinois",
+        "question": "who is my representative in illinois house?",
+        "answers": [
+            "Richard B. Ogilvie",
+            "Otto Kerner, Jr.",
+            "George Ryan",
+            "Pat Quinn",
+            "Rod Blagojevich",
+            "James R. Thompson",
+            "Jesse White",
+            "Daniel Walker",
+            "Jim Edgar",
+            "Samuel H. Shapiro"
+        ],
+        "topic_entity": {
+            "m.03j8g1": "Illinois House of Representatives"
+        },
+        "qid_topic_entity": {
+            "Q908954": "Illinois House of Representatives"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/michelangelo",
+        "question": "what inspired michelangelo buonarroti?",
+        "answers": [
+            "Lorenzo de' Medici",
+            " Medici\" ",
+            "Giovanni Pico della Mirandola",
+            "Girolamo Savonarola",
+            "Melozzo da Forlì"
+        ],
+        "topic_entity": {
+            "m.058w5": "Michelangelo"
+        },
+        "qid_topic_entity": {
+            "Q5592": "Michelangelo"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/egypt",
+        "question": "what are some ancient egypt names?",
+        "answers": [
+            "Abdel Hakim Amer",
+            "Abdul Munim Riad",
+            "Ahmad Ismail Ali",
+            "Abdul Munim Wassel",
+            "Saad El Shazly",
+            "Hosni Mubarak",
+            "Mohammed Aly Fahmy",
+            "Anwar Sadat",
+            "Abd-Al-Minaam Khaleel",
+            "Abdel Ghani el-Gamasy"
+        ],
+        "topic_entity": {
+            "m.02k54": "Egypt"
+        },
+        "qid_topic_entity": {
+            "Q79": "Egypt"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/george_harrison",
+        "question": "what kind of guitar did george harrison use?",
+        "answers": [
+            "Fender Stratocaster",
+            "Rickenbacker 360/12"
+        ],
+        "topic_entity": {
+            "m.03bnv": "George Harrison"
+        },
+        "qid_topic_entity": {
+            "Q2643": "George Harrison"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/japan",
+        "question": "what type of sports do japanese play?",
+        "answers": [
+            "Japan women's national handball team",
+            "Japan men's national volleyball team",
+            "Japan women's national volleyball team",
+            "Japan national football team",
+            "s national volleyball team\" ",
+            "s national volleyball team\" "
+        ],
+        "topic_entity": {
+            "m.03_3d": "Japan"
+        },
+        "qid_topic_entity": {
+            "Q17": "Japan"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/tennessee_river",
+        "question": "where is tennessee river?",
+        "answers": [
+            "Tennessee"
+        ],
+        "topic_entity": {
+            "m.01spb0": "Tennessee River"
+        },
+        "qid_topic_entity": {
+            "Q193737": "Tennessee River"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/gary_paulsen",
+        "question": "what awards gary paulsen won?",
+        "answers": [
+            "Dorothy Canfield Fisher Children's Book Award",
+            "Anne V. Zarrow Award for Young Readers' Literature",
+            "Spur Award for Best Juvenile Fiction",
+            "s Book Award\" ",
+            "Spur Award for Best Juvenile Nonfiction",
+            "Newbery Honor"
+        ],
+        "topic_entity": {
+            "m.04fpcx": "Gary Paulsen"
+        },
+        "qid_topic_entity": {
+            "Q718463": "Gary Paulsen"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/tom_hardy",
+        "question": "what other movies has tom hardy played in?",
+        "answers": [
+            "Warrior",
+            "Mad Max: Fury Road",
+            "Thick as Thieves",
+            "Lawless",
+            "This Means War",
+            "Tinker, Tailor, Soldier, Spy",
+            "Bronson",
+            "The Dark Knight Rises",
+            "Inception",
+            "Sergeant Slaughter, My Big Brother"
+        ],
+        "topic_entity": {
+            "m.05xf75": "Tom Hardy"
+        },
+        "qid_topic_entity": {
+            "Q208026": "Tom Hardy"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/spanish",
+        "question": "which countries have spanish as their main language?",
+        "answers": [
+            "Honduras",
+            "Uruguay",
+            "El Salvador",
+            "Panama",
+            "Equatorial Guinea",
+            "Andorra",
+            "Guatemala",
+            "Puerto Rico",
+            "Paraguay",
+            "Belize"
+        ],
+        "topic_entity": {
+            "m.06nm1": "Spanish Language"
+        },
+        "qid_topic_entity": {
+            "Q1321": "Spanish Language"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/justin_bieber",
+        "question": "what country does justin bieber come from?",
+        "answers": [
+            "Canada"
+        ],
+        "topic_entity": {
+            "m.06w2sn5": "Justin Bieber"
+        },
+        "qid_topic_entity": {
+            "Q34086": "Justin Bieber"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/dallas_cowboys",
+        "question": "who is number 22 for the dallas cowboys?",
+        "answers": [
+            "Felix Jones"
+        ],
+        "topic_entity": {
+            "m.02896": "Dallas Cowboys"
+        },
+        "qid_topic_entity": {
+            "Q204862": "Dallas Cowboys"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/nikola_tesla",
+        "question": "what did nikola tesla invented that is of use today?",
+        "answers": [
+            "Tesla coil"
+        ],
+        "topic_entity": {
+            "m.05d1y": "Nikola Tesla"
+        },
+        "qid_topic_entity": {
+            "Q9036": "Nikola Tesla"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/listz",
+        "question": "what songs did franz liszt compose?",
+        "answers": [
+            "La lugubre gondola",
+            "Piano Concerto No. 1",
+            "Sonata in B minor",
+            "Piano Concerto No. 3",
+            "Piano Concerto No. 2",
+            "Dante Symphony",
+            "Concerto pathetique",
+            "Don Sanche",
+            "Transcendental Études",
+            "Faust Symphony"
+        ],
+        "topic_entity": {
+            "m.0hqgp": "Life of Franz Liszt"
+        },
+        "qid_topic_entity": {
+            "Q41309": "Life of Franz Liszt"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/utah",
+        "question": "who won utah attorney general?",
+        "answers": [
+            "Mark Shurtleff"
+        ],
+        "topic_entity": {
+            "m.07srw": "Utah"
+        },
+        "qid_topic_entity": {
+            "Q829": "Utah"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/france",
+        "question": "who was france allied with in ww2?",
+        "answers": [
+            "Allies of World War II"
+        ],
+        "topic_entity": {
+            "m.0f8l9c": "France"
+        },
+        "qid_topic_entity": {
+            "Q142": "France"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/pablo_picasso",
+        "question": "where all did picasso live?",
+        "answers": [
+            "Málaga",
+            "France"
+        ],
+        "topic_entity": {
+            "m.060_7": "Pablo Picasso"
+        },
+        "qid_topic_entity": {
+            "Q5593": "Pablo Picasso"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/catholicism",
+        "question": "what are the catholic holy days?",
+        "answers": [
+            "Saint Patrick's Day",
+            "Saint George's Day",
+            "Saint Joseph's Day",
+            "Name day",
+            "s Day\" ",
+            " ",
+            "s Day\" \"Saint Joseph",
+            "Christmas"
+        ],
+        "topic_entity": {
+            "m.0c8wxp": "Catholicism"
+        },
+        "qid_topic_entity": {
+            "Q1841": "Catholicism"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/islam",
+        "question": "what did the islamic people believe in?",
+        "answers": [
+            "Zakāt",
+            "Salah",
+            "Hajj",
+            "Islamic dietary laws",
+            "Jihad",
+            "Sawm",
+            "Halal food",
+            "Shahada",
+            "Adab"
+        ],
+        "topic_entity": {
+            "m.0flw86": "Islam"
+        },
+        "qid_topic_entity": {
+            "Q432": "Islam"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/switzerland",
+        "question": "what is the money of switzerland called?",
+        "answers": [
+            "Swiss franc"
+        ],
+        "topic_entity": {
+            "m.06mzp": "Switzerland"
+        },
+        "qid_topic_entity": {
+            "Q39": "Switzerland"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/tom_landry",
+        "question": "who did tom landry play for?",
+        "answers": [
+            "Texas Longhorns football",
+            "New York Giants",
+            "New York Yankees"
+        ],
+        "topic_entity": {
+            "m.019_p3": "Tom Landry"
+        },
+        "qid_topic_entity": {
+            "Q1374361": "Tom Landry"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/nike_inc",
+        "question": "which country invented nike?",
+        "answers": [
+            "United States of America"
+        ],
+        "topic_entity": {
+            "m.0lwkh": "Nike Inc"
+        },
+        "qid_topic_entity": {
+            "Q483915": "Nike Inc"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/egypt",
+        "question": "what is the capital of modern day egypt?",
+        "answers": [
+            "Cairo"
+        ],
+        "topic_entity": {
+            "m.02k54": "Egypt"
+        },
+        "qid_topic_entity": {
+            "Q79": "Egypt"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/spain",
+        "question": "what are the sports in spain?",
+        "answers": [
+            "Spain women's national handball team",
+            "Spain men's national volleyball team",
+            "Spain women's national volleyball team",
+            "Spain national beach handball team",
+            "Spain national football team",
+            "s national volleyball team\" "
+        ],
+        "topic_entity": {
+            "m.06mkj": "Spain"
+        },
+        "qid_topic_entity": {
+            "Q29": "Spain"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/missouri_river",
+        "question": "where the missouri river ends?",
+        "answers": [
+            "Mississippi River"
+        ],
+        "topic_entity": {
+            "m.04ykz": "Missouri River"
+        },
+        "qid_topic_entity": {
+            "Q5419": "Missouri River"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/bentley",
+        "question": "what does bentley mean?",
+        "answers": [
+            "Bentley Motors Limited"
+        ],
+        "topic_entity": {
+            "m.01l8p": "Bentley"
+        },
+        "qid_topic_entity": {
+            "Q27224": "Bentley"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/england",
+        "question": "where is the home stadium of the new england patriots?",
+        "answers": [
+            "uk"
+        ],
+        "topic_entity": {
+            "m.05g3b": "New England Patriots"
+        },
+        "qid_topic_entity": {
+            "Q193390": "New England Patriots"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/bradley_walsh",
+        "question": "where does bradley walsh live?",
+        "answers": [
+            "England"
+        ],
+        "topic_entity": {
+            "m.05h48b": "Bradley Walsh"
+        },
+        "qid_topic_entity": {
+            "Q4955063": "Bradley Walsh"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/elizabeth_ii_of_the_united_kingdom",
+        "question": "what was queen elizabeth ii childhood nickname?",
+        "answers": [
+            "Lillibet"
+        ],
+        "topic_entity": {
+            "m.0d1_f": "Elizabeth II"
+        },
+        "qid_topic_entity": {
+            "Q9682": "Elizabeth II"
+        }
+    },
+    {
+        "url": "http://www.freebase.com/view/en/taliban_movement",
+        "question": "where did the taliban began?",
+        "answers": [
+            "Afghanistan"
+        ],
+        "topic_entity": {
+            "m.07jqh": "Taliban"
+        },
+        "qid_topic_entity": {
+            "Q42418": "Taliban"
+        }
+    }
+]
