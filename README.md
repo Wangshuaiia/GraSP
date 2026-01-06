@@ -78,9 +78,6 @@ pip install torch-geometric
 pip install transformers
 ```
 
-> ⚠️ For PyTorch Geometric installation, please follow the official instructions matching your CUDA/PyTorch version:
-> [https://pytorch-geometric.readthedocs.io](https://pytorch-geometric.readthedocs.io)
-
 ---
 
 ## 🧠 Model Components
