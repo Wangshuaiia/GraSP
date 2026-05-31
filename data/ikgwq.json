@@ -1,0 +1,3328 @@
+[
+    {
+        "ID": "IKGWQ_yaftatscsv6h3s9e",
+        "created_time": "2025-04-24 11:56:45",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current president of Malta?",
+        "question": "Which university did Malta's 2025 President graduate from?",
+        "topic_entities": {
+            "m.04v3q": "Malta"
+        },
+        "answer_entities": [
+            "University of Malta"
+        ],
+        "cwq_id": "WebQTrn-465_e9585b7d3117fbe09c4ed03353acee7b",
+        "cwq_question": "What tourist spot in Malta opened in 1732?"
+    },
+    {
+        "ID": "IKGWQ_7qognct52t6nrjj5",
+        "created_time": "2025-04-24 02:51:23",
+        "complexity_score": 3,
+        "machine_quesiton": "Which organization inducted Tupac Shakur into their Hall of Fame in 2017?",
+        "question": "In which city is the headquarters of the organization that inducted Tupac Shakur into their Hall of Fame in 2017 located?",
+        "topic_entities": {
+            "m.07pzc": "Tupac Shakur"
+        },
+        "answer_entities": [
+            "Cleveland",
+            "Cleveland, Ohio"
+        ],
+        "cwq_id": "WebQTrn-1278_9ddd77154bbd5aa55ea6b7d543dceaac",
+        "cwq_question": "The subject of the movie Tupac: Hip Hop Genius dated whom?"
+    },
+    {
+        "ID": "IKGWQ_hyl2hfq34p5ve6qr",
+        "created_time": "2025-04-22 00:58:20",
+        "complexity_score": 3,
+        "machine_quesiton": "Which team did the Los Angeles Dodgers defeat in the 2020 World Series?",
+        "question": "In which city is the team that the Los Angeles Dodgers defeated in the 2020 World Series based?",
+        "topic_entities": {
+            "m.04mjl": "Los Angeles Dodgers"
+        },
+        "answer_entities": [
+            "Saint Petersburg",
+            "St. Petersburg",
+            "St. Petersburg, Florida"
+        ],
+        "cwq_id": "WebQTrn-750_bb35e9b8023fbf9c05df55b4245a4775",
+        "cwq_question": "In which years have the baseball club that claimed victory in the 1988 World Series won the World Series?"
+    },
+    {
+        "ID": "IKGWQ_gjh2s55ywcbkcv5w",
+        "created_time": "2025-04-24 02:49:09",
+        "complexity_score": 2,
+        "machine_quesiton": "What role did Anne Hathaway play in the animated film Rio?",
+        "question": "What species was the character Anne Hathaway voiced in the animated film Rio?",
+        "topic_entities": {
+            "m.02vntj": "Anne Hathaway",
+            "None": "Rio"
+        },
+        "answer_entities": [
+            "Spix's macaw"
+        ],
+        "cwq_id": "WebQTest-942_838b888de3d170ac0236da18c8d329e0",
+        "cwq_question": "Which of Anne Hathaway's parents was in the movie \"The Princess Diaries 2: Royal Engagement\"?"
+    },
+    {
+        "ID": "IKGWQ_ox4ewenjy9rkh6bx",
+        "created_time": "2025-07-20 02:08:55",
+        "complexity_score": 3,
+        "machine_quesiton": "Which university unveiled a bronze statue of Martin Luther King Jr.?",
+        "question": "In which country is the overseas campus of the university that unveiled a bronze statue of Martin Luther King Jr. located?",
+        "topic_entities": {
+            "m.051cc": "Martin Luther King, Jr."
+        },
+        "answer_entities": [
+            "Singapore",
+            "Republic of Singapore",
+            "Malaysia"
+        ],
+        "cwq_id": "WebQTest-23",
+        "cwq_question": "what town was martin luther king assassinated in?"
+    },
+    {
+        "ID": "IKGWQ_tbmd9ic3csvwzolv",
+        "created_time": "2025-04-22 06:02:50",
+        "complexity_score": 2,
+        "machine_quesiton": "Which city is the sister city of Kushinagar?",
+        "question": "In which time zone is the sister city of Kushinagar located?",
+        "topic_entities": {
+            "m.01h0lq": "Kushinagar"
+        },
+        "answer_entities": [
+            "Nepal Standard Time",
+            "Nepal Standard Time (NPT)",
+            "UTC+05:45",
+            "UTC+5:45"
+        ],
+        "cwq_id": "WebQTest-1091_843715b5d1b0569540e0316e66763a38",
+        "cwq_question": "What type of religion in the United States has the Kushinagar sacred site?"
+    },
+    {
+        "ID": "IKGWQ_c8k1baaesjdtpr6i",
+        "created_time": "2025-04-22 23:29:38",
+        "complexity_score": 4,
+        "machine_quesiton": "What is the title of the head of the Bangsamoro region in the Philippines?",
+        "question": "During his university studies, which university did the first Chief Minister of the Bangsamoro region transfer to?",
+        "topic_entities": {
+            "m.0n5x2ss": "Bangsamoro"
+        },
+        "answer_entities": [
+            "University of Notre Dame",
+            "The University of Notre Dame du Lac",
+            "Notre Dame",
+            "Notre Dame University"
+        ],
+        "cwq_id": "WebQTest-12_68d745a0657c86906382873e57294d6a",
+        "cwq_question": "Who was the governor of Ohio in 2011 that was in the government prior to 3-1-1983?"
+    },
+    {
+        "ID": "IKGWQ_8qm7hb4oz75qkgfb",
+        "created_time": "2025-07-18 14:15:41",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current chancellor of Austria?",
+        "question": "In which city is the university located where Austria's chancellor who took office in 2025 studied?",
+        "topic_entities": {
+            "m.0h7x": "Austria"
+        },
+        "answer_entities": [
+            "Vienna",
+            "Vienna, Austria"
+        ],
+        "cwq_id": "WebQTest-77",
+        "cwq_question": "what capital of austria?"
+    },
+    {
+        "ID": "IKGWQ_2f2mgw8uusyhpsqb",
+        "created_time": "2025-04-24 06:27:29",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current mayor of Anaheim?",
+        "question": "In which city was the 2023 mayor of Anaheim born?",
+        "topic_entities": {
+            "m.0k9p4": "Anaheim"
+        },
+        "answer_entities": [
+            "Fullerton",
+            "Fullerton, California"
+        ],
+        "cwq_id": "WebQTest-297",
+        "cwq_question": "what time zone is anaheim california?"
+    },
+    {
+        "ID": "IKGWQ_t14r5xr880ne4h0o",
+        "created_time": "2025-04-24 00:50:31",
+        "complexity_score": 2,
+        "machine_quesiton": "Which professional soccer team plays in Nashville?",
+        "question": "Where did Nashville's first professional soccer team of the 21st century play its home matches?",
+        "topic_entities": {
+            "m.0j_t1": "Nashville"
+        },
+        "answer_entities": [
+            "Geodis Park"
+        ],
+        "cwq_id": "WebQTest-519_a236cf83f662b6d443c9d7e1b28b2b37",
+        "cwq_question": "In what time zone does the film \"Nashville\" take place?"
+    },
+    {
+        "ID": "IKGWQ_lhsy5uvyqs7nf0yn",
+        "created_time": "2025-04-24 10:47:56",
+        "complexity_score": 2,
+        "machine_quesiton": "Which unfinished film did Gary Graver work on with Orson Welles?",
+        "question": "In what year was the unfinished film collaborated on by Gary Graver and Orson Welles ultimately released?",
+        "topic_entities": {
+            "m.026xvgn": "Gary Graver",
+            "m.05kh_": "Orson Welles"
+        },
+        "answer_entities": [
+            "2018"
+        ],
+        "cwq_id": "WebQTrn-567_56763f477e39878bdaf767b6319fabfc",
+        "cwq_question": "What movie had cinematography by Gary Graver and was made by Ron Howard?"
+    },
+    {
+        "ID": "IKGWQ_8a4oom7ww8jnten0",
+        "created_time": "2025-07-19 23:54:12",
+        "complexity_score": 4,
+        "machine_quesiton": "Which talent management company did Keyshia Cole sign with in 2020?",
+        "question": "In which city was the founder of the talent management company that Keyshia Cole signed with in 2020 born?",
+        "topic_entities": {
+            "m.01pkxs9": "Keyshia Cole"
+        },
+        "answer_entities": [
+            "Brooklyn",
+            "Brooklyn, New York"
+        ],
+        "cwq_id": "WebQTest-21",
+        "cwq_question": "who is keyshia cole dad?"
+    },
+    {
+        "ID": "IKGWQ_b1e59afvozo9v1wc",
+        "created_time": "2025-04-24 08:21:52",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of Fordham University's study abroad campus in London?",
+        "question": "In which city is Fordham University's study abroad campus located?",
+        "topic_entities": {
+            "m.027kp3": "Fordham University"
+        },
+        "answer_entities": [
+            "London",
+            "London, England"
+        ],
+        "cwq_id": "WebQTrn-567_1a71767eac14bb7758028268acfe97f3",
+        "cwq_question": "What Ron Howard movie was filmed at Fordham University?"
+    },
+    {
+        "ID": "IKGWQ_hw7eh1q15saqg8u5",
+        "created_time": "2025-04-23 06:40:01",
+        "complexity_score": 3,
+        "machine_quesiton": "What network has Tamera Mowry signed an overall deal with?",
+        "question": "What is the name of the parent company of the network that Tamera Mowry signed an overall deal with?",
+        "topic_entities": {
+            "m.075kfb": "Tamera Mowry"
+        },
+        "answer_entities": [
+            "Hallmark Cards",
+            "Hallmark Cards, Inc."
+        ],
+        "cwq_id": "WebQTrn-3249_8854b6b321c9e210d83c0419d6d3b4c5",
+        "cwq_question": "Which shows did the actor who played the character Danielle Warren play in?"
+    },
+    {
+        "ID": "IKGWQ_lp1yewp1cxxs579e",
+        "created_time": "2025-04-24 08:04:50",
+        "complexity_score": 3,
+        "machine_quesiton": "What company currently holds the naming rights to the Milwaukee Brewers' stadium?",
+        "question": "In which city is the headquarters of the company that currently holds the naming rights to the Milwaukee Brewers' stadium located?",
+        "topic_entities": {
+            "m.051vz": "Milwaukee Brewers",
+            "m.0f511": "Miller Brewing Company"
+        },
+        "answer_entities": [
+            "Madison",
+            "Madison, Wisconsin"
+        ],
+        "cwq_id": "WebQTest-534_2492cfb926882a4bf9c580ba4f7c700a",
+        "cwq_question": "What is the mascot of the sports team who plays in the Miller Park Stadium?"
+    },
+    {
+        "ID": "IKGWQ_tvoujjdhb7vi3w6d",
+        "created_time": "2025-04-23 07:21:41",
+        "complexity_score": 3,
+        "machine_quesiton": "Which Dodgers player was named the National League Most Valuable Player in 2024?",
+        "question": "Which country is the Dodgers player who was named the National League Most Valuable Player in 2024 from?",
+        "topic_entities": {
+            "m.04mjl": "Los Angeles Dodgers"
+        },
+        "answer_entities": [
+            "Japan"
+        ],
+        "cwq_id": "WebQTrn-750_5f66ca8229db055848db87dcca69d66f",
+        "cwq_question": "What year did the Dodgers beat The Chicago White Sox in the World Series?"
+    },
+    {
+        "ID": "IKGWQ_x8hbw4bqwih5mqq7",
+        "created_time": "2025-04-23 06:40:43",
+        "complexity_score": 2,
+        "machine_quesiton": "Who purchased Anchor Brewing Company with plans to restart its operations?",
+        "question": "In which city is the headquarters of the company that acquired Anchor Brewing Company in 2017 located?",
+        "topic_entities": {
+            "m.03cx92": "Anchor Brewing Company"
+        },
+        "answer_entities": [
+            "Shibuya",
+            "Shibuya, Tokyo"
+        ],
+        "cwq_id": "WebQTrn-2904_0b2295cf692f73863c4d317fe2713132",
+        "cwq_question": "Where did Lauren Conrad live that also produced the beer Anchor Steam?"
+    },
+    {
+        "ID": "IKGWQ_0fz9avdmi392vegj",
+        "created_time": "2025-04-25 03:19:22",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the Chief Justice of the Michigan Supreme Court?",
+        "question": "In which city was the Chief Justice of the Michigan Supreme Court in 2020 born?",
+        "topic_entities": {
+            "m.04s5bm": "Michigan Supreme Court"
+        },
+        "answer_entities": [
+            "Plainfield",
+            "Plainfield, New Jersey"
+        ],
+        "cwq_id": "WebQTrn-1283_fe799f0968328608acc72a24be05ffe2",
+        "cwq_question": "What timezones are the Michigan Supreme Courts in?"
+    },
+    {
+        "ID": "IKGWQ_q31fj5uf7uikqa12",
+        "created_time": "2025-04-23 00:49:05",
+        "complexity_score": 3,
+        "machine_quesiton": "Which NFL team did Russell Wilson join after leaving the Seattle Seahawks?",
+        "question": "In which city is the headquarters of the NFL team that Russell Wilson joined after leaving the Seattle Seahawks located?",
+        "topic_entities": {
+            "m.05c10yf": "Russell Wilson",
+            "m.070xg": "Seattle Seahawks"
+        },
+        "answer_entities": [
+            "Englewood",
+            "Englewood, Colorado"
+        ],
+        "cwq_id": "WebQTrn-3744_26401b4c33bcb760afd734acaa0a1869",
+        "cwq_question": "The Daily Cardinal is the school newspaper at which university that Russell Wilson attended?"
+    },
+    {
+        "ID": "IKGWQ_5kteawezef6as10m",
+        "created_time": "2025-07-18 14:15:41",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current chancellor of Austria?",
+        "question": "In which city was Austria's chancellor who took office in 2025 born?",
+        "topic_entities": {
+            "m.0h7x": "Austria"
+        },
+        "answer_entities": [
+            "Wiener Neustadt",
+            "Wiener Neustadt, Austria"
+        ],
+        "cwq_id": "WebQTest-77",
+        "cwq_question": "what capital of austria?"
+    },
+    {
+        "ID": "IKGWQ_tjdaoeteaz6xf6md",
+        "created_time": "2025-04-23 03:24:09",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the animated film where Adam Sandler voices a lizard?",
+        "question": "Which production company made the animated film featuring Adam Sandler as the voice of a lizard?",
+        "topic_entities": {
+            "m.0pz91": "Adam Sandler"
+        },
+        "answer_entities": [
+            "Netflix"
+        ],
+        "cwq_id": "WebQTrn-1677_59282357ecb12eaa2c93c4580085afa4",
+        "cwq_question": "What film with character named Ginger did Adam Sandler play in?"
+    },
+    {
+        "ID": "IKGWQ_4wiava0rtip2vrtb",
+        "created_time": "2025-04-25 00:36:42",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the documentary Walter Murch worked on with Howard Berry?",
+        "question": "At which film festival did the documentary collaboration between Walter Murch and Howard Berry premiere?",
+        "topic_entities": {
+            "m.02lp3c": "Walter Murch"
+        },
+        "answer_entities": [
+            "Sheffield Doc/Fest",
+            "Sheffield DocFest",
+            "Telluride Film Festival",
+            "TTF"
+        ],
+        "cwq_id": "WebQTrn-567_e3c6bccfe68fd431e1df2afb78bfd9d0",
+        "cwq_question": "What Ron Howard movie featured Walter Murch as a crew member?"
+    },
+    {
+        "ID": "IKGWQ_5bo009kyd6txfuro",
+        "created_time": "2025-04-24 11:43:04",
+        "complexity_score": 4,
+        "machine_quesiton": "Who was the first female President of the Senate?",
+        "question": "At which university did the father of the first female President of the Senate in the United States earn his PhD degree?",
+        "topic_entities": {
+            "m.01hvfh": "President of the Senate",
+            "m.09c7w0": "United States of America"
+        },
+        "answer_entities": [
+            "University of California, Berkeley",
+            "UC Berkeley",
+            "Berkeley, Cal",
+            "Berkeley, California"
+        ],
+        "cwq_id": "WebQTest-561_0a522fd602641e4c7acb7870908615ed",
+        "cwq_question": "What years did the President whom Congress dedicated their work to serve?"
+    },
+    {
+        "ID": "IKGWQ_rgxp9o8z9tedivlx",
+        "created_time": "2025-04-24 04:50:14",
+        "complexity_score": 3,
+        "machine_quesiton": "Which university did Shaquille O'Neal's daughter Me'Arah commit to for basketball?",
+        "question": "Which city is the university located where Shaquille O'Neal’s daughter plays basketball?",
+        "topic_entities": {
+            "m.012xdf": "Shaquille O'Neal"
+        },
+        "answer_entities": [
+            "Gainesville",
+            "Gainesville, Florida",
+            "Florida"
+        ],
+        "cwq_id": "WebQTrn-25_dd421826f1e09f3c0be8d226b04b1e70",
+        "cwq_question": "What movie does Taylor Lautner play in with Shaquille O'Neal?"
+    },
+    {
+        "ID": "IKGWQ_a78wjss2qhyr7bhi",
+        "created_time": "2025-04-24 23:45:42",
+        "complexity_score": 3,
+        "machine_quesiton": "What high school appointed Derek Fisher as their head basketball coach?",
+        "question": "In which city is the high school that appointed Derek Fisher as head basketball coach located?",
+        "topic_entities": {
+            "m.04lvwk": "Derek Fisher"
+        },
+        "answer_entities": [
+            "California"
+        ],
+        "cwq_id": "WebQTest-998_47e95c73ec76579a8d66b6e1607df389",
+        "cwq_question": "When was the last time the basketball team whose head coach is Derek Fisher won the national championship?"
+    },
+    {
+        "ID": "IKGWQ_yh00h0s7ryku20pp",
+        "created_time": "2025-04-25 00:05:38",
+        "complexity_score": 2,
+        "machine_quesiton": "Where did Elizabeth II appoint her 15th British prime minister?",
+        "question": "In which building did Elizabeth II appoint her 15th British prime minister?",
+        "topic_entities": {
+            "m.0d1_f": "Elizabeth II"
+        },
+        "answer_entities": [
+            "Balmoral Castle"
+        ],
+        "cwq_id": "WebQTest-1000_46f65a3745ff73f46fdcecf071f8b144",
+        "cwq_question": "What Oceania countries that were ruled by Elizabeth II?"
+    },
+    {
+        "ID": "IKGWQ_oaqu13goqxikztuh",
+        "created_time": "2025-04-23 01:08:31",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current president of Chile?",
+        "question": "In which city is the university located where Chile's president in 2024 studied?",
+        "topic_entities": {
+            "m.01p1v": "Chile"
+        },
+        "answer_entities": [
+            "Santiago",
+            "Santiago de Chile",
+            "Santiago, Chile"
+        ],
+        "cwq_id": "WebQTrn-2069_14d783de97238bd1ef6eb28fe7221306",
+        "cwq_question": "Which language is spoken in Chile, its main speaking country is Peru?"
+    },
+    {
+        "ID": "IKGWQ_n2mzj25no78jlv6i",
+        "created_time": "2025-04-23 07:23:15",
+        "complexity_score": 3,
+        "machine_quesiton": "Who won the AL MVP award for the Chicago White Sox in 2020?",
+        "question": "Which team did the 2020 AL MVP winner for the Chicago White Sox join after leaving the team?",
+        "topic_entities": {
+            "m.01slc": "Chicago White Sox"
+        },
+        "answer_entities": [
+            "Houston Astros"
+        ],
+        "cwq_id": "WebQTrn-750_5f66ca8229db055848db87dcca69d66f",
+        "cwq_question": "What year did the Dodgers beat The Chicago White Sox in the World Series?"
+    },
+    {
+        "ID": "IKGWQ_i3qtt65un7ju7uf6",
+        "created_time": "2025-04-22 03:47:21",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current head coach of Syracuse Orange football?",
+        "question": "In which city is the high school located where Syracuse Orange football's 2025 head coach studied?",
+        "topic_entities": {
+            "m.057xlyq": "Syracuse Orange football"
+        },
+        "answer_entities": [
+            "Camden",
+            "Camden, New Jersey"
+        ],
+        "cwq_id": "WebQTrn-2478_e8d14b133bcd059be721e604cd921796",
+        "cwq_question": "What is the name of the mascot by the university which inlcudes Syracuse University Orange Football?"
+    },
+    {
+        "ID": "IKGWQ_c8hjjtm82x01s58b",
+        "created_time": "2025-04-24 07:25:07",
+        "complexity_score": 3,
+        "machine_quesiton": "Which company currently holds the naming rights to the home stadium of the San Francisco Giants?",
+        "question": "In which city is the headquarters of the company that currently holds the naming rights to the San Francisco Giants' home stadium located?",
+        "topic_entities": {
+            "m.0713r": "San Francisco Giants"
+        },
+        "answer_entities": [
+            "Texas"
+        ],
+        "cwq_id": "WebQTrn-710_c1d5c9c777c291a80c29c70ec43c45ad",
+        "cwq_question": "Find the sports team that calls AT&T Park, when was the last time they won a world series?"
+    },
+    {
+        "ID": "IKGWQ_jwuu75eaa5d01tme",
+        "created_time": "2025-04-24 12:18:22",
+        "complexity_score": 1,
+        "machine_quesiton": "Which NFL team owner did Jerry Jones collaborate with to facilitate the Rams' relocation to Los Angeles?",
+        "question": "Where did the NFL team owner who collaborated with Jerry Jones to facilitate the relocation of the Los Angeles Rams grow up?",
+        "topic_entities": {
+            "m.016b9c": "Jerry Jones",
+            "m.06mpvs8": "Los Angeles Rams"
+        },
+        "answer_entities": [
+            "Mora",
+            "Mora, Missouri"
+        ],
+        "cwq_id": "WebQTest-302_5e43a21c08076aabc07f1a6fd6ae6bb9",
+        "cwq_question": "Which colors are the official ones of the athletic team that is owned by Jerry Jones?"
+    },
+    {
+        "ID": "IKGWQ_rks253vjg1u40np0",
+        "created_time": "2025-04-22 05:55:44",
+        "complexity_score": 2,
+        "machine_quesiton": "Who did Jan Brewer endorse during the 2016 presidential campaign?",
+        "question": "Which city was the birthplace of the 2016 presidential candidate that Jan Brewer endorsed?",
+        "topic_entities": {
+            "m.02pkb1c": "Jan Brewer"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York",
+            "New York City (NYC)"
+        ],
+        "cwq_id": "WebQTest-1686_4fa3b53f1047599414336495b9275a38",
+        "cwq_question": "Who was the Governor who appointed Jan Brewer to a government position in 2009?"
+    },
+    {
+        "ID": "IKGWQ_2rl4f6xevxcr9f09",
+        "created_time": "2025-04-24 11:12:37",
+        "complexity_score": 2,
+        "machine_quesiton": "Who portrays Michael Jackson in the biographical film?",
+        "question": "Who portrays Michael Jackson in the biographical film based on Michael Jackson's life?",
+        "topic_entities": {
+            "m.09889g": "Michael Jackson"
+        },
+        "answer_entities": [
+            "Jaafar Jackson"
+        ],
+        "cwq_id": "WebQTest-213_a384dcda565428453fba2e776f242983",
+        "cwq_question": "Which of Scarlett Johansson's romantic partners was influenced by Michael Jackson?"
+    },
+    {
+        "ID": "IKGWQ_2d6x86aisyj6ntlc",
+        "created_time": "2025-04-22 03:47:21",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the stadium where the Syracuse Orange football team plays their home games?",
+        "question": "In which city is the headquarters of the company that held the naming rights for Syracuse Orange football's home stadium in 2023 located?",
+        "topic_entities": {
+            "m.057xlyq": "Syracuse Orange football"
+        },
+        "answer_entities": [
+            "Syracuse",
+            "Syracuse, New York"
+        ],
+        "cwq_id": "WebQTrn-2478_e8d14b133bcd059be721e604cd921796",
+        "cwq_question": "What is the name of the mascot by the university which inlcudes Syracuse University Orange Football?"
+    },
+    {
+        "ID": "IKGWQ_v0n3cril9hplummn",
+        "created_time": "2025-04-24 12:08:20",
+        "complexity_score": 2,
+        "machine_quesiton": "What highway was renamed in honor of Jimmy Buffett?",
+        "question": "In which city is the western endpoint of the highway renamed in honor of Jimmy Buffett located?",
+        "topic_entities": {
+            "m.0168cl": "Jimmy Buffett"
+        },
+        "answer_entities": [
+            "Callahan",
+            "Nassau County, Florida",
+            "Nassau County"
+        ],
+        "cwq_id": "WebQTest-1528_e1afb0de9f0365dc12b33198fb286896",
+        "cwq_question": "What movie, produced by Jimmy Buffet, features Logan Lerman?"
+    },
+    {
+        "ID": "IKGWQ_j4522m1p15jag5q4",
+        "created_time": "2025-04-23 07:16:54",
+        "complexity_score": 2,
+        "machine_quesiton": "Which club did Lionel Messi join after leaving Paris Saint-Germain?",
+        "question": "In which city is the stadium located of the club that Lionel Messi joined after leaving Paris Saint-Germain F.C.?",
+        "topic_entities": {
+            "m.06qjgc": "Lionel Messi",
+            "m.01_1kk": "Paris Saint-Germain F.C."
+        },
+        "answer_entities": [
+            "Fort Lauderdale",
+            "Fort Lauderdale, Florida"
+        ],
+        "cwq_id": "WebQTest-924_6d72ea1b1b38e146c28c87fee57e7f96",
+        "cwq_question": "What is the sports team that Messi played for in 2010 that uses the Estadio Monumental Antonio Vespucio Liberti museum?"
+    },
+    {
+        "ID": "IKGWQ_daz7jntb3b8n6tid",
+        "created_time": "2025-04-25 00:23:14",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the current governor of Kentucky?",
+        "question": "In which city was Kentucky's governor in 2024 born?",
+        "topic_entities": {
+            "m.0498y": "Kentucky"
+        },
+        "answer_entities": [
+            "Louisville",
+            "Louisville, Kentucky"
+        ],
+        "cwq_id": "WebQTrn-2286_35c058b9b10893ca1dbc9d24fc2f6683",
+        "cwq_question": "In what country, which is the site of MayagÃ¼ez, is Kentucky located?"
+    },
+    {
+        "ID": "IKGWQ_2ghiog1ldwbt77ne",
+        "created_time": "2025-04-24 01:08:50",
+        "complexity_score": 3,
+        "machine_quesiton": "Which NBA team drafted LeBron James' son?",
+        "question": "In which city is the NBA team that drafted LeBron James' son located?",
+        "topic_entities": {
+            "m.01jz6d": "LeBron James"
+        },
+        "answer_entities": [
+            "Los Angeles",
+            "Los Angeles, California"
+        ],
+        "cwq_id": "WebQTest-268",
+        "cwq_question": "what year was lebron james rookie season?"
+    },
+    {
+        "ID": "IKGWQ_r2pux17u2xocu9hq",
+        "created_time": "2025-04-25 00:36:42",
+        "complexity_score": 2,
+        "machine_quesiton": "Which university awarded Walter Murch an honorary doctorate for his contribution to the film industry in Hertfordshire?",
+        "question": "In which city is the university that awarded Walter Murch an honorary doctorate for his film contributions located?",
+        "topic_entities": {
+            "m.02lp3c": "Walter Murch"
+        },
+        "answer_entities": [
+            "Hertfordshire",
+            "Herts"
+        ],
+        "cwq_id": "WebQTrn-567_e3c6bccfe68fd431e1df2afb78bfd9d0",
+        "cwq_question": "What Ron Howard movie featured Walter Murch as a crew member?"
+    },
+    {
+        "ID": "IKGWQ_v2sgmobglwzem46e",
+        "created_time": "2025-04-23 04:50:49",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was hired as the manager of the Kansas City Royals after Ned Yost's retirement?",
+        "question": "In which city is the university located where the manager hired by the Kansas City Royals after Ned Yost's retirement graduated?",
+        "topic_entities": {
+            "m.049n7": "Kansas City Royals"
+        },
+        "answer_entities": [
+            "Ann Arbor",
+            "Ann Arbor, Michigan"
+        ],
+        "cwq_id": "WebQTrn-3057_17e973c9587cc65f8e2ea8add9f00ef2",
+        "cwq_question": "In what year, did the Giants win the World Series, and the Kansas City Royals, was the championship, runner up?"
+    },
+    {
+        "ID": "IKGWQ_qvijtc7i5mixfitu",
+        "created_time": "2025-04-22 09:06:26",
+        "complexity_score": 1,
+        "machine_quesiton": "Who was expelled from Tamil Nadu Thowheed Jamath and why?",
+        "question": "Which leader of Tamil Nadu Thowheed Jamath was expelled due to sexually inappropriate behaviour?",
+        "topic_entities": {
+            "m.010ffmhn": "Tamil Nadu Thowheed Jamath"
+        },
+        "answer_entities": [
+            "P Jainulabdeen",
+            "P. Jainulabideen",
+            "P Jainulabideen",
+            "PJ"
+        ],
+        "cwq_id": "WebQTest-61_6a27420dcf0528ae017dd74e40cfd38a",
+        "cwq_question": "What religion practiced in Indonesia has a religious organization called Tamil Nadu Thowheed Jamath?"
+    },
+    {
+        "ID": "IKGWQ_1zpq54o4u7k5cssr",
+        "created_time": "2025-04-23 02:33:00",
+        "complexity_score": 2,
+        "machine_quesiton": "Who was the first openly lesbian contestant in the Miss America pageant?",
+        "question": "In which city was the first openly lesbian contestant in the Miss America pageant born?",
+        "topic_entities": {
+            "m.01bk3n": "Miss America"
+        },
+        "answer_entities": [
+            "Florence",
+            "Florence, South Carolina"
+        ],
+        "cwq_id": "WebQTest-245",
+        "cwq_question": "what year was the first miss america pageant held?"
+    },
+    {
+        "ID": "IKGWQ_rcwg12lymvjng92o",
+        "created_time": "2025-04-22 05:13:54",
+        "complexity_score": 2,
+        "machine_quesiton": "Which team did Bruce Bochy manage to their first World Series championship?",
+        "question": "In which city is the team that Bruce Bochy led to their first World Series championship won in 2023 based?",
+        "topic_entities": {
+            "m.06v0wk": "Bruce Bochy"
+        },
+        "answer_entities": [
+            "Arlington",
+            "Arlington, Texas"
+        ],
+        "cwq_id": "WebQTrn-3057_1315945fdcb4fad1310ab7862120be0f",
+        "cwq_question": "What years was the World Series won by the 2010 World Series champions?"
+    },
+    {
+        "ID": "IKGWQ_hx172qehq7z5n4ao",
+        "created_time": "2025-04-24 03:29:24",
+        "complexity_score": 3,
+        "machine_quesiton": "Who purchased Marilyn Monroe's 'Happy Birthday, Mr. President' dress in 2016?",
+        "question": "In which city is the university located where the 2016 buyer of Marilyn Monroe's 'Happy Birthday, Mr. President' dress dropped out?",
+        "topic_entities": {
+            "m.010b0n18": "Marilyn Monroe",
+            "m.0_jd323": "Happy Birthday, Mr. President"
+        },
+        "answer_entities": [
+            "Vancouver",
+            "Vancouver, British Columbia"
+        ],
+        "cwq_id": "WebQTrn-2815_3a40921ae6042ff93cc654f727b80209",
+        "cwq_question": "Where was the person raised who recorded \"Happy Birthday, Mr. President\"?"
+    },
+    {
+        "ID": "IKGWQ_zcap3utvgs9g26mm",
+        "created_time": "2025-04-24 03:00:46",
+        "complexity_score": 4,
+        "machine_quesiton": "Which street was named in honor of Tupac Shakur in Oakland?",
+        "question": "In which time zone is the street named after Tupac Shakur?",
+        "topic_entities": {
+            "m.07pzc": "Tupac Shakur"
+        },
+        "answer_entities": [
+            "Pacific Time Zone",
+            "Pacific Time Zone (PT)",
+            "PT"
+        ],
+        "cwq_id": "WebQTest-1178_9ddd77154bbd5aa55ea6b7d543dceaac",
+        "cwq_question": "Where does the plot of the film Tupac: Hip Hop Genius originate from?"
+    },
+    {
+        "ID": "IKGWQ_3udfbd52jljiemu7",
+        "created_time": "2025-04-24 03:29:24",
+        "complexity_score": 2,
+        "machine_quesiton": "Who purchased Marilyn Monroe's 'Happy Birthday, Mr. President' dress in 2016?",
+        "question": "In which city was the buyer of Marilyn Monroe's 'Happy Birthday, Mr. President' dress in 2016 born?",
+        "topic_entities": {
+            "m.010b0n18": "Marilyn Monroe",
+            "m.0_jd323": "Happy Birthday, Mr. President"
+        },
+        "answer_entities": [
+            "Saskatoon",
+            "Saskatoon, Canada"
+        ],
+        "cwq_id": "WebQTrn-2815_3a40921ae6042ff93cc654f727b80209",
+        "cwq_question": "Where was the person raised who recorded \"Happy Birthday, Mr. President\"?"
+    },
+    {
+        "ID": "IKGWQ_ns6ncmmztgvvjlhn",
+        "created_time": "2025-04-24 23:45:42",
+        "complexity_score": 2,
+        "machine_quesiton": "Which WNBA team did Derek Fisher coach?",
+        "question": "Which city is home to the WNBA team that Derek Fisher coached in 2020?",
+        "topic_entities": {
+            "m.04lvwk": "Derek Fisher"
+        },
+        "answer_entities": [
+            "Los Angeles"
+        ],
+        "cwq_id": "WebQTest-998_47e95c73ec76579a8d66b6e1607df389",
+        "cwq_question": "When was the last time the basketball team whose head coach is Derek Fisher won the national championship?"
+    },
+    {
+        "ID": "IKGWQ_l262bhc89lho1no6",
+        "created_time": "2025-04-24 04:19:18",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current Prime Minister of Denmark?",
+        "question": "In which city was Denmark's Prime Minister in 2024 born?",
+        "topic_entities": {
+            "m.01p1tc": "Prime Minister of Denmark"
+        },
+        "answer_entities": [
+            "Aalborg",
+            "Aalborg in the North Jutland Region"
+        ],
+        "cwq_id": "WebQTrn-2777_d88f49612c5fbbc35c6a9bf1992abd98",
+        "cwq_question": "Where does the Prime Minister of Denmark live?"
+    },
+    {
+        "ID": "IKGWQ_69c8i2kbnzvaxras",
+        "created_time": "2025-04-21 23:33:18",
+        "complexity_score": 2,
+        "machine_quesiton": "Which NBA team did Brad Stevens coach after leaving Butler?",
+        "question": "Which arena serves as the home court of the NBA team Brad Stevens coached after leaving Butler?",
+        "topic_entities": {
+            "m.02qwvmq": "Brad Stevens"
+        },
+        "answer_entities": [
+            "TD Garden"
+        ],
+        "cwq_id": "WebQTrn-2209_c1374f388d9cc7a78365860c91218362",
+        "cwq_question": "What year did the basketball team coached by Brad Stevens win the championship?"
+    },
+    {
+        "ID": "IKGWQ_3lzz6c8jcf7o3jfd",
+        "created_time": "2025-04-23 06:45:54",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the title of Kevin Hart's autobiography released after 2015?",
+        "question": "In which city was the co-author of Kevin Hart's first autobiography released after 2015 born?",
+        "topic_entities": {
+            "m.0ggp1n": "Kevin Hart"
+        },
+        "answer_entities": [
+            "Chicago",
+            "Chicago, Illinois"
+        ],
+        "cwq_id": "WebQTrn-3376_2d06cbcbb5ada96a239eeee425106c28",
+        "cwq_question": "What educational institution with football sports team named Temple Owls  did Kevin Hart go to?"
+    },
+    {
+        "ID": "IKGWQ_j69j9anlms2ek31q",
+        "created_time": "2025-04-25 02:40:31",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current chancellor of Germany?",
+        "question": "Which time zone is the birthplace of Germany's chancellor in 2024 located in?",
+        "topic_entities": {
+            "m.0345h": "Germany"
+        },
+        "answer_entities": [
+            "Central European Time Zone",
+            "CET",
+            "Middle European Time",
+            "UTC+01:00",
+            "UTC+02:00",
+            "UTC+1",
+            "UTC+2",
+            "CEST"
+        ],
+        "cwq_id": "WebQTrn-2653_6a188757d196d24be80495a40b38147d",
+        "cwq_question": "Which war has France been involved in, where one of the combatants was Germany?"
+    },
+    {
+        "ID": "IKGWQ_8eoqkw9ad35yhln1",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 3,
+        "machine_quesiton": "Which company is the Cubs' first uniform sponsor?",
+        "question": "In which city is the headquarters of the Cubs' first uniform sponsor company located?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "Chicago",
+            "Chicago, Illinois"
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_k92ubntxxfkua0i7",
+        "created_time": "2025-04-24 07:02:27",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current Prime Minister of the Netherlands?",
+        "question": "In which city was the Netherlands' Prime Minister serving in 2025 born?",
+        "topic_entities": {
+            "m.059j2": "Netherlands"
+        },
+        "answer_entities": [
+            "Santpoort-Noord",
+            "Santpoort, Netherlands",
+            "Santpoort",
+            "Santpoort-Zuid",
+            "Santpoort, Netherlands",
+            "Santpoort"
+        ],
+        "cwq_id": "WebQTrn-412_e5130693c916cf0420cb76f54b49ddfe",
+        "cwq_question": "What language do they speak with the initials fy in the Netherlands?"
+    },
+    {
+        "ID": "IKGWQ_q9oxcyq9oxc59rtf",
+        "created_time": "2025-04-23 06:45:54",
+        "complexity_score": 4,
+        "machine_quesiton": "Which poker organization did Kevin Hart become a Brand Ambassador for?",
+        "question": "Which time zone is the headquarters of the poker organization that Kevin Hart became a Brand Ambassador for located in?",
+        "topic_entities": {
+            "m.0ggp1n": "Kevin Hart"
+        },
+        "answer_entities": [
+            "Greenwich Mean Time Zone",
+            "GMT",
+            "UTC+0",
+            "UTC+1",
+            "BST"
+        ],
+        "cwq_id": "WebQTrn-3376_2d06cbcbb5ada96a239eeee425106c28",
+        "cwq_question": "What educational institution with football sports team named Temple Owls  did Kevin Hart go to?"
+    },
+    {
+        "ID": "IKGWQ_iy3hax4ogtdiiikc",
+        "created_time": "2025-04-23 03:53:24",
+        "complexity_score": 1,
+        "machine_quesiton": "Who was sworn in as president of Haiti in 2017?",
+        "question": "In which city was Haiti's 2017 presidential inauguration leader born?",
+        "topic_entities": {
+            "m.03gyl": "Haiti"
+        },
+        "answer_entities": [
+            "Trou du Nord",
+            "Trou-du-Nord",
+            "Twou dinò"
+        ],
+        "cwq_id": "WebQTest-100_3fd000b7cbc17c620bb91588e1c3cda3",
+        "cwq_question": "What is the current main speech medium in Haiti?"
+    },
+    {
+        "ID": "IKGWQ_ztct31des3ir8kgd",
+        "created_time": "2025-04-22 03:55:13",
+        "complexity_score": 2,
+        "machine_quesiton": "Which former president won a second non-consecutive term in office?",
+        "question": "In which city was the President of the United States born who won a second non-consecutive term in office in the 21st century?",
+        "topic_entities": {
+            "m.060d2": "President of the United States"
+        },
+        "answer_entities": [
+            "Queens",
+            "Queens, New York City",
+            "New York City",
+            "New York",
+            "New York City (NYC),"
+        ],
+        "cwq_id": "WebQTest-931_544385aeda746d05fc5f0e7fdb2ac79b",
+        "cwq_question": "What office did John Adams hold from May 10, 1775 before he was President?"
+    },
+    {
+        "ID": "IKGWQ_oia44arab7kjve5j",
+        "created_time": "2025-04-22 07:27:10",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the new national stadium in Tirana?",
+        "question": "Which organization owns the new national stadium in Tirana?",
+        "topic_entities": {
+            "m.07m_f": "Tirana"
+        },
+        "answer_entities": [
+            "Albanian Football Association",
+            "Albanian Football Federation",
+            "FSHF"
+        ],
+        "cwq_id": "WebQTrn-1394_2906eaa7fc927cbcba4887a4d73cc452",
+        "cwq_question": "Which country with the capital Tirana does Turkey trade with?"
+    },
+    {
+        "ID": "IKGWQ_6xmdfmztc1p6nudf",
+        "created_time": "2025-04-24 06:53:21",
+        "complexity_score": 3,
+        "machine_quesiton": "What platform released the documentary series about the making of Fan Chan?",
+        "question": "In which city is the company headquartered that owns the platform which released the documentary series about the making of Fan Chan?",
+        "topic_entities": {
+            "m.0dhmm9": "Fan Chan"
+        },
+        "answer_entities": [
+            "Los Gatos",
+            "Los Gatos, California"
+        ],
+        "cwq_id": "WebQTrn-2748_5394f28651892e7656afeda366a6af04",
+        "cwq_question": "Find the location of the film Fan Chan, what language is spoken there?"
+    },
+    {
+        "ID": "IKGWQ_beracjvj9kzg5oxy",
+        "created_time": "2025-04-24 23:46:40",
+        "complexity_score": 3,
+        "machine_quesiton": "Which college is currently led by Nancy Cantor?",
+        "question": "Which time zone is the city in where the university led by Nancy Cantor in 2025 located?",
+        "topic_entities": {
+            "m.0bnhtk": "Nancy Cantor"
+        },
+        "answer_entities": [
+            "Eastern Time Zone",
+            "EST",
+            "UTC−05:00",
+            "UTC−04:00",
+            "Eastern Standard Time (EST)",
+            "Eastern Daylight Time (EDT) "
+        ],
+        "cwq_id": "WebQTrn-2478_0e2a90c8d8bf04cd881d1fd53ab0c6bc",
+        "cwq_question": "What is the mascot of the college led by Nancy Cantor?"
+    },
+    {
+        "ID": "IKGWQ_srbd2qx4qu8m9y8s",
+        "created_time": "2025-04-24 05:54:13",
+        "complexity_score": 1,
+        "machine_quesiton": "What company currently holds the naming rights to the home stadium of the San Francisco Giants?",
+        "question": "Where was the first chief executive of the company that held the naming rights to the San Francisco Giants' home stadium in 2020 born?",
+        "topic_entities": {
+            "m.0713r": "San Francisco Giants"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York",
+            "New York City (NYC)"
+        ],
+        "cwq_id": "WebQTest-832_c1d5c9c777c291a80c29c70ec43c45ad",
+        "cwq_question": "What was the last World Series won by the team whose home arena is AT&T Park?"
+    },
+    {
+        "ID": "IKGWQ_da3chys5dmfohnt7",
+        "created_time": "2025-04-22 11:11:04",
+        "complexity_score": 3,
+        "machine_quesiton": "Which football club from Trentino-South Tyrol reached Serie B for the first time?",
+        "question": "Where is the home stadium of the first Trentino-South Tyrol football club to reach Serie B?",
+        "topic_entities": {
+            "m.0133jj": "Tyrol",
+            "m.02kqqt": "Serie B"
+        },
+        "answer_entities": [
+            "Stadio Druso",
+            "Drusus stadium"
+        ],
+        "cwq_id": "WebQTest-1251_70eea8afa2d8d70c694402c9f77b40d1",
+        "cwq_question": "What Germanic Languages speaking European country is also home to  the state of Tyrol?"
+    },
+    {
+        "ID": "IKGWQ_jf49bwcz3jx2zpki",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the lead television play-by-play announcer for the Chicago Cubs?",
+        "question": "In which city is the university located where the Cubs' 2024 lead TV play-by-play announcer studied?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "Chestnut Hill",
+            "Chestnut Hill, Massachusetts"
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_ive7665ywwidid3n",
+        "created_time": "2025-04-23 05:20:55",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the chief of the Main Directorate of Intelligence of the Ministry of Defense of Ukraine?",
+        "question": "Where was the Chief of the Chief Directorate of Intelligence of the Ministry of Defence of Ukraine in 2024 born?",
+        "topic_entities": {
+            "m.04z_xt": "Chief Directorate of Intelligence of the Ministry of Defence of Ukraine"
+        },
+        "answer_entities": [
+            "Kyiv",
+            "Kyiv, Ukraine"
+        ],
+        "cwq_id": "WebQTest-43_6988da193226944bb48ca59b2115a2b6",
+        "cwq_question": "What was the occupation of the person who said \"War is too important a matter to be left to the military.\"?"
+    },
+    {
+        "ID": "IKGWQ_ug8xwqmjo9mwysdm",
+        "created_time": "2025-04-24 09:45:36",
+        "complexity_score": 2,
+        "machine_quesiton": "What museum is George Lucas developing with his wife Mellody Hobson?",
+        "question": "In which city is the museum being developed by George Lucas and his wife located?",
+        "topic_entities": {
+            "m.0343h": "George Lucas"
+        },
+        "answer_entities": [
+            "Los Angeles",
+            "L.A.",
+            "City of Los Angeles",
+            "Los Angeles, USA"
+        ],
+        "cwq_id": "WebQTrn-567_4a1a3549a4b6e02ee3422b2c7dd80544",
+        "cwq_question": "What movie produced by George Lucas was done by Ron Howard?"
+    },
+    {
+        "ID": "IKGWQ_hpm6865d4tvxhaet",
+        "created_time": "2025-04-23 00:24:40",
+        "complexity_score": 2,
+        "machine_quesiton": "Which record label did Miley Cyrus shift to in 2021?",
+        "question": "What was the original name of the company when it was first founded, which now owns the record label Miley Cyrus joined in 2021?",
+        "topic_entities": {
+            "m.0bdxs5": "Miley Cyrus"
+        },
+        "answer_entities": [
+            "American Record Corporation",
+            "American Record Corporation (ARC)"
+        ],
+        "cwq_id": "WebQTest-1923_53fa50559ec52976eb1f02fc6bd5ae76",
+        "cwq_question": "What movie was Miley Cyrus in with a character named Theresa Russo?"
+    },
+    {
+        "ID": "IKGWQ_ovuyvox14feavgay",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current manager of the Chicago Cubs?",
+        "question": "In which city is the university located where the Chicago Cubs manager in 2024 studied?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "South Bend",
+            "South Bend, Indiana"
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_6ei8zag4jy1la4ps",
+        "created_time": "2025-04-24 06:30:55",
+        "complexity_score": 2,
+        "machine_quesiton": "Who succeeded Eli Manning as the starting quarterback for the New York Giants?",
+        "question": "In which city was the quarterback who replaced Eli Manning on the New York Giants born?",
+        "topic_entities": {
+            "m.05gg4": "New York Giants",
+            "m.02x6lw": "Eli Manning"
+        },
+        "answer_entities": [
+            "Charlotte",
+            "Charlotte, North Carolina",
+            "North Carolina"
+        ],
+        "cwq_id": "WebQTest-837_00790334f21ccc3d75415a56920dc691",
+        "cwq_question": "What year did the Baltimore Ravens win the Superbowl against the New York Giants?"
+    },
+    {
+        "ID": "IKGWQ_li0ypipxt37ruzvi",
+        "created_time": "2025-04-24 02:49:09",
+        "complexity_score": 2,
+        "machine_quesiton": "Which organization appointed Anne Hathaway as a Goodwill ambassador?",
+        "question": "Which organization appointed Anne Hathaway as a Goodwill ambassador?",
+        "topic_entities": {
+            "m.02vntj": "Anne Hathaway"
+        },
+        "answer_entities": [
+            "UN Women",
+            "The United Nations Entity for Gender Equality and the Empowerment of Women"
+        ],
+        "cwq_id": "WebQTest-942_838b888de3d170ac0236da18c8d329e0",
+        "cwq_question": "Which of Anne Hathaway's parents was in the movie \"The Princess Diaries 2: Royal Engagement\"?"
+    },
+    {
+        "ID": "IKGWQ_nfgbr46cs1bhtatv",
+        "created_time": "2025-04-22 07:25:30",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the first all-electric vehicle company in Turkey?",
+        "question": "In which city is the headquarters of Turkey's first all-electric vehicle company located?",
+        "topic_entities": {
+            "m.01znc_": "Turkey"
+        },
+        "answer_entities": [
+            "Gebze",
+            "Gebze, Kocaeli Province"
+        ],
+        "cwq_id": "WebQTrn-1394_dc71f08a76d71762a0cfd30f11f66535",
+        "cwq_question": "What country does Turkey trade with that contains the Annaba Province?"
+    },
+    {
+        "ID": "IKGWQ_sa7y7odt7acy0ou0",
+        "created_time": "2025-07-18 14:15:41",
+        "complexity_score": 2,
+        "machine_quesiton": "Which Austrian tennis player won the US Open (Tennis)?",
+        "question": "In which city was the Austrian tennis player who won the US Open born?",
+        "topic_entities": {
+            "m.0h7x": "Austria",
+            "m.0l6c9": "The US Open (Tennis)"
+        },
+        "answer_entities": [
+            "Wiener Neustadt",
+            "Wiener Neustadt, Austria"
+        ],
+        "cwq_id": "WebQTest-77",
+        "cwq_question": "what capital of austria?"
+    },
+    {
+        "ID": "IKGWQ_37gfq44qtzrkpdgh",
+        "created_time": "2025-04-22 06:23:29",
+        "complexity_score": 3,
+        "machine_quesiton": "Which NBA team did LeBron James join after his second stint with the Cleveland Cavaliers?",
+        "question": "What is the home arena of the NBA team that LeBron James joined after his second stint with the Cleveland Cavaliers?",
+        "topic_entities": {
+            "m.01jz6d": "LeBron James"
+        },
+        "answer_entities": [
+            "Staples Center",
+            "Crypto.com Arena"
+        ],
+        "cwq_id": "WebQTest-268",
+        "cwq_question": "what year was lebron james rookie season?"
+    },
+    {
+        "ID": "IKGWQ_1wk4x4jsnq7ive8b",
+        "created_time": "2025-04-24 08:49:56",
+        "complexity_score": 2,
+        "machine_quesiton": "Which film depicts the relationship between Leonard Bernstein and his wife Felicia Montealegre?",
+        "question": "At which university did the director of the film depicting the relationship between Leonard Bernstein and his wife Felicia Montealegre earn their master's degree?",
+        "topic_entities": {
+            "m.0bvzp": "Leonard Bernstein",
+            "m.027v500": "Felicia Montealegre"
+        },
+        "answer_entities": [
+            "Actors Studio",
+            "Actors Studio Drama School"
+        ],
+        "cwq_id": "WebQTest-743_3a3a861fe35922a25bb5991497496887",
+        "cwq_question": "Who were the brothers of the work to whom Leonard Bernstein dedicated his work to?"
+    },
+    {
+        "ID": "IKGWQ_fgsyxd5h7gtfhm76",
+        "created_time": "2025-04-24 12:03:52",
+        "complexity_score": 4,
+        "machine_quesiton": "Which film features Beyoncé's voice as Nala?",
+        "question": "In which city was the director of the film featuring Beyoncé as Nala born?",
+        "topic_entities": {
+            "m.010b0mz_": "Beyonce Knowles"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York",
+            "Queens",
+            "Queens, New York"
+        ],
+        "cwq_id": "WebQTrn-1770_540abec8ff3d2f4e81bfc5be9ea8e816",
+        "cwq_question": "Featured in the film Beyonce: Baby and Beyond, what is Beyonce's daughter's name?"
+    },
+    {
+        "ID": "IKGWQ_s9aip96usnozo8jw",
+        "created_time": "2025-04-24 02:39:10",
+        "complexity_score": 4,
+        "machine_quesiton": "Who owns the Houston Rockets?",
+        "question": "Which time zone is the birthplace of the Houston Rockets' owner in 2024 located in?",
+        "topic_entities": {
+            "m.0jmfb": "Houston Rockets"
+        },
+        "answer_entities": [
+            "Central Time Zone",
+            "UTC−6",
+            "UTC-5",
+            "Central Daylight Time (CDT)"
+        ],
+        "cwq_id": "WebQTrn-2569_382323d8e4417de2b2ee78b7dcf62771",
+        "cwq_question": "Where do the Houston Rockets play basketball, that opened after 1975?"
+    },
+    {
+        "ID": "IKGWQ_1i2ynq25vo9ejt6r",
+        "created_time": "2025-04-25 02:18:53",
+        "complexity_score": 4,
+        "machine_quesiton": "Which science fiction film directed by Denis Villeneuve did Hans Zimmer score?",
+        "question": "Where was the author born whose novel was adapted into the Denis Villeneuve-directed, Hans Zimmer-scored science fiction film?",
+        "topic_entities": {
+            "m.0150t6": "Hans Zimmer",
+            "m.02jj1l": "Denis Villeneuve"
+        },
+        "answer_entities": [
+            "Tacoma",
+            "Tacoma, Washington"
+        ],
+        "cwq_id": "WebQTest-1528_5d11d9c9cbbc8558d1d4af742af87b04",
+        "cwq_question": "What movie with music by Hans Zimmer does logan lerman play in?"
+    },
+    {
+        "ID": "IKGWQ_671en9az5z16yere",
+        "created_time": "2025-07-20 20:46:40",
+        "complexity_score": 2,
+        "machine_quesiton": "Which luxury car brand did David Beckham become a global ambassador for?",
+        "question": "In which city is the headquarters of the luxury car brand that David Beckham became a global ambassador for located?",
+        "topic_entities": {
+            "m.02d9k": "David Beckham"
+        },
+        "answer_entities": [
+            "Bologna",
+            "Bologna, Italy"
+        ],
+        "cwq_id": "WebQTest-121",
+        "cwq_question": "what team did david beckham play for in 2011?"
+    },
+    {
+        "ID": "IKGWQ_fe4c1mst0bz41yir",
+        "created_time": "2025-04-24 10:11:18",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current president of the University of Washington?",
+        "question": "In which city is the university located where the UW President in 2024 earned their PhD?",
+        "topic_entities": {
+            "m.07t90": "University of Washington"
+        },
+        "answer_entities": [
+            "New Haven",
+            "New Haven, Connecticut",
+            "New Haven, Connecticut, United States"
+        ],
+        "cwq_id": "WebQTrn-1659_a75f0268ac2ced8609cacb5afb5343a7",
+        "cwq_question": "What Washington sports team had Nate Robinson on their roster?"
+    },
+    {
+        "ID": "IKGWQ_93pnh5bvjnvtmjkw",
+        "created_time": "2025-04-24 07:06:06",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current President of the European Parliament?",
+        "question": "In which city is the university located that awarded an honorary doctorate to the person serving as European Parliament President in 2024?",
+        "topic_entities": {
+            "m.02m0v": "European Parliament"
+        },
+        "answer_entities": [
+            "Lisbon",
+            "Lisbon, Portugal"
+        ],
+        "cwq_id": "WebQTrn-3136_d883a8a48671befac33bf89e3d801830",
+        "cwq_question": "What four regions, and is the political district with the governmental body European Parliament, make up the United Kingdom?"
+    },
+    {
+        "ID": "IKGWQ_lmtecv8qtkmxn4w8",
+        "created_time": "2025-04-24 04:30:35",
+        "complexity_score": 1,
+        "machine_quesiton": "Who is the director of the planned live-action film adaptation of Captain Pugwash?",
+        "question": "Who is the director of the planned live-action film adaptation of Captain Pugwash?",
+        "topic_entities": {
+            "m.010qv_79": "Captain Pugwash"
+        },
+        "answer_entities": [
+            "John Hay"
+        ],
+        "cwq_id": "WebQTest-1000_11e9758e98422bc42f1d085d6723de33",
+        "cwq_question": "Which country is the fictional universe Captain Pugwash that is also included in Oceania?"
+    },
+    {
+        "ID": "IKGWQ_86onflflzshkbddu",
+        "created_time": "2025-04-24 03:47:59",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the head coach of the New York Giants after Tom Coughlin resigned?",
+        "question": "In which city was the head coach who succeeded Tom Coughlin for the New York Giants born?",
+        "topic_entities": {
+            "m.05gg4": "New York Giants",
+            "m.05jl4g": "Tom Coughlin"
+        },
+        "answer_entities": [
+            "Homer City",
+            "Homer City, Pennsylvania"
+        ],
+        "cwq_id": "WebQTrn-1001_6bcfac70e63efec42212159c644a593a",
+        "cwq_question": "In what events ending prior to 3 February 2008 did the Giants win the Super Bowl?"
+    },
+    {
+        "ID": "IKGWQ_wjo4dqvawadkctbf",
+        "created_time": "2025-04-23 06:00:16",
+        "complexity_score": 2,
+        "machine_quesiton": "Who portrays Professor Albus Dumbledore in the HBO television adaptation of the Harry Potter series?",
+        "question": "In which city was the actor who portrays Albus Dumbledore in the HBO Harry Potter adaptation born?",
+        "topic_entities": {
+            "m.0cb2r": "Professor Albus Dumbledore",
+            "m.02qg4h": "Hodgkin's lymphoma"
+        },
+        "answer_entities": [
+            "Rochester",
+            "Rochester, New York"
+        ],
+        "cwq_id": "WebQTest-1002_18b698a0c4db4e35a9c98877fc9c40ae",
+        "cwq_question": "Who was the actor who played Dumbledore in Harry Potter who died from Hodgkin's lymphoma?"
+    },
+    {
+        "ID": "IKGWQ_9o1022uxkpb7zdli",
+        "created_time": "2025-04-22 09:08:19",
+        "complexity_score": 2,
+        "machine_quesiton": "What corporate boards has Nicolas Sarkozy been a member of since his retirement from politics?",
+        "question": "What corporate boards has Nicolas Sarkozy been a member of since his retirement from politics?",
+        "topic_entities": {
+            "m.02ps9k": "Nicolas Sarkozy"
+        },
+        "answer_entities": [
+            "Lagardère Group",
+            "Accor",
+            "Groupe Lucien Barrière"
+        ],
+        "cwq_id": "WebQTest-185_dfad75afd3c40503f595b4cb6acc43a5",
+        "cwq_question": "Which system of government, does the location that appointed Nicolas Sarkozy, to governmental position utilize?"
+    },
+    {
+        "ID": "IKGWQ_rble8eo9bqd0wcba",
+        "created_time": "2025-04-21 20:56:28",
+        "complexity_score": 3,
+        "machine_quesiton": "Which mascots were inducted into the Mascot Hall of Fame in 2020?",
+        "question": "Which teams' mascots were inducted into the Mascot Hall of Fame in 2020?",
+        "topic_entities": {
+            "m.0c4yv8": "Mascot Hall of Fame"
+        },
+        "answer_entities": [
+            "Montreal Canadiens",
+            "Baltimore Orioles",
+            "O's",
+            "Birds",
+            "Indiana Pacers",
+            "Indianapolis Colts"
+        ],
+        "cwq_id": "WebQTest-832_c334509bb5e02cacae1ba2e80c176499",
+        "cwq_question": "Lou Seal is the mascot for the team that last won the World Series when?"
+    },
+    {
+        "ID": "IKGWQ_62e74mzaylftzgcc",
+        "created_time": "2025-04-23 01:19:17",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the name of the documentary that chronicles parts of Taylor Swift's life and career?",
+        "question": "Which university did the director graduate from who made the documentary chronicling parts of Taylor Swift's life and career?",
+        "topic_entities": {
+            "m.0dl567": "Taylor Swift"
+        },
+        "answer_entities": [
+            "Wesleyan University"
+        ],
+        "cwq_id": "WebQTest-538_92e606ef9c0429ad6820797ad2950730",
+        "cwq_question": "What movie was Taylor Swift in that had a character named Once-ler?"
+    },
+    {
+        "ID": "IKGWQ_jcdndmz2vqhar8ku",
+        "created_time": "2025-04-22 03:22:31",
+        "complexity_score": 2,
+        "machine_quesiton": "Which network aired the first Super Bowl to be broadcast in a children-oriented format?",
+        "question": "In which city is the headquarters of the network that aired the first children-oriented Super Bowl broadcast located?",
+        "topic_entities": {
+            "m.06x5s": "Super Bowl"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York",
+            "NYC"
+        ],
+        "cwq_id": "WebQTest-837_c4e06c3a9e4b4f10bd1ae97f1742c198",
+        "cwq_question": "In what year did a team win the superbowl and the 2013 AFC Championship Game ?"
+    },
+    {
+        "ID": "IKGWQ_k7j2tkftw63pdz2x",
+        "created_time": "2025-04-22 23:29:10",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the highest fielding drum corps in Ohio?",
+        "question": "What is the corps song of the Ohio-based drum corps that has won the DCI World Championship twice?",
+        "topic_entities": {
+            "m.05kkh": "Ohio",
+            "m.060c3v": "Drum Corps International World Class Champions"
+        },
+        "answer_entities": [
+            "Autumn Leaves"
+        ],
+        "cwq_id": "WebQTest-12_68d745a0657c86906382873e57294d6a",
+        "cwq_question": "Who was the governor of Ohio in 2011 that was in the government prior to 3-1-1983?"
+    },
+    {
+        "ID": "IKGWQ_468mwkbpilhnvhix",
+        "created_time": "2025-04-22 00:05:38",
+        "complexity_score": 2,
+        "machine_quesiton": "Which martial art became an Asian Games sporting event with Indonesia as a leading competitor?",
+        "question": "Which type of martial art from Indonesia is an event of Asian Games sports?",
+        "topic_entities": {
+            "m.03ryn": "Indonesia",
+            "m.09v82vy": "Asian Games sports"
+        },
+        "answer_entities": [
+            "Pencak Silat"
+        ],
+        "cwq_id": "WebQTest-61_09020cbb000c86fda5910ec084690246",
+        "cwq_question": "What religion is practiced in Indonesia and has a sacred site of Mecca?"
+    },
+    {
+        "ID": "IKGWQ_3fs13tmj20ck5cvx",
+        "created_time": "2025-04-22 01:14:31",
+        "complexity_score": 3,
+        "machine_quesiton": "Which NFL team retired Peyton Manning's jersey?",
+        "question": "What is the mascot of the NFL team that retired Peyton Manning's jersey?",
+        "topic_entities": {
+            "m.027jv8": "Peyton Manning"
+        },
+        "answer_entities": [
+            "Indianapolis Colts Blue",
+            "Blue",
+            "Blue (NFL mascot)"
+        ],
+        "cwq_id": "WebQTest-1348_3bddf705b2a346fbdc2f00e9a02b84f3",
+        "cwq_question": "What team did Payton Manning's father play for that has a mascot named Viktor the Viking?"
+    },
+    {
+        "ID": "IKGWQ_lx1uf9bi83385et5",
+        "created_time": "2025-04-24 08:02:53",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is a notable proponent of right-wing populism outside of politics?",
+        "question": "Where was the inaugural director of Donald Trump's newly created government agency during his second term born?",
+        "topic_entities": {
+            "m.0cqt90": "Donald Trump"
+        },
+        "answer_entities": [
+            "Pretoria",
+            "Pretoria, South Africa"
+        ],
+        "cwq_id": "WebQTest-1686_dea38577dc62de7675415718be1c9286",
+        "cwq_question": "Who was the Republican governor of Arizona in 2009?"
+    },
+    {
+        "ID": "IKGWQ_xojypteyj5vnfpwd",
+        "created_time": "2025-04-24 23:58:20",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current mayor of Atlanta?",
+        "question": "Which time zone is the birthplace of Atlanta's mayor in 2025 located in?",
+        "topic_entities": {
+            "m.013yq": "Atlanta"
+        },
+        "answer_entities": [
+            "Eastern Time Zone",
+            "EST",
+            "UTC-5",
+            "UTC-4",
+            "Eastern Standard Time (EST)",
+            "Eastern Daylight Time (EDT)"
+        ],
+        "cwq_id": "WebQTrn-3049_c2209731c36910d996455a986525aba1",
+        "cwq_question": "What is the circulation area of the Atlanta Georgian famous for hosting?"
+    },
+    {
+        "ID": "IKGWQ_nxbhodvqc1ch3c4p",
+        "created_time": "2025-04-24 10:36:59",
+        "complexity_score": 1,
+        "machine_quesiton": "Which professional American football league was founded in Mexico?",
+        "question": "What was the alma mater of the first head coach of a team in the professional American football league founded in Mexico?",
+        "topic_entities": {
+            "m.0zwtz6c": "Mexico",
+            "m.0jm_": "American football"
+        },
+        "answer_entities": [
+            "Instituto Politécnico Nacional",
+            "IPN"
+        ],
+        "cwq_id": "WebQTest-743_d1a984c71ef01065e1506cdf340d2ccb",
+        "cwq_question": "What football player was a sibling of JFK?"
+    },
+    {
+        "ID": "IKGWQ_16dytnuxz7kq2amq",
+        "created_time": "2025-04-23 07:31:51",
+        "complexity_score": 1,
+        "machine_quesiton": "Who became the first former Miss America to serve as the chairwoman of the Miss America Organization?",
+        "question": "In which city is the university located from which the first former Miss America to serve as the chairwoman of the Miss America Organization graduated?",
+        "topic_entities": {
+            "m.01bk3n": "Miss America"
+        },
+        "answer_entities": [
+            "Stanford",
+            "Stanford, California"
+        ],
+        "cwq_id": "WebQTest-245",
+        "cwq_question": "what year was the first miss america pageant held?"
+    },
+    {
+        "ID": "IKGWQ_4iait97pclm3tgj6",
+        "created_time": "2025-04-23 00:21:49",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current prime minister of France?",
+        "question": "Which time zone is the birthplace of France's Prime Minister in 2025 located in?",
+        "topic_entities": {
+            "m.0f8l9c": "France"
+        },
+        "answer_entities": [
+            "Central European Time Zone",
+            "CET",
+            "Middle European Time",
+            "UTC+01:00",
+            "UTC+02:00",
+            "UTC+1",
+            "UTC+2",
+            "CEST"
+        ],
+        "cwq_id": "WebQTrn-2653_57622031abc6042a5a02dcf3b4300552",
+        "cwq_question": "During which wars did France participate in using an army of less that 16544 soldiers?"
+    },
+    {
+        "ID": "IKGWQ_p1p979qh6t4tcqj4",
+        "created_time": "2025-04-23 01:34:37",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is set to play Captain Pugwash in the planned live-action film adaptation?",
+        "question": "Where was the actor cast as Captain Pugwash in the live-action film born?",
+        "topic_entities": {
+            "m.010qv_79": "Captain Pugwash"
+        },
+        "answer_entities": [
+            "Hornchurch",
+            "Hornchurch, England"
+        ],
+        "cwq_id": "WebQTest-712_11e9758e98422bc42f1d085d6723de33",
+        "cwq_question": "Which country has territories in Oceania and is the location of the fictional universe of Captain Pugwash?"
+    },
+    {
+        "ID": "IKGWQ_rfkxacequ1bk5us8",
+        "created_time": "2025-04-25 00:23:14",
+        "complexity_score": 4,
+        "machine_quesiton": "What is the name of the current governor of Kentucky?",
+        "question": "In which city is the university located where Kentucky's governor in 2024 earned their bachelor's degree?",
+        "topic_entities": {
+            "m.0498y": "Kentucky"
+        },
+        "answer_entities": [
+            "Nashville",
+            "Music City",
+            "Nashville, Tennessee"
+        ],
+        "cwq_id": "WebQTrn-2286_35c058b9b10893ca1dbc9d24fc2f6683",
+        "cwq_question": "In what country, which is the site of MayagÃ¼ez, is Kentucky located?"
+    },
+    {
+        "ID": "IKGWQ_qls7mae150zct8jr",
+        "created_time": "2025-04-23 05:20:55",
+        "complexity_score": 2,
+        "machine_quesiton": "Which country joined NATO as a result of Russia's invasion of Ukraine?",
+        "question": "Which time zone is the country that joined NATO as a result of the Russo-Ukrainian War located in?",
+        "topic_entities": {
+            "None": "Russo-Ukrainian War",
+            "m.059dn": "North Atlantic Treaty Organization (NATO)"
+        },
+        "answer_entities": [
+            "Coordinated Universal Time",
+            "Coordinated Universal Time (UTC)",
+            "UTC"
+        ],
+        "cwq_id": "WebQTest-43_6988da193226944bb48ca59b2115a2b6",
+        "cwq_question": "What was the occupation of the person who said \"War is too important a matter to be left to the military.\"?"
+    },
+    {
+        "ID": "IKGWQ_3onbu6aesj3t5c5t",
+        "created_time": "2025-07-19 22:14:56",
+        "complexity_score": 3,
+        "machine_quesiton": "Which professional baseball team did Tim Tebow sign with after his NFL career?",
+        "question": "What is the name of the other professional baseball team in the city where Tim Tebow's post-NFL baseball team was based?",
+        "topic_entities": {
+            "m.0g7km1": "Tim Tebow"
+        },
+        "answer_entities": [
+            "New York Yankees"
+        ],
+        "cwq_id": "WebQTest-109",
+        "cwq_question": "who did tim tebow play college football for?"
+    },
+    {
+        "ID": "IKGWQ_l4daw0d5s2vsfazz",
+        "created_time": "2025-04-24 23:45:42",
+        "complexity_score": 2,
+        "machine_quesiton": "Which television networks has Derek Fisher worked with as an NBA analyst?",
+        "question": "Which television networks has Derek Fisher worked with as an NBA analyst since his retirement from playing?",
+        "topic_entities": {
+            "m.04lvwk": "Derek Fisher"
+        },
+        "answer_entities": [
+            "Turner Sports",
+            "Spectrum SportsNet"
+        ],
+        "cwq_id": "WebQTest-998_47e95c73ec76579a8d66b6e1607df389",
+        "cwq_question": "When was the last time the basketball team whose head coach is Derek Fisher won the national championship?"
+    },
+    {
+        "ID": "IKGWQ_bmyqo3ned3p9f0dj",
+        "created_time": "2025-07-20 01:12:57",
+        "complexity_score": 2,
+        "machine_quesiton": "Which Jordanian athlete won the country's first Olympic gold medal?",
+        "question": "In which city was the Jordanian athlete who won the country's first Olympic gold medal born?",
+        "topic_entities": {
+            "m.03__y": "Jordan"
+        },
+        "answer_entities": [
+            "Amman",
+            "Amman, Jordan"
+        ],
+        "cwq_id": "WebQTest-146",
+        "cwq_question": "what team does jordan own?"
+    },
+    {
+        "ID": "IKGWQ_z4jhgc8ebe2c6auv",
+        "created_time": "2025-04-24 04:03:53",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the first openly lesbian contestant in the Miss America pageant?",
+        "question": "In which city is the university located where the first openly lesbian Miss America contestant studied?",
+        "topic_entities": {
+            "m.01bk3n": "Miss America"
+        },
+        "answer_entities": [
+            "Orlando",
+            "Orlando, Florida",
+            "Orlando, Florida, United States"
+        ],
+        "cwq_id": "WebQTest-245",
+        "cwq_question": "what year was the first miss america pageant held?"
+    },
+    {
+        "ID": "IKGWQ_gjvhbd5mpiuc1gv3",
+        "created_time": "2025-04-24 07:12:48",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the first female president of Ethiopia?",
+        "question": "In which city is the university located where the first female President of Ethiopia studied?",
+        "topic_entities": {
+            "m.0j5r5ml": "President of Ethiopia",
+            "m.019pcs": "Ethiopia"
+        },
+        "answer_entities": [
+            "Montpellier"
+        ],
+        "cwq_id": "WebQTrn-21_63e2e4208eb4ac364cdc131500b71e42",
+        "cwq_question": "Who holds the title of the President of Ethiopia as the prime minister of the governmental jurisdiction?"
+    },
+    {
+        "ID": "IKGWQ_oyueydnz6zyeg150",
+        "created_time": "2025-04-24 00:50:31",
+        "complexity_score": 2,
+        "machine_quesiton": "Who was the first female mayor of Nashville?",
+        "question": "Where did the first female mayor of Nashville grow up?",
+        "topic_entities": {
+            "m.0j_t1": "Nashville"
+        },
+        "answer_entities": [
+            "Overland Park",
+            "Overland Park, Kansas",
+            "Overland Park, Johnson County, Kansas"
+        ],
+        "cwq_id": "WebQTest-519_a236cf83f662b6d443c9d7e1b28b2b37",
+        "cwq_question": "In what time zone does the film \"Nashville\" take place?"
+    },
+    {
+        "ID": "IKGWQ_pl0ys8bwpdumhztr",
+        "created_time": "2025-07-18 12:48:27",
+        "complexity_score": 2,
+        "machine_quesiton": "Which military alliance did Sweden join?",
+        "question": "In which city is the headquarters of the military alliance that Sweden joined located?",
+        "topic_entities": {
+            "m.0d0vqn": "Sweden"
+        },
+        "answer_entities": [
+            "City of Brussels",
+            "Brussels",
+            "Brussels, Belgium"
+        ],
+        "cwq_id": "WebQTest-33",
+        "cwq_question": "what timezone is sweden?"
+    },
+    {
+        "ID": "IKGWQ_4eu18s1m7xjcsw45",
+        "created_time": "2025-04-22 03:55:13",
+        "complexity_score": 3,
+        "machine_quesiton": "Who are the presidents that have been impeached by the House of Representatives?",
+        "question": "In which city was the father of the U.S. President who was impeached twice by the House of Representatives born?",
+        "topic_entities": {
+            "m.09h21": "House of Representatives",
+            "m.060d2": "President of the United States"
+        },
+        "answer_entities": [
+            "The Bronx",
+            "New York City",
+            "Bronx, New York"
+        ],
+        "cwq_id": "WebQTest-931_544385aeda746d05fc5f0e7fdb2ac79b",
+        "cwq_question": "What office did John Adams hold from May 10, 1775 before he was President?"
+    },
+    {
+        "ID": "IKGWQ_p8je8j1eox4hsc3i",
+        "created_time": "2025-04-24 04:43:31",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current Prime Minister of Poland?",
+        "question": "In which city is the Polish President's (2024) alma mater located?",
+        "topic_entities": {
+            "m.05qhw": "Poland"
+        },
+        "answer_entities": [
+            "Gdańsk",
+            "Danzig"
+        ],
+        "cwq_id": "WebQTest-1470_888604e15ae965565efd2aa1eb615bab",
+        "cwq_question": "What government system does Poland use that Nelson Mandela has talked about?"
+    },
+    {
+        "ID": "IKGWQ_03gdgtlfrajiuhgw",
+        "created_time": "2025-04-24 23:58:20",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current mayor of Atlanta?",
+        "question": "In which city is the university located where Atlanta's mayor in 2025 earned their MPA degree?",
+        "topic_entities": {
+            "m.013yq": "Atlanta"
+        },
+        "answer_entities": [
+            "Atlanta",
+            "Atlanta, Georgia"
+        ],
+        "cwq_id": "WebQTrn-3049_c2209731c36910d996455a986525aba1",
+        "cwq_question": "What is the circulation area of the Atlanta Georgian famous for hosting?"
+    },
+    {
+        "ID": "IKGWQ_e0ftv0nvd4tbywp2",
+        "created_time": "2025-04-24 07:12:28",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current patron of University College Hospital?",
+        "question": "What is the title of the patron of University College Hospital in 2025?",
+        "topic_entities": {
+            "m.02m6w9": "University College Hospital"
+        },
+        "answer_entities": [
+            "King of the United Kingdom"
+        ],
+        "cwq_id": "WebQTest-1002_ada3e07cc3c7a687601987704074b18c",
+        "cwq_question": "What actor who starred as Harry Potter's Dumbledore died in University College Hospital?"
+    },
+    {
+        "ID": "IKGWQ_svf0izianm7tjvw4",
+        "created_time": "2025-04-23 03:19:38",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current owner of the Baltimore Orioles?",
+        "question": "In which city was the 2024 owner of the Baltimore Orioles born?",
+        "topic_entities": {
+            "m.01d6g": "Baltimore Orioles"
+        },
+        "answer_entities": [
+            "Baltimore",
+            "Baltimore, Maryland"
+        ],
+        "cwq_id": "WebQTest-298",
+        "cwq_question": "what year did the orioles go to the world series?"
+    },
+    {
+        "ID": "IKGWQ_bwwccup276bd474j",
+        "created_time": "2025-04-23 04:50:49",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was hired as the manager of the Kansas City Royals after Ned Yost's retirement?",
+        "question": "Which time zone is the birthplace of the manager hired by the Kansas City Royals after Ned Yost's retirement located in?",
+        "topic_entities": {
+            "m.049n7": "Kansas City Royals"
+        },
+        "answer_entities": [
+            "Eastern Time Zone",
+            "EST",
+            "UTC-5",
+            "UTC-05:00",
+            "UTC-4",
+            "UTC-04:00",
+            "Eastern Standard Time",
+            "Eastern Daylight Time"
+        ],
+        "cwq_id": "WebQTrn-3057_17e973c9587cc65f8e2ea8add9f00ef2",
+        "cwq_question": "In what year, did the Giants win the World Series, and the Kansas City Royals, was the championship, runner up?"
+    },
+    {
+        "ID": "IKGWQ_zly8dbufmodk6tht",
+        "created_time": "2025-04-24 08:07:29",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current president of the Dominican Republic?",
+        "question": "Which political party does the Dominican Republic's President in 2025 belong to",
+        "topic_entities": {
+            "m.027rn": "Dominican Republic"
+        },
+        "answer_entities": [
+            "Modern Revolutionary Party",
+            "Opposition party",
+            "Modern Revolutionary Party (PRM)"
+        ],
+        "cwq_id": "WebQTrn-1646_1457d90ab0f2e38e307aac386e176bbd",
+        "cwq_question": "What language to they speak in the Dominican Republic, the also as the initials E.S.?"
+    },
+    {
+        "ID": "IKGWQ_64gy58evjqfbhqyv",
+        "created_time": "2025-04-23 01:31:47",
+        "complexity_score": 2,
+        "machine_quesiton": "Which company currently owns Grolsch?",
+        "question": "In which city is the headquarters of the company that currently owns Grolsch located?",
+        "topic_entities": {
+            "m.02nvpkg": "Grolsch"
+        },
+        "answer_entities": [
+            "Tokyo",
+            "Tokyo, Japan"
+        ],
+        "cwq_id": "WebQTrn-849_29d62c66b3b2bc4938023788455b5bc7",
+        "cwq_question": "What country that produces Grolsch beer borders Germany?"
+    },
+    {
+        "ID": "IKGWQ_pqr8ixzal5u78eoe",
+        "created_time": "2025-04-23 07:21:41",
+        "complexity_score": 3,
+        "machine_quesiton": "Which Dodgers player had their number retired in 2023?",
+        "question": "In which city was the Dodgers player whose number was retired in 2023 born?",
+        "topic_entities": {
+            "m.04mjl": "Los Angeles Dodgers"
+        },
+        "answer_entities": [
+            "Navojoa",
+            "Navojoa, Sonora, Mexico"
+        ],
+        "cwq_id": "WebQTrn-750_5f66ca8229db055848db87dcca69d66f",
+        "cwq_question": "What year did the Dodgers beat The Chicago White Sox in the World Series?"
+    },
+    {
+        "ID": "IKGWQ_pigy9wkr5lvegtkv",
+        "created_time": "2025-04-23 03:53:24",
+        "complexity_score": 1,
+        "machine_quesiton": "Which industrial park is the largest in the Caribbean and located in Haiti?",
+        "question": "Which industrial park is the largest in the Caribbean and located in Haiti?",
+        "topic_entities": {
+            "m.03gyl": "Haiti"
+        },
+        "answer_entities": [
+            "Caracol Industrial Park"
+        ],
+        "cwq_id": "WebQTest-100_3fd000b7cbc17c620bb91588e1c3cda3",
+        "cwq_question": "What is the current main speech medium in Haiti?"
+    },
+    {
+        "ID": "IKGWQ_yqcftyl9jga9aner",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 3,
+        "machine_quesiton": "Which company is the Cubs' first uniform sponsor?",
+        "question": "Which parent company owns the Cubs' first uniform sponsor?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "Lenovo",
+            "Lenovo Group Limited",
+            "Lenovo Group Ltd."
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_zhqgzgux6x96rp7g",
+        "created_time": "2025-04-24 06:37:25",
+        "complexity_score": 2,
+        "machine_quesiton": "What new sitcom is Tim Allen starring in as a widowed owner of a classic car restoration shop?",
+        "question": "What is the name of Tim Allen's character in his new sitcom where he plays a widowed owner of a classic car restoration shop?",
+        "topic_entities": {
+            "m.019vgs": "Tim Allen"
+        },
+        "answer_entities": [
+            "Matt Parker"
+        ],
+        "cwq_id": "WebQTest-1012_8602f4a22371baa72ab6965c0f6625d1",
+        "cwq_question": "What fun attraction is located in Hollywood and is the same place that Tim Allen was inducted?"
+    },
+    {
+        "ID": "IKGWQ_thmobcmc24oled99",
+        "created_time": "2025-04-22 01:16:08",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current head coach of the Minnesota Vikings?",
+        "question": "Which university did the Minnesota Vikings' 2022 head coach graduate from?",
+        "topic_entities": {
+            "m.051q5": "Minnesota Vikings"
+        },
+        "answer_entities": [
+            "San Diego State University",
+            "San Diego State University (SDSU)"
+        ],
+        "cwq_id": "WebQTest-1348_3bddf705b2a346fbdc2f00e9a02b84f3",
+        "cwq_question": "What team did Payton Manning's father play for that has a mascot named Viktor the Viking?"
+    },
+    {
+        "ID": "IKGWQ_p65bs29ag5qeh0rn",
+        "created_time": "2025-04-22 02:38:23",
+        "complexity_score": 3,
+        "machine_quesiton": "Which political figure did Jan Brewer endorse during the 2016 presidential campaign?",
+        "question": "Which university did the political figure endorsed by Jan Brewer during the 2016 presidential campaign graduate from?",
+        "topic_entities": {
+            "m.02pkb1c": "Jan Brewer"
+        },
+        "answer_entities": [
+            "University of Pennsylvania",
+            "Penn",
+            "UPenn"
+        ],
+        "cwq_id": "WebQTest-212_3c65a82425ff4488504b53ba502d0eb7",
+        "cwq_question": "What is the name of the state that has the elected official Jan Brewer and also has the colorado river flow through it?"
+    },
+    {
+        "ID": "IKGWQ_jf0qyodjjn86e9ma",
+        "created_time": "2025-04-24 03:49:25",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current First Minister of the Scottish Government?",
+        "question": "Which time zone is the birthplace of Scotland's First Minister in 2025 located in?",
+        "topic_entities": {
+            "m.01nq43": "Scottish Government"
+        },
+        "answer_entities": [
+            "Greenwich Mean Time Zone",
+            "GMT",
+            "UTC+0",
+            "UTC+00:00",
+            "UTC+1",
+            "UTC+01:00",
+            "BST"
+        ],
+        "cwq_id": "WebQTrn-3136_324f0ff9176003570d081f09a51698a3",
+        "cwq_question": "Which of the regions included in the United Kingdom is governed by the Scottish government?"
+    },
+    {
+        "ID": "IKGWQ_9j7npxjidofv9d4s",
+        "created_time": "2025-04-23 00:49:05",
+        "complexity_score": 2,
+        "machine_quesiton": "Which Major League Soccer team is Russell Wilson a part owner of?",
+        "question": "In which city is the MLS team that Russell Wilson is a part owner of based?",
+        "topic_entities": {
+            "m.05c10yf": "Russell Wilson"
+        },
+        "answer_entities": [
+            "Seattle",
+            "Seattle, Washington"
+        ],
+        "cwq_id": "WebQTrn-3744_26401b4c33bcb760afd734acaa0a1869",
+        "cwq_question": "The Daily Cardinal is the school newspaper at which university that Russell Wilson attended?"
+    },
+    {
+        "ID": "IKGWQ_06edhm3zxi7pkwlo",
+        "created_time": "2025-04-23 06:40:43",
+        "complexity_score": 2,
+        "machine_quesiton": "Who purchased Anchor Brewing Company with plans to restart its operations?",
+        "question": "In which city is the headquarters of the company that acquired Anchor Brewing Company in 2024 located?",
+        "topic_entities": {
+            "m.03cx92": "Anchor Brewing Company"
+        },
+        "answer_entities": [
+            "Norwich",
+            "Norwich, New York"
+        ],
+        "cwq_id": "WebQTrn-2904_0b2295cf692f73863c4d317fe2713132",
+        "cwq_question": "Where did Lauren Conrad live that also produced the beer Anchor Steam?"
+    },
+    {
+        "ID": "IKGWQ_yz5ju1wzmvvwbsxt",
+        "created_time": "2025-04-25 00:37:31",
+        "complexity_score": 4,
+        "machine_quesiton": "What was William Goldenberg's directorial debut film?",
+        "question": "On whose actual experiences was the original book based, which was later adapted for Goldenberg's inaugural directorial project?",
+        "topic_entities": {
+            "m.02q0jzx": "William Goldenberg"
+        },
+        "answer_entities": [
+            "Anthony Robles"
+        ],
+        "cwq_id": "WebQTrn-124_4393f92bea9150f52d07d9aa21943302",
+        "cwq_question": "What movie directed by Angelina Jolie and edited by William Goldenberg?"
+    },
+    {
+        "ID": "IKGWQ_z1bugnnfe4werary",
+        "created_time": "2025-04-23 00:21:49",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current prime minister of France?",
+        "question": "In which city is the university located where France's Prime Minister in 2025 studied?",
+        "topic_entities": {
+            "m.0f8l9c": "France"
+        },
+        "answer_entities": [
+            "Pessac",
+            "Pessac, France"
+        ],
+        "cwq_id": "WebQTrn-2653_57622031abc6042a5a02dcf3b4300552",
+        "cwq_question": "During which wars did France participate in using an army of less that 16544 soldiers?"
+    },
+    {
+        "ID": "IKGWQ_rjae3nx5b6mu4d2e",
+        "created_time": "2025-04-23 00:49:05",
+        "complexity_score": 2,
+        "machine_quesiton": "Which NFL team did Russell Wilson join after leaving the Seattle Seahawks?",
+        "question": "What is the name of the mascot of the NFL team that Russell Wilson joined after leaving the Seattle Seahawks?",
+        "topic_entities": {
+            "m.05c10yf": "Russell Wilson",
+            "m.070xg": "Seattle Seahawks"
+        },
+        "answer_entities": [
+            "Thunder"
+        ],
+        "cwq_id": "WebQTrn-3744_26401b4c33bcb760afd734acaa0a1869",
+        "cwq_question": "The Daily Cardinal is the school newspaper at which university that Russell Wilson attended?"
+    },
+    {
+        "ID": "IKGWQ_9t22ya9dl9d3ciux",
+        "created_time": "2025-04-24 02:44:34",
+        "complexity_score": 3,
+        "machine_quesiton": "Which streaming platform debuted the Stone Ocean anime adaptation worldwide?",
+        "question": "Which country's streaming service first premiered the JoJo's Bizarre Adventure: Stone Ocean anime globally?",
+        "topic_entities": {
+            "None": "JoJo's Bizarre Adventure: Stone Ocean"
+        },
+        "answer_entities": [
+            "United States of America",
+            "USA",
+            "America",
+            "the United States (U.S.)",
+            "the United States of America (USA),"
+        ],
+        "cwq_id": "WebQTest-1251_060135e66e84cbaa29a73145435c5457",
+        "cwq_question": "What country is the location in Jojo's bizarre adventure and speaks Germanic languages?"
+    },
+    {
+        "ID": "IKGWQ_69tlbsay0lqi50mr",
+        "created_time": "2025-04-24 09:44:13",
+        "complexity_score": 2,
+        "machine_quesiton": "What international organization does Stephen Harper currently chair?",
+        "question": "In which city is the headquarters of the international organization currently chaired by Stephen Harper located?",
+        "topic_entities": {
+            "m.01k165": "Stephen Harper"
+        },
+        "answer_entities": [
+            "Munich",
+            "München",
+            "Bavaria, Germany"
+        ],
+        "cwq_id": "WebQTrn-261_f4a4dfab08b56eff265a066b1f88f983",
+        "cwq_question": "Is whistler mountain in Stephen Harper's district and where is that?"
+    },
+    {
+        "ID": "IKGWQ_mefzmi8vkxnppanr",
+        "created_time": "2025-04-22 01:24:53",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the first female president of New York University?",
+        "question": "Where did New York University's inaugural woman president complete her PhD studies?",
+        "topic_entities": {
+            "m.0bwfn": "New York University"
+        },
+        "answer_entities": [
+            "University of California",
+            "UC",
+            "Brandeis University"
+        ],
+        "cwq_id": "WebQTest-1560_1bee868ed5551a3cfdba70a720adbc04",
+        "cwq_question": "Who founded New York University, which held his governmental position from after 1795-03-04?"
+    },
+    {
+        "ID": "IKGWQ_wbppcj40mma0usvj",
+        "created_time": "2025-04-23 01:19:55",
+        "complexity_score": 2,
+        "machine_quesiton": "Which political figure did Billy Ray Cyrus endorse in the 2024 presidential election?",
+        "question": "What was the name of the first company founded by the political figure endorsed by Billy Ray Cyrus in the 2024 presidential election?",
+        "topic_entities": {
+            "m.016qtt": "Billy Ray Cyrus"
+        },
+        "answer_entities": [
+            "The Trump Organization",
+            "The Trump Organization, Inc."
+        ],
+        "cwq_id": "WebQTest-538_3c662be721b9c2107f0dd05ba38cf729",
+        "cwq_question": "What movie featuring Taylor Swift was produced by Billy Ray Cyrus?"
+    },
+    {
+        "ID": "IKGWQ_96zdy2vdsn4l31ev",
+        "created_time": "2025-04-24 04:08:48",
+        "complexity_score": 2,
+        "machine_quesiton": "Which team did Shohei Ohtani sign with after leaving the Los Angeles Angels?",
+        "question": "In which city was the team founded that Shohei Ohtani joined after leaving the Angels?",
+        "topic_entities": {
+            "None": "Shohei Ohtani",
+            "m.04wmvz": "Los Angeles Angels of Anaheim"
+        },
+        "answer_entities": [
+            "Brooklyn",
+            "Brooklyn, New York"
+        ],
+        "cwq_id": "WebQTrn-2152_0d87898882b34c3adae306c48242ca32",
+        "cwq_question": "Which defunct American League West team was later known as the Los Angeles Angels?"
+    },
+    {
+        "ID": "IKGWQ_eqv4wajeg4pg2rr0",
+        "created_time": "2025-04-24 04:06:07",
+        "complexity_score": 4,
+        "machine_quesiton": "What is the title of Darren Aronofsky's film that features Brendan Fraser in a leading role?",
+        "question": "What is the birth place of the playwright  for Darren Aronofsky's film that features Brendan Fraser in a leading role?",
+        "topic_entities": {
+            "m.017c87": "Darren Aronofsky",
+            "m.0227tr": "Brendan Fraser"
+        },
+        "answer_entities": [
+            "Pullman",
+            "Pullman, Washington"
+        ],
+        "cwq_id": "WebQTest-1528_b9c4c1e1aa28e8685efdd6addb7d907e",
+        "cwq_question": "In what movie does Logan Lerman play that was written by Darren Aronofsky?"
+    },
+    {
+        "ID": "IKGWQ_od5nw2e6ph7kh0or",
+        "created_time": "2025-04-23 01:08:31",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current president of Chile?",
+        "question": "In which city was Chile's president in 2024 born?",
+        "topic_entities": {
+            "m.01p1v": "Chile"
+        },
+        "answer_entities": [
+            "Punta Arenas",
+            "Punta Arenas, Chile"
+        ],
+        "cwq_id": "WebQTrn-2069_14d783de97238bd1ef6eb28fe7221306",
+        "cwq_question": "Which language is spoken in Chile, its main speaking country is Peru?"
+    },
+    {
+        "ID": "IKGWQ_i0sfilphxwkmgzdp",
+        "created_time": "2025-04-24 11:50:20",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current Speaker of the United States House of Representatives?",
+        "question": "In which city was the Speaker of the United States House of Representatives in 2025 born?",
+        "topic_entities": {
+            "m.0b3wk": "United States House of Representatives"
+        },
+        "answer_entities": [
+            "Shreveport",
+            "Shreveport, Louisiana"
+        ],
+        "cwq_id": "WebQTrn-1939_7e55258c3508aa4ca9dcf0c22ab3a126",
+        "cwq_question": "What position did Abraham Lincoln have with the US House of Representatives?"
+    },
+    {
+        "ID": "IKGWQ_20r0m01jptuuucuw",
+        "created_time": "2025-04-23 01:19:17",
+        "complexity_score": 2,
+        "machine_quesiton": "What record label did Taylor Swift sign with after leaving Big Machine Records?",
+        "question": "Where did the founder of the record label grow up, which Taylor Swift signed with after leaving Big Machine Records?",
+        "topic_entities": {
+            "m.0dl567": "Taylor Swift",
+            "m.0dl50c": "Big Machine Records"
+        },
+        "answer_entities": [
+            "Montclair",
+            "Montclair, New Jersey"
+        ],
+        "cwq_id": "WebQTest-538_92e606ef9c0429ad6820797ad2950730",
+        "cwq_question": "What movie was Taylor Swift in that had a character named Once-ler?"
+    },
+    {
+        "ID": "IKGWQ_8eex40i9bzl9fjee",
+        "created_time": "2025-04-24 08:07:29",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current president of the Dominican Republic?",
+        "question": "In which city was the President of the Dominican Republic in 2025 born?",
+        "topic_entities": {
+            "m.027rn": "Dominican Republic"
+        },
+        "answer_entities": [
+            "Santo Domingo"
+        ],
+        "cwq_id": "WebQTrn-1646_1457d90ab0f2e38e307aac386e176bbd",
+        "cwq_question": "What language to they speak in the Dominican Republic, the also as the initials E.S.?"
+    },
+    {
+        "ID": "IKGWQ_l6p855ggzvxgrlpz",
+        "created_time": "2025-04-23 03:19:38",
+        "complexity_score": 3,
+        "machine_quesiton": "Which film features Brad Pitt as a stunt double opposite Leonardo DiCaprio?",
+        "question": "Where was the director of the film starring Brad Pitt as a stunt double opposite Leonardo DiCaprio born?",
+        "topic_entities": {
+            "m.0c6qh": "Brad Pitt",
+            "m.0dvmd": "Leonardo DiCaprio"
+        },
+        "answer_entities": [
+            "Knoxville",
+            "Knoxville, Tennessee"
+        ],
+        "cwq_id": "WebQTest-759_ba7920b2a977b33afdc49bc8f82377b0",
+        "cwq_question": "Who did Brad Pitt date that had bulimia nervosa?"
+    },
+    {
+        "ID": "IKGWQ_ovcftmj8c1i56svx",
+        "created_time": "2025-07-20 20:46:40",
+        "complexity_score": 3,
+        "machine_quesiton": "Which MLS team does David Beckham own?",
+        "question": "In which city is the home stadium of the MLS team owned by David Beckham located?",
+        "topic_entities": {
+            "m.02d9k": "David Beckham"
+        },
+        "answer_entities": [
+            "Fort Lauderdale",
+            "Fort Lauderdale, Florida"
+        ],
+        "cwq_id": "WebQTest-121",
+        "cwq_question": "what team did david beckham play for in 2011?"
+    },
+    {
+        "ID": "IKGWQ_8tb22kxqdkoingih",
+        "created_time": "2025-04-24 02:18:51",
+        "complexity_score": 2,
+        "machine_quesiton": "Which Academy Award-winning films has Gary Rizzo worked on?",
+        "question": "Which university did the wife of the director graduate from, who directed the Academy Award-winning war films that Gary Rizzo worked on?",
+        "topic_entities": {
+            "m.05bm4th": "Gary Rizzo"
+        },
+        "answer_entities": [
+            "University College London",
+            "UCL"
+        ],
+        "cwq_id": "WebQTest-538_7c59d9eab138d70759d1f171064789ff",
+        "cwq_question": "What movie with Gary Rizzo as a crew member was Taylor Swift in?"
+    },
+    {
+        "ID": "IKGWQ_7yt61ckh4q2o1cl5",
+        "created_time": "2025-04-23 00:03:42",
+        "complexity_score": 2,
+        "machine_quesiton": "Who directed the Audible adaptation of The Mysterious Affair at Styles?",
+        "question": "In which city was the director of the Audible adaptation of The Mysterious Affair at Styles born?",
+        "topic_entities": {
+            "m.01g097": "The Mysterious Affair at Styles"
+        },
+        "answer_entities": [
+            "Coventry",
+            "Coventry, West Midlands"
+        ],
+        "cwq_id": "WebQTest-134_4b4d85a9238759037fd59117a07fa130",
+        "cwq_question": "The author who published editions for The Mysterious Affair at Styles (Large Print Edition) wrote what types of books?"
+    },
+    {
+        "ID": "IKGWQ_5rvzqmf6bgmzci5a",
+        "created_time": "2025-04-22 02:46:44",
+        "complexity_score": 2,
+        "machine_quesiton": "What theme park land is dedicated to the Pittsburgh Steelers?",
+        "question": "Which city is the Pittsburgh Steelers-themed amusement park located in?",
+        "topic_entities": {
+            "m.05tfm": "Pittsburgh Steelers"
+        },
+        "answer_entities": [
+            "West Mifflin",
+            "West Mifflin, Pennsylvania"
+        ],
+        "cwq_id": "WebQTrn-237_abc143e50fcf4915c8267215915795b5",
+        "cwq_question": "Stelly McBeam is the team mascot for the sports team with who as head coach?"
+    },
+    {
+        "ID": "IKGWQ_ts32p2cng1eztuf7",
+        "created_time": "2025-04-24 01:37:14",
+        "complexity_score": 1,
+        "machine_quesiton": "Who is the current Chief Justice of the Supreme Court of Canada?",
+        "question": "Where was the Chief Justice of the Supreme Court of Canada in 2018 born?",
+        "topic_entities": {
+            "m.0d060g": "Canada"
+        },
+        "answer_entities": [
+            "Montreal",
+            "Montrealer"
+        ],
+        "cwq_id": "WebQTest-517_c093231fe2a83541cf05e721b6fad5b5",
+        "cwq_question": "What language spoken in Canada is the language of Daedalus?"
+    },
+    {
+        "ID": "IKGWQ_uib43odpsw7ll494",
+        "created_time": "2025-04-23 07:40:04",
+        "complexity_score": 2,
+        "machine_quesiton": "Which company sponsors the Detroit Tigers' uniforms?",
+        "question": "In which city is the headquarters of the company that sponsors the Detroit Tigers' uniforms located?",
+        "topic_entities": {
+            "m.02d02": "Detroit Tigers"
+        },
+        "answer_entities": [
+            "Walker",
+            "Walker, Michigan"
+        ],
+        "cwq_id": "WebQTrn-3057_c456567791bbf0a13cd83e1412dd3170",
+        "cwq_question": "What year did the Giants win the World Series with the Detroit Tigers as a runner up?"
+    },
+    {
+        "ID": "IKGWQ_799s1b0c6py00war",
+        "created_time": "2025-04-24 03:13:02",
+        "complexity_score": 4,
+        "machine_quesiton": "Which films has Arianne Phillips collaborated on with Quentin Tarantino?",
+        "question": "Which male actors born in Los Angeles starred in the films that Arianne Phillips and Quentin Tarantino collaborated on?",
+        "topic_entities": {
+            "m.04myc32": "Arianne Phillips",
+            "m.0693l": "Quentin Tarantino"
+        },
+        "answer_entities": [
+            "Leonardo DiCaprio",
+            "Leonardo Wilhelm DiCaprio",
+            "Emile Hirsch",
+            "Emile Davenport Hirsch"
+        ],
+        "cwq_id": "WebQTest-1528_f4031bab4675b90da1eff58abc5ecc91",
+        "cwq_question": "What movie starring Logan Lerman that the costumes were designer by Arianne Phillps?"
+    },
+    {
+        "ID": "IKGWQ_n31er5sq2h7udmgi",
+        "created_time": "2025-04-23 00:03:42",
+        "complexity_score": 1,
+        "machine_quesiton": "Which actor played Hercule Poirot in the Audible adaptation of The Mysterious Affair at Styles?",
+        "question": "In which city was the actor who played Hercule Poirot in Audible's The Mysterious Affair at Styles born?",
+        "topic_entities": {
+            "m.01g097": "The Mysterious Affair at Styles",
+            "m.0ljm": "Hercule Poirot"
+        },
+        "answer_entities": [
+            "New Jersey"
+        ],
+        "cwq_id": "WebQTest-134_4b4d85a9238759037fd59117a07fa130",
+        "cwq_question": "The author who published editions for The Mysterious Affair at Styles (Large Print Edition) wrote what types of books?"
+    },
+    {
+        "ID": "IKGWQ_c6l6vxyl44367nmn",
+        "created_time": "2025-04-22 02:22:54",
+        "complexity_score": 2,
+        "machine_quesiton": "Which NFL team is Magic Johnson an investor in?",
+        "question": "What is the fight song of the NFL team that Magic Johnson has invested in?",
+        "topic_entities": {
+            "m.095nx": "Magic Johnson"
+        },
+        "answer_entities": [
+            "Hail to the Commanders"
+        ],
+        "cwq_id": "WebQTrn-750_0c4812773890324eea74aa09e14de1cf",
+        "cwq_question": "In which years did the team that has Magic Johnson among its ownership claim victory in the World Series?"
+    },
+    {
+        "ID": "IKGWQ_3d22grgo7bgu1xod",
+        "created_time": "2025-04-25 00:44:58",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current prime minister of Greece?",
+        "question": "In which city was Greece's Prime Minister in 2020 born?",
+        "topic_entities": {
+            "m.035qy": "Greece"
+        },
+        "answer_entities": [
+            "Athens"
+        ],
+        "cwq_id": "WebQTrn-1394_58fc62f12e18fa64619476efd4fbedb4",
+        "cwq_question": "What trade partner of Turkey also exports to Greece?"
+    },
+    {
+        "ID": "IKGWQ_c6r4uxf050exx7yv",
+        "created_time": "2025-04-24 03:52:18",
+        "complexity_score": 1,
+        "machine_quesiton": "What is the name of Italy's flag carrier airline that succeeded Alitalia?",
+        "question": "Where is the headquarters of Italy's flag carrier airline that replaced Alitalia located?",
+        "topic_entities": {
+            "m.03rjj": "Italy",
+            "m.05_5qpj": "Alitalia"
+        },
+        "answer_entities": [
+            "Rome",
+            "Roma"
+        ],
+        "cwq_id": "WebQTest-537_8f768e11eabc7781a72a84addaf7067c",
+        "cwq_question": "Which movie has Charlie Hunnam been in, and is from Italy?"
+    },
+    {
+        "ID": "IKGWQ_ld2dk0rs01xv8u39",
+        "created_time": "2025-07-19 23:33:35",
+        "complexity_score": 2,
+        "machine_quesiton": "Which NFL team did Cam Newton return to after being released by the New England Patriots?",
+        "question": "What is the mascot of the NFL team that Cam Newton joined after being released by the New England Patriots?",
+        "topic_entities": {
+            "m.02phnp7": "Cam Newton",
+            "m.05g3b": "New England Patriots"
+        },
+        "answer_entities": [
+            "Sir Purr"
+        ],
+        "cwq_id": "WebQTest-34",
+        "cwq_question": "who did cam newton sign with?"
+    },
+    {
+        "ID": "IKGWQ_3y6cm8po86uwjyl0",
+        "created_time": "2025-04-23 05:40:42",
+        "complexity_score": 3,
+        "machine_quesiton": "Which sport has Bolivia excelled in at the Pan American Games?",
+        "question": "What is the strongest Pan American Games sport for the nation holding the largest Lithium reserves globally?",
+        "topic_entities": {
+            "m.025rzqx": "Lithium",
+            "m.01psm6": "Pan American Games"
+        },
+        "answer_entities": [
+            "Racquetball"
+        ],
+        "cwq_id": "WebQTest-1282_29d667144c10743ecdb31fccce932cdd",
+        "cwq_question": "What form of government is used in both the United States and Bolivia?"
+    },
+    {
+        "ID": "IKGWQ_837rswm2d2reb16t",
+        "created_time": "2025-04-25 02:49:44",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the first Black woman appointed to the Supreme Court by a Democratic president?",
+        "question": "Where was the first black woman to serve as a justice on the Supreme Court of the United States born?",
+        "topic_entities": {
+            "m.07sz1": "Supreme Court of the United States"
+        },
+        "answer_entities": [
+            "Washington, D.C.",
+            "Washington",
+            "D.C."
+        ],
+        "cwq_id": "WebQTest-1686_b30993b3354e5b4bb3ded1e07150aef8",
+        "cwq_question": "What 2009 governor of Arizona is also a member of the Democratic Party?"
+    },
+    {
+        "ID": "IKGWQ_5jhabz2qacasexcl",
+        "created_time": "2025-04-23 04:50:49",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the majority owner of the Kansas City Royals?",
+        "question": "Which time zone is the country of birth of the Kansas City Royals' majority owner in 2020 located in?",
+        "topic_entities": {
+            "m.049n7": "Kansas City Royals"
+        },
+        "answer_entities": [
+            "Japan Time Zone",
+            "Japan Standard Time",
+            "JST",
+            "UTC+9",
+            "UTC+09:00",
+            "Japan Central Standard Time"
+        ],
+        "cwq_id": "WebQTrn-3057_17e973c9587cc65f8e2ea8add9f00ef2",
+        "cwq_question": "In what year, did the Giants win the World Series, and the Kansas City Royals, was the championship, runner up?"
+    },
+    {
+        "ID": "IKGWQ_gkc4v0cg8qwmszmj",
+        "created_time": "2025-04-23 01:48:47",
+        "complexity_score": 2,
+        "machine_quesiton": "Who was the first woman to be hired as a general manager in MLB history?",
+        "question": "In which city was the first woman hired as a general manager in MLB history born?",
+        "topic_entities": {
+            "m.09p14": "Major League Baseball"
+        },
+        "answer_entities": [
+            "Indianapolis",
+            "Indianapolis, Indiana"
+        ],
+        "cwq_id": "WebQTest-231",
+        "cwq_question": "when did florida marlins join mlb?"
+    },
+    {
+        "ID": "IKGWQ_iiav4cwary3oiae5",
+        "created_time": "2025-04-22 05:10:33",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current prime minister of France?",
+        "question": "Which city is home to the university attended by the President of France in 2025?",
+        "topic_entities": {
+            "m.0f8l9c": "France"
+        },
+        "answer_entities": [
+            "Bordeaux",
+            "Bordèu"
+        ],
+        "cwq_id": "WebQTrn-241_dfb6c97ac9bf2f0ac07f27dd80f9edc2",
+        "cwq_question": "What country bordering France contains an airport that serves Nijmegen?"
+    },
+    {
+        "ID": "IKGWQ_hb15fthqlfuodtth",
+        "created_time": "2025-04-24 02:07:34",
+        "complexity_score": 3,
+        "machine_quesiton": "Who succeeded Elizabeth II as Head of the Commonwealth?",
+        "question": "In which city is the university located where the successor of Elizabeth II as Head of the Commonwealth earned his Bachelor of Arts degree?",
+        "topic_entities": {
+            "m.0d1_f": "Elizabeth II"
+        },
+        "answer_entities": [
+            "Cambridge",
+            "Cambridge, England"
+        ],
+        "cwq_id": "WebQTrn-1812_46f65a3745ff73f46fdcecf071f8b144",
+        "cwq_question": "Which countries ruled by Elizabeth II are in the caribbean?"
+    },
+    {
+        "ID": "IKGWQ_w20nq8yl8i6m0zt8",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current manager of the Chicago Cubs?",
+        "question": "In which city was the Chicago Cubs manager in 2024 born?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "South Bend",
+            "South Bend, Indiana"
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_u82nvwc1qb9xe55a",
+        "created_time": "2025-04-24 06:03:13",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current mayor of New York City?",
+        "question": "In which city is the university located where NYC's mayor in 2025 earned their MPA degree?",
+        "topic_entities": {
+            "m.02_286": "New York City"
+        },
+        "answer_entities": [
+            "Poughkeepsie",
+            "Poughkeepsie (town), New York",
+            "Poughkeepsie, New York"
+        ],
+        "cwq_id": "WebQTrn-1677_22c4d321fc60b69e1d966c77d4107a74",
+        "cwq_question": "What movie starring Adam Sandler was filmed in New York City?"
+    },
+    {
+        "ID": "IKGWQ_n96jq8y42hljywsx",
+        "created_time": "2025-04-23 03:33:28",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the name of the documentary directed by Ron Howard about the Beatles?",
+        "question": "Who edited the Beatles documentary directed by Ron Howard?",
+        "topic_entities": {
+            "m.0g2lq": "Ron Howard",
+            "m.07c0j": "The Beatles"
+        },
+        "answer_entities": [
+            "Paul Crowder"
+        ],
+        "cwq_id": "WebQTrn-567_693feb48c0515cd069014e7ca2846b37",
+        "cwq_question": "What movie with the character Teklel Hafouli did Ron Howard do?"
+    },
+    {
+        "ID": "IKGWQ_qjsww1gt1497zyaj",
+        "created_time": "2025-04-24 12:03:52",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the name of Beyoncé's sister who is also a singer?",
+        "question": "Which city's ballet company did Beyonce Knowles's sister perform with as a member?",
+        "topic_entities": {
+            "m.010b0mz_": "Beyonce Knowles"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York"
+        ],
+        "cwq_id": "WebQTrn-1770_540abec8ff3d2f4e81bfc5be9ea8e816",
+        "cwq_question": "Featured in the film Beyonce: Baby and Beyond, what is Beyonce's daughter's name?"
+    },
+    {
+        "ID": "IKGWQ_dbeb3gl2a7pziiow",
+        "created_time": "2025-04-24 04:43:31",
+        "complexity_score": 3,
+        "machine_quesiton": "Which Polish video game developer created The Witcher trilogy and Cyberpunk 2077?",
+        "question": "What's the time zone of the home country of the studio that released Cyberpunk 2077?",
+        "topic_entities": {
+            "None": "Cyberpunk 2077"
+        },
+        "answer_entities": [
+            "Central European Time Zone",
+            "Central European Time"
+        ],
+        "cwq_id": "WebQTest-1470_888604e15ae965565efd2aa1eb615bab",
+        "cwq_question": "What government system does Poland use that Nelson Mandela has talked about?"
+    },
+    {
+        "ID": "IKGWQ_5yepz5isocf4lv89",
+        "created_time": "2025-04-22 05:44:21",
+        "complexity_score": 2,
+        "machine_quesiton": "Which team won Super Bowl LVI in their home stadium?",
+        "question": "In which city is the headquarters of the team that won Super Bowl LVI located?",
+        "topic_entities": {
+            "None": "Super Bowl LVI"
+        },
+        "answer_entities": [
+            "Los Angeles",
+            "L.A."
+        ],
+        "cwq_id": "WebQTrn-1001_4e074d51c67d5358b05e462d1f48f3e5",
+        "cwq_question": "What other Superbowls did the champion of the 1934 NFL Championship game win?"
+    },
+    {
+        "ID": "IKGWQ_2fe22a18qc9fx7zs",
+        "created_time": "2025-04-24 07:06:06",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current President of the European Parliament?",
+        "question": "Which time zone is the birthplace of the European Parliament's President in 2024 located in?",
+        "topic_entities": {
+            "m.02m0v": "European Parliament"
+        },
+        "answer_entities": [
+            "Central European Time Zone",
+            "CET",
+            "UTC+1",
+            "Middle European Time",
+            "MET",
+            "UTC+2",
+            "CEST"
+        ],
+        "cwq_id": "WebQTrn-3136_d883a8a48671befac33bf89e3d801830",
+        "cwq_question": "What four regions, and is the political district with the governmental body European Parliament, make up the United Kingdom?"
+    },
+    {
+        "ID": "IKGWQ_jo66dknkq9nb7b0d",
+        "created_time": "2025-07-20 02:40:48",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current president of Seychelles?",
+        "question": "In which city is the university located where Seychelles' president in 2025 graduated?",
+        "topic_entities": {
+            "m.06sw9": "Seychelles"
+        },
+        "answer_entities": [
+            "Birmingham",
+            "Birmingham, England",
+            "Birmingham, UK"
+        ],
+        "cwq_id": "WebQTest-222",
+        "cwq_question": "where is the seychelles on world map?"
+    },
+    {
+        "ID": "IKGWQ_bqbxfklmwh3nd08m",
+        "created_time": "2025-04-22 23:29:10",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current governor of Ohio?",
+        "question": "In which city is the university located where the governor of Ohio in 2019 earned their PhD degree?",
+        "topic_entities": {
+            "m.05kkh": "Ohio",
+            "m.0fkvn": "Governor"
+        },
+        "answer_entities": [
+            "Ada",
+            "Ada, Ohio"
+        ],
+        "cwq_id": "WebQTest-12_68d745a0657c86906382873e57294d6a",
+        "cwq_question": "Who was the governor of Ohio in 2011 that was in the government prior to 3-1-1983?"
+    },
+    {
+        "ID": "IKGWQ_7n8tv2gldx6yd77f",
+        "created_time": "2025-04-24 05:12:05",
+        "complexity_score": 3,
+        "machine_quesiton": "Which reality TV star wore Marilyn Monroe's 'Happy Birthday, Mr. President' dress to the Met Gala?",
+        "question": "In which city was the reality TV star who wore Marilyn Monroe's 'Happy Birthday, Mr. President' dress to the Met Gala born?",
+        "topic_entities": {
+            "m.04wqr": "Marilyn Monroe",
+            "m.0_jd323": "Happy Birthday, Mr. President",
+            "m.0gmgl_p": "Met Gala"
+        },
+        "answer_entities": [
+            "Los Angeles"
+        ],
+        "cwq_id": "WebQTest-743_3a40921ae6042ff93cc654f727b80209",
+        "cwq_question": "What were the names of the brothers of the man to whom \"Happy Birthday, Mr. President\" was sung?"
+    },
+    {
+        "ID": "IKGWQ_ul3ssr0gj0eo3x81",
+        "created_time": "2025-07-19 22:14:56",
+        "complexity_score": 3,
+        "machine_quesiton": "Which university awarded Tim Tebow an honorary Doctorate of Humanities?",
+        "question": "In which city is the university located that awarded Tim Tebow an honorary Doctorate of Humanities?",
+        "topic_entities": {
+            "m.0g7km1": "Tim Tebow"
+        },
+        "answer_entities": [
+            "Lynchburg",
+            "Lynchburg, Virginia"
+        ],
+        "cwq_id": "WebQTest-109",
+        "cwq_question": "who did tim tebow play college football for?"
+    },
+    {
+        "ID": "IKGWQ_bcso7bmfkdaawthe",
+        "created_time": "2025-04-22 05:54:26",
+        "complexity_score": 2,
+        "machine_quesiton": "Which professional basketball team plays in the Dutch Basketball League and is based in The Hague?",
+        "question": "Which country's basketball league has the team based in The Hague previously participated in?",
+        "topic_entities": {
+            "m.07g0_": "The Hague"
+        },
+        "answer_entities": [
+            "Netherlands",
+            "Dutch",
+            "Holland"
+        ],
+        "cwq_id": "WebQTrn-412_b5575cb1cef1ef5a555d364a3429dedd",
+        "cwq_question": "People from the country that contains The Hague speak what language?"
+    },
+    {
+        "ID": "IKGWQ_8yn26dk8lu828kr4",
+        "created_time": "2025-04-25 00:11:09",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current Governing Mayor of Oslo?",
+        "question": "In which city is the university located where Oslo's Governing Mayor in 2024 earned their master's degree?",
+        "topic_entities": {
+            "m.05l64": "Oslo"
+        },
+        "answer_entities": [
+            "Cambridge",
+            "Cambridge, England"
+        ],
+        "cwq_id": "WebQTrn-1770_eacb827b9f76250dd8e9b68184ed09b5",
+        "cwq_question": "What is the daughter of the actor that played the character Xania?"
+    },
+    {
+        "ID": "IKGWQ_qng8kni7qmr9z932",
+        "created_time": "2025-04-23 15:52:48",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current Prime Minister of Norway?",
+        "question": "Which universities did Norway's 2022 Prime Minister attend abroad during his studies?",
+        "topic_entities": {
+            "m.05b4w": "Norway"
+        },
+        "answer_entities": [
+            "Sciences Po",
+            "Sciences Po Paris",
+            "Paris Institute of Political Studies",
+            "London School of Economics and Political Science",
+            "London School of Economics and Political Science (LSE)",
+            "London School of Economics"
+        ],
+        "cwq_id": "WebQTest-1840_21c0fcf71d0e64b2a0b0151293b3b140",
+        "cwq_question": "What language, with the initials FKV, do they speak in Norway?"
+    },
+    {
+        "ID": "IKGWQ_8sd5fow4ucdo73zp",
+        "created_time": "2025-04-22 08:10:52",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is Scarlett Johansson married to?",
+        "question": "What is the profession of the man Scarlett Johansson married in 2020?",
+        "topic_entities": {
+            "m.02114t": "Scarlett Johansson"
+        },
+        "answer_entities": [
+            "Comedian",
+            "Writer",
+            "Actor"
+        ],
+        "cwq_id": "WebQTest-213_d9993d3e6f665d0c937cf7c0209ff9f8",
+        "cwq_question": "Which artist with a concert tour named FutureSex/LoveShow did Scarlett Johansson date?"
+    },
+    {
+        "ID": "IKGWQ_jfwwm5ga0jlx8j13",
+        "created_time": "2025-04-22 02:54:44",
+        "complexity_score": 3,
+        "machine_quesiton": "Which country designated Benjamin Netanyahu as a terrorist?",
+        "question": "What is the predominant religion in the country that designated Benjamin Netanyahu as a terrorist?",
+        "topic_entities": {
+            "m.0fm2h": "Benjamin Netanyahu"
+        },
+        "answer_entities": [
+            "Islam"
+        ],
+        "cwq_id": "WebQTest-1384_cb60fbc3dea230fc32682cbb8556ba62",
+        "cwq_question": "What is the most predominant religion in the country Benjamin Netanyahu holds a governmental position?"
+    },
+    {
+        "ID": "IKGWQ_ja6n1vl356u3jogz",
+        "created_time": "2025-04-23 06:45:54",
+        "complexity_score": 4,
+        "machine_quesiton": "Which poker organization did Kevin Hart become a Brand Ambassador for?",
+        "question": "In which country was the poker organization that Kevin Hart became a Brand Ambassador for founded?",
+        "topic_entities": {
+            "m.0ggp1n": "Kevin Hart"
+        },
+        "answer_entities": [
+            "Costa Rica",
+            "Republic of Costa Rica"
+        ],
+        "cwq_id": "WebQTrn-3376_2d06cbcbb5ada96a239eeee425106c28",
+        "cwq_question": "What educational institution with football sports team named Temple Owls  did Kevin Hart go to?"
+    },
+    {
+        "ID": "IKGWQ_5yr6orfqigd957ax",
+        "created_time": "2025-04-22 08:50:36",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the first woman to be hired as a general manager in MLB history?",
+        "question": "In which city is the university located where the first female MLB general manager graduated?",
+        "topic_entities": {
+            "m.09p14": "Major League Baseball"
+        },
+        "answer_entities": [
+            "Chicago",
+            "Chicago, Illinois"
+        ],
+        "cwq_id": "WebQTest-231",
+        "cwq_question": "when did florida marlins join mlb?"
+    },
+    {
+        "ID": "IKGWQ_hiz71eomk3bug4k5",
+        "created_time": "2025-04-24 06:53:21",
+        "complexity_score": 3,
+        "machine_quesiton": "What platform released the documentary series about the making of Fan Chan?",
+        "question": "In which city was the parent company of the platform that released the 'making of Fan Chan' documentary series founded?",
+        "topic_entities": {
+            "m.0dhmm9": "Fan Chan"
+        },
+        "answer_entities": [
+            "Scotts Valley",
+            "Scotts Valley, California"
+        ],
+        "cwq_id": "WebQTrn-2748_5394f28651892e7656afeda366a6af04",
+        "cwq_question": "Find the location of the film Fan Chan, what language is spoken there?"
+    },
+    {
+        "ID": "IKGWQ_3gdtdpz0ohgogs55",
+        "created_time": "2025-04-21 23:33:18",
+        "complexity_score": 2,
+        "machine_quesiton": "What position does Brad Stevens currently hold with the Boston Celtics?",
+        "question": "In which city was the team founded where Brad Stevens served as President of Basketball Operations in 2024?",
+        "topic_entities": {
+            "m.02qwvmq": "Brad Stevens"
+        },
+        "answer_entities": [
+            "Boston",
+            "Boston, Massachusetts"
+        ],
+        "cwq_id": "WebQTrn-2209_c1374f388d9cc7a78365860c91218362",
+        "cwq_question": "What year did the basketball team coached by Brad Stevens win the championship?"
+    },
+    {
+        "ID": "IKGWQ_shsowy03ayxqpmby",
+        "created_time": "2025-04-23 01:48:06",
+        "complexity_score": 3,
+        "machine_quesiton": "Which film featuring Armie Hammer was selected for preservation in the United States National Film Registry?",
+        "question": "Which film featuring Armie Hammer was selected for preservation in the National Film Registry?",
+        "topic_entities": {
+            "m.03y9941": "Armie Hammer",
+            "m.05glt": "National Film Registry"
+        },
+        "answer_entities": [
+            "The Social Network"
+        ],
+        "cwq_id": "WebQTest-106_8a7ae3422867fd4b2d40b06930915468",
+        "cwq_question": "Who did Armie Hammer play in The Social Network?"
+    },
+    {
+        "ID": "IKGWQ_9do5zyto37ipbnpa",
+        "created_time": "2025-04-22 02:27:37",
+        "complexity_score": 1,
+        "machine_quesiton": "What is the headquarters location of the Newmont Mining Corporation?",
+        "question": "Which university awarded an honorary doctorate to the founder of the company acquired by Newmont Mining Corporation in 2019?",
+        "topic_entities": {
+            "m.0460n_": "Newmont Mining Corporation"
+        },
+        "answer_entities": [
+            "York University",
+            "YorkU"
+        ],
+        "cwq_id": "WebQTest-212_0415f406246ee6468d7eb40867780498",
+        "cwq_question": "Which State's capital is Denver and the Colorado River runs through it?"
+    },
+    {
+        "ID": "IKGWQ_d2ptnzuk75as9jl3",
+        "created_time": "2025-04-24 04:28:51",
+        "complexity_score": 2,
+        "machine_quesiton": "Which English soccer club was acquired by the enterprise branch of the San Francisco 49ers?",
+        "question": "What is the plant species featured on the crest of the English soccer club acquired by the enterprise branch of the San Francisco 49ers?",
+        "topic_entities": {
+            "m.06rny": "San Francisco 49ers"
+        },
+        "answer_entities": [
+            "White Rose of York",
+            "rosa alba",
+            "Leeds United"
+        ],
+        "cwq_id": "WebQTest-837_e50d04e5d9bdd3df83fecd82c106d7f4",
+        "cwq_question": "What was the year that the Baltimore Ravens won the Superbowl over the San Francisco 49er's?"
+    },
+    {
+        "ID": "IKGWQ_gk469ybf56m4lrf0",
+        "created_time": "2025-04-23 07:14:25",
+        "complexity_score": 2,
+        "machine_quesiton": "Which university awarded Samantha Power the Honors of Ulysses Medal?",
+        "question": "In which city is the university that awarded Samantha Power the Ulysses Medal located?",
+        "topic_entities": {
+            "m.07vznt": "Samantha Power"
+        },
+        "answer_entities": [
+            "Dublin",
+            "London, England",
+            "London, United Kingdom"
+        ],
+        "cwq_id": "WebQTest-719_4c56262d6806c8bd5c0fadb75177520a",
+        "cwq_question": "Which political party, does the political appointed, that had the title, Director for Multilateral Affairs represent?"
+    },
+    {
+        "ID": "IKGWQ_fwzrqgof1vxon0zc",
+        "created_time": "2025-07-18 12:48:27",
+        "complexity_score": 4,
+        "machine_quesiton": "Who was the first female prime minister of Sweden?",
+        "question": "In which city is the university located where Sweden's first female prime minister graduated?",
+        "topic_entities": {
+            "m.0d0vqn": "Sweden"
+        },
+        "answer_entities": [
+            "Stockholm",
+            "Stockholm, Sweden"
+        ],
+        "cwq_id": "WebQTest-33",
+        "cwq_question": "what timezone is sweden?"
+    },
+    {
+        "ID": "IKGWQ_cejx0p0fiw1c6b5t",
+        "created_time": "2025-04-22 06:38:36",
+        "complexity_score": 2,
+        "machine_quesiton": "Which competition did Brian Shaw create and host?",
+        "question": "In which city is the competition created and hosted by Brian Shaw held?",
+        "topic_entities": {
+            "m.074s0v": "Brian Shaw"
+        },
+        "answer_entities": [
+            "Colorado",
+            "Colorado, USA",
+            "Colorado, United States",
+            "Colorado, United States of America"
+        ],
+        "cwq_id": "WebQTrn-1659_1a493665beb5be1dd530e06a6d98082b",
+        "cwq_question": "What basketball team with head coach Brian Shaw did Nate Robinson play for?"
+    },
+    {
+        "ID": "IKGWQ_sbjadchydvy1zw6x",
+        "created_time": "2025-04-22 00:05:38",
+        "complexity_score": 2,
+        "machine_quesiton": "What is the administrative status of Southwest Papua in Indonesia?",
+        "question": "Which continent is the country that Southwest Papua Province belongs to located in?",
+        "topic_entities": {
+            "None": "Southwest Papua"
+        },
+        "answer_entities": [
+            "Asia"
+        ],
+        "cwq_id": "WebQTest-61_09020cbb000c86fda5910ec084690246",
+        "cwq_question": "What religion is practiced in Indonesia and has a sacred site of Mecca?"
+    },
+    {
+        "ID": "IKGWQ_orqgj6fciza3wybb",
+        "created_time": "2025-04-25 00:08:49",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current Mayor of Toronto?",
+        "question": "Where was the husband of Toronto’s mayor (2024) born?",
+        "topic_entities": {
+            "m.0h7h6": "Toronto"
+        },
+        "answer_entities": [
+            "Montreal",
+            "Montreal, Quebec",
+            "Québec",
+            "Quebec"
+        ],
+        "cwq_id": "WebQTest-1387_c93b982bbc3358f769cd28fe07c446be",
+        "cwq_question": "In what time zone does the Toronto City Council meet?"
+    },
+    {
+        "ID": "IKGWQ_xa9xqrvsawvkp1cj",
+        "created_time": "2025-04-23 06:45:54",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the title of Kevin Hart's autobiography released after 2015?",
+        "question": "In which city is the university located where the co-author of Kevin Hart's first autobiography released after 2015 studied?",
+        "topic_entities": {
+            "m.0ggp1n": "Kevin Hart"
+        },
+        "answer_entities": [
+            "New York City",
+            "New York City(NYC)"
+        ],
+        "cwq_id": "WebQTrn-3376_2d06cbcbb5ada96a239eeee425106c28",
+        "cwq_question": "What educational institution with football sports team named Temple Owls  did Kevin Hart go to?"
+    },
+    {
+        "ID": "IKGWQ_w2162ryy84o4e2g6",
+        "created_time": "2025-04-25 03:31:42",
+        "complexity_score": 3,
+        "machine_quesiton": "Who was the first Nobel Prize in Literature winner to write in Nynorsk?",
+        "question": "Where was the first Nobel Literature laureate who wrote in Nynorsk born?",
+        "topic_entities": {
+            "m.0ddd9": "Nobel Prize in Literature",
+            "m.016rsc": "Nynorsk"
+        },
+        "answer_entities": [
+            "Haugesund"
+        ],
+        "cwq_id": "WebQTest-1840_c9b29298640eb6e6b30bb75ceae98297",
+        "cwq_question": "Find the place where Nynorsk is spoken, what other languages are spoken there?"
+    },
+    {
+        "ID": "IKGWQ_jzj8aya2spd9u1e5",
+        "created_time": "2025-04-23 03:19:38",
+        "complexity_score": 4,
+        "machine_quesiton": "What is the name of the recording company Brad Pitt co-founded with Damien Quintard?",
+        "question": "In which city is the recording studio located that Brad Pitt and Damien Quintard acquired and rebranded?",
+        "topic_entities": {
+            "m.0c6qh": "Brad Pitt",
+            "m.0101rz_d": "Damien Quintard"
+        },
+        "answer_entities": [
+            "Correns"
+        ],
+        "cwq_id": "WebQTest-759_ba7920b2a977b33afdc49bc8f82377b0",
+        "cwq_question": "Who did Brad Pitt date that had bulimia nervosa?"
+    },
+    {
+        "ID": "IKGWQ_pj3cvm7pf6pi9nzf",
+        "created_time": "2025-04-24 11:50:20",
+        "complexity_score": 4,
+        "machine_quesiton": "Who is the current Speaker of the United States House of Representatives?",
+        "question": "In which city is the university located where the United States House Speaker in 2025 earned his bachelor's degree?",
+        "topic_entities": {
+            "m.0b3wk": "United States House of Representatives"
+        },
+        "answer_entities": [
+            "Baton Rouge",
+            "Baton Rouge, Louisiana"
+        ],
+        "cwq_id": "WebQTrn-1939_7e55258c3508aa4ca9dcf0c22ab3a126",
+        "cwq_question": "What position did Abraham Lincoln have with the US House of Representatives?"
+    },
+    {
+        "ID": "IKGWQ_6cv2h08clid1x7tr",
+        "created_time": "2025-04-23 00:14:26",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the lead television play-by-play announcer for the Chicago Cubs?",
+        "question": "In which city was the Chicago Cubs' lead TV play-by-play announcer in 2024 born?",
+        "topic_entities": {
+            "m.01yjl": "Chicago Cubs"
+        },
+        "answer_entities": [
+            "Philadelphia",
+            "Philly"
+        ],
+        "cwq_id": "WebQTrn-2047_2b331bd984ee8971df426cc51b58ebe1",
+        "cwq_question": "What structure opened in 1914 and is where the Chicago Cubs play?"
+    },
+    {
+        "ID": "IKGWQ_t1dy7c8gmhtapzsv",
+        "created_time": "2025-04-24 06:55:13",
+        "complexity_score": 2,
+        "machine_quesiton": "Who composed the soundtrack for the film The Book of Love?",
+        "question": "What is the birthplace of the musician who created the film score for The Book of Love?",
+        "topic_entities": {
+            "None": "The Book of Love"
+        },
+        "answer_entities": [
+            "Memphis",
+            "Memphis, Tennessee",
+            "Tennessee"
+        ],
+        "cwq_id": "WebQTest-213_2c4862f486291f7fae3f1a0a19e5dc4d",
+        "cwq_question": "Who did Scarlett Johansson date that also wrote the music for \"The Devil and the Deep Blue Sea\"?"
+    },
+    {
+        "ID": "IKGWQ_lwuf6m5uwjffi2p0",
+        "created_time": "2025-04-23 06:40:01",
+        "complexity_score": 4,
+        "machine_quesiton": "What network has Tamera Mowry signed an overall deal with?",
+        "question": "In which city is the headquarters of the parent company of the network that Tamera Mowry signed an overall deal with located?",
+        "topic_entities": {
+            "m.075kfb": "Tamera Mowry"
+        },
+        "answer_entities": [
+            "Kansas City",
+            "Kansas City, Missouri",
+            "KC",
+            "KCMO"
+        ],
+        "cwq_id": "WebQTrn-3249_8854b6b321c9e210d83c0419d6d3b4c5",
+        "cwq_question": "Which shows did the actor who played the character Danielle Warren play in?"
+    },
+    {
+        "ID": "IKGWQ_hmmn4f9rrtjre7xj",
+        "created_time": "2025-04-22 09:27:38",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current owner of the Baltimore Orioles?",
+        "question": "In which city is the university located where the 2024 owner of the Baltimore Orioles earned their doctoral degree?",
+        "topic_entities": {
+            "m.01d6g": "Baltimore Orioles"
+        },
+        "answer_entities": [
+            "Chicago",
+            "Chicago, Illinois"
+        ],
+        "cwq_id": "WebQTest-298",
+        "cwq_question": "what year did the orioles go to the world series?"
+    },
+    {
+        "ID": "IKGWQ_fs3hyswktbowhx9a",
+        "created_time": "2025-04-24 06:30:55",
+        "complexity_score": 2,
+        "machine_quesiton": "Who was the head coach of the New York Giants after Ben McAdoo?",
+        "question": "Where was the New York Giants head coach who succeeded Ben McAdoo born?",
+        "topic_entities": {
+            "m.05gg4": "New York Giants",
+            "m.04zy4wf": "Ben McAdoo"
+        },
+        "answer_entities": [
+            "Dearborn",
+            "Dearborn, Michigan"
+        ],
+        "cwq_id": "WebQTest-837_00790334f21ccc3d75415a56920dc691",
+        "cwq_question": "What year did the Baltimore Ravens win the Superbowl against the New York Giants?"
+    },
+    {
+        "ID": "IKGWQ_6plh9tzd9tsownxk",
+        "created_time": "2025-04-24 05:17:15",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current Prime Minister of Belgium?",
+        "question": "Which city is the birthplace of Belgium's 2025 Prime Minister?",
+        "topic_entities": {
+            "m.0582y4": "Federal Government of Belgium"
+        },
+        "answer_entities": [
+            "Mortsel"
+        ],
+        "cwq_id": "WebQTrn-493_7889cf4cf3c3b2b2bf5e10722d096ffd",
+        "cwq_question": "What continent is the Federal Government of Belgian located on?"
+    },
+    {
+        "ID": "IKGWQ_ff6q15unjc6g056u",
+        "created_time": "2025-04-22 04:53:36",
+        "complexity_score": 2,
+        "machine_quesiton": "Which English football club is owned by Stan Kroenke?",
+        "question": "In which city is the English football club owned by Stan Kroenke located?",
+        "topic_entities": {
+            "m.0dg6f6": "Stan Kroenke"
+        },
+        "answer_entities": [
+            "North London",
+            "North London, England",
+            "London",
+            "London, England"
+        ],
+        "cwq_id": "WebQTrn-1659_df4619d9a9fff3930f63496bafd4b823",
+        "cwq_question": "Which sports team owned by Stan Kroenke did Nate Robinson play for?"
+    },
+    {
+        "ID": "IKGWQ_ksvc8yi2j6wmp9v4",
+        "created_time": "2025-04-23 06:19:46",
+        "complexity_score": 2,
+        "machine_quesiton": "Who is the current mayor of Montreal?",
+        "question": "Which university did Montreal's 2018 mayor attend?",
+        "topic_entities": {
+            "m.052p7": "Montreal"
+        },
+        "answer_entities": [
+            "Université de Montréal",
+            "University of Montreal",
+            "UdeM"
+        ],
+        "cwq_id": "WebQTest-1376_f46d89a2e7090339e748bcf7dbd14692",
+        "cwq_question": "In which province, is the location that has a governmental body called, Montreal Executive Committee?"
+    },
+    {
+        "ID": "IKGWQ_r8kywuajrldy6evr",
+        "created_time": "2025-04-24 03:49:25",
+        "complexity_score": 3,
+        "machine_quesiton": "Who is the current First Minister of the Scottish Government?",
+        "question": "In which city is the university located where Scotland's First Minister in 2025 studied?",
+        "topic_entities": {
+            "m.01nq43": "Scottish Government"
+        },
+        "answer_entities": [
+            "Edinburgh",
+            "Edinburgh, Scotland, UK",
+            "Edinburgh, Scotland"
+        ],
+        "cwq_id": "WebQTrn-3136_324f0ff9176003570d081f09a51698a3",
+        "cwq_question": "Which of the regions included in the United Kingdom is governed by the Scottish government?"
+    },
+    {
+        "ID": "IKGWQ_rwbdp9rencjj6rhu",
+        "created_time": "2025-07-19 23:33:35",
+        "complexity_score": 3,
+        "machine_quesiton": "Which team did Cam Newton sign with after being released by the Carolina Panthers?",
+        "question": "In which city is the home stadium of the team that Cam Newton joined after being released by the Carolina Panthers located?",
+        "topic_entities": {
+            "m.02phnp7": "Cam Newton",
+            "m.01y3c": "Carolina Panthers"
+        },
+        "answer_entities": [
+            "Foxborough",
+            "Foxborough, Massachusetts"
+        ],
+        "cwq_id": "WebQTest-34",
+        "cwq_question": "who did cam newton sign with?"
+    },
+    {
+        "ID": "IKGWQ_tgdhtbaab86vosss",
+        "created_time": "2025-04-23 06:40:01",
+        "complexity_score": 3,
+        "machine_quesiton": "What network has Tamera Mowry signed an overall deal with?",
+        "question": "In which city is the headquarters of the production company that Tamera Mowry signed an overall deal with located?",
+        "topic_entities": {
+            "m.075kfb": "Tamera Mowry"
+        },
+        "answer_entities": [
+            "Studio City",
+            "Studio City, Los Angeles"
+        ],
+        "cwq_id": "WebQTrn-3249_8854b6b321c9e210d83c0419d6d3b4c5",
+        "cwq_question": "Which shows did the actor who played the character Danielle Warren play in?"
+    },
+    {
+        "ID": "IKGWQ_cza334rdmhar5rsp",
+        "created_time": "2025-04-24 07:20:15",
+        "complexity_score": 2,
+        "machine_quesiton": "Who became the first former Miss America to serve as the chairwoman of the Miss America Organization?",
+        "question": "In which city was the first former Miss America to serve as the chairwoman of the Miss America Organization born?",
+        "topic_entities": {
+            "m.01bk3n": "Miss America"
+        },
+        "answer_entities": [
+            "Coon Rapids",
+            "Coon Rapids, Minnesota"
+        ],
+        "cwq_id": "WebQTest-245",
+        "cwq_question": "what year was the first miss america pageant held?"
+    },
+    {
+        "ID": "IKGWQ_ffz3zvcwax90y7nq",
+        "created_time": "2025-04-22 07:25:30",
+        "complexity_score": 3,
+        "machine_quesiton": "What is the name of Turkey's first domestically manufactured communication satellite?",
+        "question": "Which company's rocket launched Turkey's first fully domestically produced communication satellite?",
+        "topic_entities": {
+            "m.01znc_": "Turkey"
+        },
+        "answer_entities": [
+            "SpaceX",
+            "Space Exploration Technologies Corp"
+        ],
+        "cwq_id": "WebQTrn-1394_dc71f08a76d71762a0cfd30f11f66535",
+        "cwq_question": "What country does Turkey trade with that contains the Annaba Province?"
+    },
+    {
+        "ID": "IKGWQ_iczzi9d153evmvet",
+        "created_time": "2025-04-22 08:24:42",
+        "complexity_score": 2,
+        "machine_quesiton": "Which museum dedicated to the Bible opened in Washington, D.C.?",
+        "question": "Who is the founder of the Bible museum that opened in Washington, D.C.?",
+        "topic_entities": {
+            "m.0rh6k": "Washington, D.C.",
+            "m.015j7": "The Bible"
+        },
+        "answer_entities": [
+            "Steve Green"
+        ],
+        "cwq_id": "WebQTest-61_9be8c18e016b713cbb7f7feb6badebc7",
+        "cwq_question": "What religion with religious text The Bible is practiced in Indonesia?"
+    },
+    {
+        "ID": "IKGWQ_a46zoes6aoor1yd9",
+        "created_time": "2025-04-22 11:04:20",
+        "complexity_score": 1,
+        "machine_quesiton": "Where are the international manufacturing centers of Samsung Heavy Industries located?",
+        "question": "Where are the overseas design centers of Samsung Heavy Industries located?",
+        "topic_entities": {
+            "m.0403pvq": "Samsung Heavy Industries"
+        },
+        "answer_entities": [
+            "India"
+        ],
+        "cwq_id": "WebQTest-48_382b3b08e12c259c4c206044a8856ff8",
+        "cwq_question": "Where is the company owned by Samsung Heavy Industries located?"
+    },
+    {
+        "ID": "IKGWQ_y5djektwy559h2c7",
+        "created_time": "2025-04-23 00:01:49",
+        "complexity_score": 2,
+        "machine_quesiton": "What broadcasting role did Drew Brees take after retiring from the NFL?",
+        "question": "Where is the headquarters of the broadcasting company where Drew Brees worked after retiring from the NFL located?",
+        "topic_entities": {
+            "m.030bdd": "Drew Brees"
+        },
+        "answer_entities": [
+            "Stamford",
+            "Stamford, Connecticut",
+            "Stamford, Fairfield County, Connecticut"
+        ],
+        "cwq_id": "WebQTest-191_c6a356c1033c0023ce7c1a8742cbdfdb",
+        "cwq_question": "Where college did Drew Brees attend that publishes Purdue Exponent?"
+    }
+]
