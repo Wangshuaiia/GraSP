@@ -158,10 +158,14 @@ train_small_llm = False  # or True
 
 ### ▶️ Start Training (Command Line)
 
-Training is launched via the following command:
+Train on the small JSON data already in the repo:
 
 ```bash
-python train.py
+python train.py \
+  --data_path data/WebQSP.json \
+  --light_model_name google/flan-t5-small \
+  --epochs 3 \
+  --batch_size 2
 ```
 
 By default, `train.py`:
@@ -189,8 +193,16 @@ Evaluation follows a **two-stage inference pipeline**:
 
 Evaluation is launched using:
 
+Run two-stage inference:
+
 ```bash
-python infer.py
+python infer.py \
+  --data_path data/WebQSP.json \
+  --checkpoint checkpoints/best.pt \
+  --example_id 0 \
+  --num_examples 1 \
+  --light_model_name google/flan-t5-small \
+  --powerful_model_name google/flan-t5-small
 ```
 
 By default, `infer.py`:

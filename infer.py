@@ -1,92 +1,114 @@
+"""Run two-stage GraSP inference.
+
+Flow:
+  1. Build local graph from a KBQA example.
+  2. Second-order GNN encodes the graph and produces soft prompts.
+  3. Light LLM receives soft prompt + triples + question and organizes graph evidence.
+  4. Powerful LLM receives organized evidence + original question and produces final answer.
+"""
+
+from __future__ import annotations
+
+import argparse
 import json
+
 import torch
+from torch.utils.data import DataLoader
 
-from prompts import BIG_LLM_SYSTEM_PROMPT, BIG_LLM_USER_PROMPT_TEMPLATE
-from train import build_small_llm_input
-from subgraph import extract_n_hop_subgraph
+from gnn_soft_prompt import Graph2Prefix, SubgraphGNN
+from light_reasoning_llm import SmallLLMSelector, TwoStageReasoner
+from subgraph import KBQAGraphDataset, collate_kbqa_examples
 
-def parse_selector_json(text: str):
-    s = text.find("{")
-    e = text.rfind("}")
-    if s == -1 or e == -1 or e <= s:
-        return {"selected_node_ids": [], "rationale": "parse_failed"}
-    try:
-        return json.loads(text[s:e+1])
-    except Exception:
-        return {"selected_node_ids": [], "rationale": "json_load_failed"}
 
-def format_edges_as_triples(subset_nodes, sub_edge_index, sub_rel_ids, id2name, relid2name=None):
-    lines = []
-    src = sub_edge_index[0].tolist()
-    dst = sub_edge_index[1].tolist()
-    for i, (u, v) in enumerate(zip(src, dst)):
-        hu = int(subset_nodes[u])
-        hv = int(subset_nodes[v])
-        rname = "related_to"
-        if sub_rel_ids is not None and relid2name is not None:
-            rname = relid2name[int(sub_rel_ids[i])]
-        lines.append(f"({id2name.get(hu, str(hu))}, {rname}, {id2name.get(hv, str(hv))})")
-    return "\n".join(lines)
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_path", type=str, default="data/WebQSP.json")
+    parser.add_argument("--checkpoint", type=str, default="checkpoints/best.pt")
+    parser.add_argument("--example_id", type=int, default=0)
+    parser.add_argument("--num_examples", type=int, default=1)
+    parser.add_argument("--light_model_name", type=str, default=None)
+    parser.add_argument("--powerful_model_name", type=str, default=None)
+    parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--max_new_tokens_light", type=int, default=128)
+    parser.add_argument("--max_new_tokens_powerful", type=int, default=128)
+    return parser.parse_args()
 
-def format_selected_nodes(selected_ids, id2name):
-    lines = []
-    for nid in selected_ids:
-        try:
-            nid_int = int(nid)
-        except Exception:
-            nid_int = nid
-        lines.append(f"- id={nid} | name={id2name.get(nid_int, str(nid))}")
-    return "\n".join(lines)
 
-class BigLLMClient:
-    def __init__(self):
-        pass
+def main():
+    args = parse_args()
+    device = torch.device(args.device)
+    ckpt = torch.load(args.checkpoint, map_location=device)
+    cfg = ckpt.get("config", {})
+    relation2id = ckpt.get("relation2id", {"<unk>": 0})
 
-    def chat(self, system_prompt: str, user_prompt: str) -> str:
-        # TODO: replace with real API call
-        raise NotImplementedError("Connect to your API.")
-
-@torch.no_grad()
-def kbqa_infer_one(question: str,
-                   center_entity_id: int,
-                   candidates: list,
-                   edge_index,
-                   rel_ids,
-                   node_features,
-                   id2name: dict,
-                   relid2name: dict | None,
-                   num_hops: int,
-                   gnn,
-                   g2p,
-                   small_llm,
-                   big_llm: BigLLMClient,
-                   device):
-    subset, sub_edge_index, sub_rel_ids, center_mapping, edge_mask = extract_n_hop_subgraph(
-        center_entity_id, edge_index, num_hops, rel_ids
+    light_model_name = args.light_model_name or ckpt.get("light_model_name") or cfg.get(
+        "light_model_name", "google/flan-t5-small"
     )
-    sub_x = node_features[subset].to(device)  # [N_sub, in_dim]
-    batch = torch.zeros(sub_x.size(0), dtype=torch.long, device=device)
+    powerful_model_name = args.powerful_model_name or light_model_name
 
-    _, g = gnn(sub_x, sub_edge_index.to(device), batch)
-    prefix = g2p(g)  # [1, prefix_len, H]
+    dataset = KBQAGraphDataset(
+        data_path=args.data_path,
+        feature_dim=int(cfg.get("feature_dim", 256)),
+        relation2id=relation2id,
+        update_relation_vocab=False,
+    )
+    start = args.example_id
+    end = min(len(dataset), start + args.num_examples)
+    examples = [dataset[i] for i in range(start, end)]
+    batch = collate_kbqa_examples(examples)
+    graph = batch["graph"].to(device)
 
-    small_inp = build_small_llm_input(question, candidates)
-    out_text = small_llm.forward_with_prefix(prefix, [small_inp], target_texts=None)[0]
-    sel = parse_selector_json(out_text)
-    selected_ids = sel.get("selected_node_ids", [])
+    light_llm = SmallLLMSelector(light_model_name, device=device)
+    light_llm.freeze_lm()
+    powerful_llm = SmallLLMSelector(powerful_model_name, device=device)
+    powerful_llm.freeze_lm()
 
-    edges_block = format_edges_as_triples(subset, sub_edge_index, sub_rel_ids, id2name, relid2name)
-    selected_nodes_block = format_selected_nodes(selected_ids, id2name)
+    gnn = SubgraphGNN(
+        in_dim=int(cfg.get("feature_dim", 256)),
+        hid_dim=int(cfg.get("graph_dim", 256)),
+        out_dim=int(cfg.get("graph_dim", 256)),
+        num_layers=int(cfg.get("gnn_layers", 2)),
+        heads=int(cfg.get("gnn_heads", 4)),
+        num_relations=len(relation2id) + 1,
+        use_second_order=True,
+    ).to(device)
+    graph2prefix = Graph2Prefix(
+        graph_dim=int(cfg.get("graph_dim", 256)),
+        llm_hidden=light_llm.hidden,
+        prefix_len=int(cfg.get("prefix_len", 8)),
+    ).to(device)
+    gnn.load_state_dict(ckpt["gnn"])
+    graph2prefix.load_state_dict(ckpt["graph2prefix"])
+    gnn.eval()
+    graph2prefix.eval()
 
-    user_prompt = BIG_LLM_USER_PROMPT_TEMPLATE.format(
-        question=question,
-        selected_nodes_block=selected_nodes_block,
-        edges_block=edges_block
+    reasoner = TwoStageReasoner(gnn, graph2prefix, light_llm, powerful_llm)
+    organized_infos = reasoner.organize_graph_info(
+        batch["questions"],
+        batch["triples_texts"],
+        graph,
+        max_new_tokens=args.max_new_tokens_light,
+    )
+    answers = reasoner.answer(
+        batch["questions"],
+        organized_infos,
+        max_new_tokens=args.max_new_tokens_powerful,
     )
 
-    answer = big_llm.chat(BIG_LLM_SYSTEM_PROMPT, user_prompt)
-    return {
-        "small_llm_raw": out_text,
-        "selected_node_ids": selected_ids,
-        "final_answer": answer
-    }
+    results = []
+    for i, qid in enumerate(batch["qids"]):
+        results.append(
+            {
+                "qid": qid,
+                "question": batch["questions"][i],
+                "retrieved_triples": batch["triples_texts"][i],
+                "organized_graph_info": organized_infos[i],
+                "prediction": answers[i],
+                "gold_answer": batch["answer_texts"][i],
+            }
+        )
+    print(json.dumps(results, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

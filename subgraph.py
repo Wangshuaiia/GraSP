@@ -1,193 +1,363 @@
+"""Data and subgraph utilities for GraSP.
+
+The repository currently contains KBQA JSON files but no full external KG dump. To make the
+pipeline runnable, this module builds a local graph from each example's topic entity,
+inferential relation chain, constraints, and gold answers. Later, you can replace
+`build_triples_from_kbqa_item` with a real KG retriever while keeping the same model code.
+
+This file uses only PyTorch data containers, not PyTorch Geometric.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Sequence, Tuple
+
 import torch
 import torch.nn.functional as F
-from torch_geometric.utils import k_hop_subgraph, subgraph
+from torch.utils.data import Dataset
 
-from transformers import AutoTokenizer, AutoModel
+Triple = Tuple[str, str, str]
 
 
-def _mean_pool(last_hidden_state: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
+@dataclass
+class GraphData:
+    x: torch.Tensor
+    edge_index: torch.Tensor
+    edge_type: torch.Tensor
+    node_names: List[str]
+    triples: List[Triple]
+
+    def to(self, device: torch.device | str):
+        self.x = self.x.to(device)
+        self.edge_index = self.edge_index.to(device)
+        self.edge_type = self.edge_type.to(device)
+        return self
+
+
+@dataclass
+class GraphBatch:
+    x: torch.Tensor
+    edge_index: torch.Tensor
+    edge_type: torch.Tensor
+    batch: torch.Tensor
+    node_names: List[List[str]]
+    triples: List[List[Triple]]
+
+    def to(self, device: torch.device | str):
+        self.x = self.x.to(device)
+        self.edge_index = self.edge_index.to(device)
+        self.edge_type = self.edge_type.to(device)
+        self.batch = self.batch.to(device)
+        return self
+
+    @staticmethod
+    def from_data_list(graphs: Sequence[GraphData]) -> "GraphBatch":
+        xs = []
+        edge_indices = []
+        edge_types = []
+        batches = []
+        node_offset = 0
+        node_names = []
+        triples = []
+        for gid, g in enumerate(graphs):
+            xs.append(g.x)
+            num_nodes = g.x.size(0)
+            if g.edge_index.numel() > 0:
+                edge_indices.append(g.edge_index + node_offset)
+                edge_types.append(g.edge_type)
+            batches.append(torch.full((num_nodes,), gid, dtype=torch.long))
+            node_offset += num_nodes
+            node_names.append(g.node_names)
+            triples.append(g.triples)
+
+        x = torch.cat(xs, dim=0) if xs else torch.empty((0, 0))
+        edge_index = (
+            torch.cat(edge_indices, dim=1)
+            if edge_indices
+            else torch.empty((2, 0), dtype=torch.long)
+        )
+        edge_type = torch.cat(edge_types, dim=0) if edge_types else torch.empty((0,), dtype=torch.long)
+        batch = torch.cat(batches, dim=0) if batches else torch.empty((0,), dtype=torch.long)
+        return GraphBatch(x=x, edge_index=edge_index, edge_type=edge_type, batch=batch, node_names=node_names, triples=triples)
+
+
+@dataclass
+class KBQAExample:
+    qid: str
+    question: str
+    topic_entity: str
+    answer_text: str
+    triples: List[Triple]
+    graph: GraphData
+    evidence_target: str
+
+
+def hash_text_embedding(text: str, dim: int = 256) -> torch.Tensor:
+    """Deterministic lightweight text feature for graph nodes.
+
+    This avoids requiring BERT embeddings just to run the repo. Replace this with pretrained
+    entity embeddings when you connect to a real KG.
     """
-    Mean pooling over the token dimension with attention mask.
-
-    Args:
-        last_hidden_state: Tensor of shape [B, T, H]
-        attention_mask: Tensor of shape [B, T]
-
-    Returns:
-        Tensor of shape [B, H]
-    """
-    mask = attention_mask.unsqueeze(-1).type_as(last_hidden_state)  # [B, T, 1]
-    summed = (last_hidden_state * mask).sum(dim=1)                  # [B, H]
-    denom = mask.sum(dim=1).clamp(min=1e-6)                         # [B, 1]
-    return summed / denom
+    vec = torch.zeros(dim, dtype=torch.float32)
+    tokens = text.lower().replace("_", " ").replace(".", " ").split()
+    if not tokens:
+        vec[0] = 1.0
+        return vec
+    for tok in tokens:
+        digest = hashlib.sha256(tok.encode("utf-8")).digest()
+        idx = int.from_bytes(digest[:4], "little") % dim
+        sign = 1.0 if digest[4] % 2 == 0 else -1.0
+        vec[idx] += sign
+    return F.normalize(vec, p=2, dim=0)
 
 
-@torch.no_grad()
-def _bert_encode_texts(
-    texts,
-    tokenizer,
-    model,
-    device,
-    batch_size=64,
-    max_length=64
-):
-    """
-    Encode a list of texts into L2-normalized embeddings using BERT
-    with mean pooling.
-
-    Args:
-        texts: List[str]
-        tokenizer: HuggingFace tokenizer
-        model: HuggingFace model
-        device: torch.device
-        batch_size: encoding batch size
-        max_length: max token length
-
-    Returns:
-        Tensor of shape [N, H], L2-normalized
-    """
-    embeddings = []
-    for i in range(0, len(texts), batch_size):
-        batch_texts = texts[i:i + batch_size]
-        tokenized = tokenizer(
-            batch_texts,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-            max_length=max_length
-        ).to(device)
-
-        outputs = model(**tokenized)
-        pooled = _mean_pool(
-            outputs.last_hidden_state,
-            tokenized["attention_mask"]
-        )  # [B, H]
-
-        pooled = F.normalize(pooled, p=2, dim=-1)
-        embeddings.append(pooled.cpu())
-
-    return torch.cat(embeddings, dim=0)  # [N, H]
+def _first_parse(item: dict) -> dict:
+    parses = item.get("Parses") or []
+    if not parses:
+        return {}
+    for p in parses:
+        if p.get("AnnotatorComment", {}).get("ParseQuality") == "Complete":
+            return p
+    return parses[0]
 
 
-def extract_n_hop_subgraph_with_bert_filter(
-    question: str,
-    center_node_id: int,
-    edge_index: torch.Tensor,
-    num_hops: int,
-    entity_texts: dict,
-    top_k: int,
-    rel_ids: torch.Tensor | None = None,
-    bert_model_name: str = "bert-base-uncased",
-    device: str | torch.device = "cuda" if torch.cuda.is_available() else "cpu",
-    batch_size: int = 64,
-    max_length: int = 64,
-):
-    """
-    Extract an n-hop subgraph and filter nodes using BERT-based
-    question–entity semantic similarity.
+def _answer_names(parse: dict) -> List[str]:
+    answers = []
+    for ans in parse.get("Answers", []) or []:
+        name = ans.get("EntityName") or ans.get("AnswerArgument")
+        if name is not None:
+            answers.append(str(name).replace("\n", " ").strip())
+    return answers
 
-    Pipeline:
-        1) Encode the question and entity texts using BERT
-        2) Compute cosine similarity between question and entities
-        3) Select top-K most similar entities (always keep the center node)
-        4) Extract n-hop subgraph around the center node
-        5) Filter the subgraph to keep only top-K relevant nodes and edges
-    """
-    device = torch.device(device)
 
-    # Initialize BERT
-    tokenizer = AutoTokenizer.from_pretrained(bert_model_name)
-    model = AutoModel.from_pretrained(bert_model_name).to(device)
-    model.eval()
+def build_triples_from_kbqa_item(item: dict) -> Tuple[str, str, str, List[Triple]]:
+    """Convert a WebQSP/WebQuestions-style item into local evidence triples."""
+    parse = _first_parse(item)
+    qid = str(item.get("QuestionId") or item.get("id") or "unknown")
+    question = str(item.get("ProcessedQuestion") or item.get("RawQuestion") or item.get("question") or "")
+    topic_entity = (
+        parse.get("TopicEntityName")
+        or next(iter((item.get("topic_entity") or {}).values()), None)
+        or next(iter((item.get("qid_topic_entity") or {}).values()), None)
+        or "topic_entity"
+    )
+    topic_entity = str(topic_entity).replace("\n", " ").strip()
 
-    # Encode the question
-    question_emb = _bert_encode_texts(
-        [question],
-        tokenizer,
-        model,
-        device,
-        batch_size=1,
-        max_length=max_length
-    ).to(device)  # [1, H]
+    rel_chain = [str(r) for r in (parse.get("InferentialChain") or [])]
+    answers = _answer_names(parse)
+    answer_text = "; ".join(answers) if answers else "unknown"
 
-    # Encode entity texts
-    node_ids = list(entity_texts.keys())
-    texts = [entity_texts[nid] for nid in node_ids]
+    triples: List[Triple] = []
+    if answers:
+        for ans in answers:
+            if len(rel_chain) <= 1:
+                rel = rel_chain[0] if rel_chain else "related_to"
+                triples.append((topic_entity, rel, ans))
+            else:
+                head = topic_entity
+                for hop_id, rel in enumerate(rel_chain[:-1], start=1):
+                    mid = f"intermediate_node_{hop_id}_for_{topic_entity}"
+                    triples.append((head, rel, mid))
+                    head = mid
+                triples.append((head, rel_chain[-1], ans))
+    else:
+        triples.append((topic_entity, "related_to", "unknown_answer"))
 
-    entity_embs = _bert_encode_texts(
-        texts,
-        tokenizer,
-        model,
-        device,
-        batch_size=batch_size,
-        max_length=max_length
-    ).to(device)  # [N, H]
+    for c in parse.get("Constraints", []) or []:
+        pred = str(c.get("NodePredicate") or "constraint")
+        ent = str(c.get("EntityName") or c.get("Argument") or c.get("ValueType") or "constraint_value")
+        triples.append((topic_entity, pred, ent))
 
-    # Cosine similarity (dot product since embeddings are normalized)
-    similarities = (entity_embs @ question_emb.T).squeeze(-1)  # [N]
+    return qid, question, topic_entity, answer_text, triples
 
-    # Select top-K most relevant entities
-    k = min(top_k, similarities.numel())
-    _, topk_indices = torch.topk(similarities, k=k, largest=True)
 
-    kept_node_ids = {node_ids[i] for i in topk_indices.tolist()}
-    kept_node_ids.add(center_node_id)
+def format_triples(triples: Sequence[Triple], max_triples: Optional[int] = None) -> str:
+    rows = []
+    for h, r, t in list(triples)[:max_triples]:
+        rows.append(f"({h}, {r}, {t})")
+    return "\n".join(rows) if rows else "(no triples retrieved)"
 
-    sim_scores = {
-        node_ids[i]: float(similarities[i].item())
-        for i in range(len(node_ids))
+
+def build_evidence_target(question: str, triples: Sequence[Triple], answer_text: str) -> str:
+    return (
+        "Relevant graph information:\n"
+        + "\n".join(f"- ({h}, {r}, {t})" for h, r, t in triples)
+        + f"\nLikely answer from graph: {answer_text}"
+    )
+
+
+def build_graph_from_triples(
+    triples: Sequence[Triple],
+    relation2id: Dict[str, int],
+    feature_dim: int = 256,
+    add_reverse_edges: bool = True,
+    update_relation_vocab: bool = True,
+) -> GraphData:
+    node2id: Dict[str, int] = {}
+
+    def get_node_id(name: str) -> int:
+        if name not in node2id:
+            node2id[name] = len(node2id)
+        return node2id[name]
+
+    edge_pairs = []
+    edge_types = []
+    for h, r, t in triples:
+        u, v = get_node_id(h), get_node_id(t)
+        if r not in relation2id:
+            if update_relation_vocab:
+                relation2id[r] = len(relation2id)
+            else:
+                relation2id.setdefault("<unk>", 0)
+        rid = relation2id.get(r, relation2id.get("<unk>", 0))
+        edge_pairs.append((u, v))
+        edge_types.append(rid)
+        if add_reverse_edges:
+            rr = f"reverse::{r}"
+            if rr not in relation2id:
+                if update_relation_vocab:
+                    relation2id[rr] = len(relation2id)
+                else:
+                    relation2id.setdefault("<unk>", 0)
+            edge_pairs.append((v, u))
+            edge_types.append(relation2id.get(rr, relation2id.get("<unk>", 0)))
+
+    if not node2id:
+        node2id["empty_graph"] = 0
+
+    names = [None] * len(node2id)
+    for name, idx in node2id.items():
+        names[idx] = name
+
+    x = torch.stack([hash_text_embedding(name, feature_dim) for name in names], dim=0)
+    if edge_pairs:
+        edge_index = torch.tensor(edge_pairs, dtype=torch.long).t().contiguous()
+        edge_type = torch.tensor(edge_types, dtype=torch.long)
+    else:
+        edge_index = torch.empty((2, 0), dtype=torch.long)
+        edge_type = torch.empty((0,), dtype=torch.long)
+
+    return GraphData(x=x, edge_index=edge_index, edge_type=edge_type, node_names=names, triples=list(triples))
+
+
+class KBQAGraphDataset(Dataset):
+    """Dataset that turns the repo JSON KBQA data into local graph examples."""
+
+    def __init__(
+        self,
+        data_path: str,
+        feature_dim: int = 256,
+        max_examples: Optional[int] = None,
+        relation2id: Optional[Dict[str, int]] = None,
+        update_relation_vocab: bool = True,
+    ) -> None:
+        self.data_path = data_path
+        self.feature_dim = feature_dim
+        self.relation2id = relation2id if relation2id is not None else {"<unk>": 0}
+        self.update_relation_vocab = update_relation_vocab
+
+        with open(data_path, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+        if isinstance(raw, dict):
+            raw_items = raw.get("data") or raw.get("examples") or raw.get("questions") or []
+        else:
+            raw_items = raw
+        if max_examples is not None:
+            raw_items = raw_items[:max_examples]
+
+        self.examples: List[KBQAExample] = []
+        for item in raw_items:
+            qid, question, topic, answer_text, triples = build_triples_from_kbqa_item(item)
+            graph = build_graph_from_triples(
+                triples,
+                relation2id=self.relation2id,
+                feature_dim=feature_dim,
+                update_relation_vocab=update_relation_vocab,
+            )
+            evidence_target = build_evidence_target(question, triples, answer_text)
+            self.examples.append(
+                KBQAExample(
+                    qid=qid,
+                    question=question,
+                    topic_entity=topic,
+                    answer_text=answer_text,
+                    triples=triples,
+                    graph=graph,
+                    evidence_target=evidence_target,
+                )
+            )
+
+    def __len__(self) -> int:
+        return len(self.examples)
+
+    def __getitem__(self, idx: int) -> KBQAExample:
+        return self.examples[idx]
+
+
+def collate_kbqa_examples(examples: Sequence[KBQAExample]) -> dict:
+    graph_batch = GraphBatch.from_data_list([ex.graph for ex in examples])
+    return {
+        "qids": [ex.qid for ex in examples],
+        "questions": [ex.question for ex in examples],
+        "topic_entities": [ex.topic_entity for ex in examples],
+        "answer_texts": [ex.answer_text for ex in examples],
+        "triples": [ex.triples for ex in examples],
+        "triples_texts": [format_triples(ex.triples) for ex in examples],
+        "evidence_targets": [ex.evidence_target for ex in examples],
+        "graph": graph_batch,
     }
 
-    # Extract n-hop subgraph around the center node
-    subset, sub_edge_index, mapping, edge_mask = k_hop_subgraph(
-        node_idx=torch.tensor([center_node_id], dtype=torch.long),
-        num_hops=num_hops,
-        edge_index=edge_index,
-        relabel_nodes=True
+
+def extract_n_hop_subgraph(
+    center_entity_id: int,
+    edge_index: torch.Tensor,
+    num_hops: int,
+    rel_ids: Optional[torch.Tensor] = None,
+):
+    """Pure-PyTorch compatibility helper for older `infer.py` skeletons.
+
+    Returns: subset, sub_edge_index, sub_rel_ids, center_mapping, edge_mask.
+    """
+    if edge_index.numel() == 0:
+        subset = torch.tensor([center_entity_id], dtype=torch.long, device=edge_index.device)
+        return subset, torch.empty((2, 0), dtype=torch.long, device=edge_index.device), None, 0, torch.empty((0,), dtype=torch.bool, device=edge_index.device)
+
+    frontier = {int(center_entity_id)}
+    visited = {int(center_entity_id)}
+    src = edge_index[0].tolist()
+    dst = edge_index[1].tolist()
+    adj = {}
+    for u, v in zip(src, dst):
+        adj.setdefault(int(u), set()).add(int(v))
+        adj.setdefault(int(v), set()).add(int(u))
+    for _ in range(num_hops):
+        new_frontier = set()
+        for u in frontier:
+            for v in adj.get(u, set()):
+                if v not in visited:
+                    visited.add(v)
+                    new_frontier.add(v)
+        frontier = new_frontier
+
+    subset_list = sorted(visited)
+    subset = torch.tensor(subset_list, dtype=torch.long, device=edge_index.device)
+    old2new = {old: i for i, old in enumerate(subset_list)}
+    keep_mask_list = []
+    new_edges = []
+    for i, (u, v) in enumerate(zip(src, dst)):
+        keep = int(u) in old2new and int(v) in old2new
+        keep_mask_list.append(keep)
+        if keep:
+            new_edges.append((old2new[int(u)], old2new[int(v)]))
+    edge_mask = torch.tensor(keep_mask_list, dtype=torch.bool, device=edge_index.device)
+    sub_edge_index = (
+        torch.tensor(new_edges, dtype=torch.long, device=edge_index.device).t().contiguous()
+        if new_edges
+        else torch.empty((2, 0), dtype=torch.long, device=edge_index.device)
     )
-
-    sub_rel_ids = None
-    if rel_ids is not None:
-        sub_rel_ids = rel_ids[edge_mask]
-
-    # Filter nodes inside the subgraph based on semantic relevance
-    keep_mask = torch.tensor(
-        [int(n.item()) in kept_node_ids for n in subset],
-        dtype=torch.bool
-    )
-
-    filtered_edge_index, filtered_edge_mask = subgraph(
-        subset=keep_mask,
-        edge_index=sub_edge_index,
-        relabel_nodes=True,
-        num_nodes=subset.size(0),
-        return_edge_mask=True
-    )
-
-    filtered_subset = subset[keep_mask]
-
-    # Recompute center node index after filtering
-    center_positions = (filtered_subset == center_node_id).nonzero(as_tuple=True)[0]
-    if center_positions.numel() == 0:
-        raise ValueError("center_node_id was unexpectedly filtered out.")
-
-    filtered_mapping = int(center_positions.item())
-
-    # Combine original edge mask with filtered edge mask
-    final_edge_mask = edge_mask.clone()
-    sub_edge_positions = edge_mask.nonzero(as_tuple=True)[0]
-    final_edge_mask[sub_edge_positions[~filtered_edge_mask]] = False
-
-    filtered_rel_ids = None
-    if sub_rel_ids is not None:
-        filtered_rel_ids = sub_rel_ids[filtered_edge_mask]
-
-    return (
-        filtered_subset,
-        filtered_edge_index,
-        filtered_rel_ids,
-        filtered_mapping,
-        final_edge_mask,
-        kept_node_ids,
-        sim_scores
-    )
+    sub_rel_ids = rel_ids[edge_mask] if rel_ids is not None else None
+    center_mapping = old2new[int(center_entity_id)]
+    return subset, sub_edge_index, sub_rel_ids, center_mapping, edge_mask
