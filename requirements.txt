@@ -1,3 +1,6 @@
 torch>=2.0
 transformers>=4.38
 tqdm>=4.66
+SPARQLWrapper>=2.0.0
+openai>=1.0
+peft>=0.10

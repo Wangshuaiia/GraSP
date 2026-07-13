@@ -1,23 +1,24 @@
 """Data and subgraph utilities for GraSP.
 
-The repository currently contains KBQA JSON files but no full external KG dump. To make the
-pipeline runnable, this module builds a local graph from each example's topic entity,
-inferential relation chain, constraints, and gold answers. Later, you can replace
-`build_triples_from_kbqa_item` with a real KG retriever while keeping the same model code.
+Each example's local graph is built by walking a live Freebase KG outward from the question's
+topic entity via SPARQL (see `freebase_func.fetch_khop_triples`). The question and gold answer
+still come from the KBQA parse -- they are the supervision label, not part of the retrieved
+graph -- but the triples themselves are real KG edges/entities, not synthesized from the parse.
 
 This file uses only PyTorch data containers, not PyTorch Geometric.
 """
 
 from __future__ import annotations
 
-import hashlib
 import json
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Sequence, Tuple
 
 import torch
-import torch.nn.functional as F
 from torch.utils.data import Dataset
+
+from freebase_func import fetch_khop_triples
+from text_encoder import DEFAULT_TEXT_ENCODER, embedding_dim, encode
 
 Triple = Tuple[str, str, str]
 
@@ -89,29 +90,10 @@ class KBQAExample:
     qid: str
     question: str
     topic_entity: str
+    topic_entity_mid: str
     answer_text: str
     triples: List[Triple]
     graph: GraphData
-    evidence_target: str
-
-
-def hash_text_embedding(text: str, dim: int = 256) -> torch.Tensor:
-    """Deterministic lightweight text feature for graph nodes.
-
-    This avoids requiring BERT embeddings just to run the repo. Replace this with pretrained
-    entity embeddings when you connect to a real KG.
-    """
-    vec = torch.zeros(dim, dtype=torch.float32)
-    tokens = text.lower().replace("_", " ").replace(".", " ").split()
-    if not tokens:
-        vec[0] = 1.0
-        return vec
-    for tok in tokens:
-        digest = hashlib.sha256(tok.encode("utf-8")).digest()
-        idx = int.from_bytes(digest[:4], "little") % dim
-        sign = 1.0 if digest[4] % 2 == 0 else -1.0
-        vec[idx] += sign
-    return F.normalize(vec, p=2, dim=0)
 
 
 def _first_parse(item: dict) -> dict:
@@ -133,45 +115,61 @@ def _answer_names(parse: dict) -> List[str]:
     return answers
 
 
-def build_triples_from_kbqa_item(item: dict) -> Tuple[str, str, str, List[Triple]]:
-    """Convert a WebQSP/WebQuestions-style item into local evidence triples."""
+def build_triples_from_kbqa_item(
+    item: dict,
+    max_hops: int = 2,
+    max_relations_per_hop: int = 8,
+    max_entities_per_relation: int = 10,
+    max_triples: int = 60,
+    text_encoder: str = DEFAULT_TEXT_ENCODER,
+) -> Tuple[str, str, str, str, str, List[Triple]]:
+    """Convert a WebQSP/WebQuestions-style item into local evidence triples.
+
+    The topic entity's local neighborhood is retrieved live from Freebase via SPARQL
+    (`freebase_func.fetch_khop_triples`), keyed off the parse's `TopicEntityMid`, and pruned at
+    each hop by cosine similarity between the question and candidate relations/entities. `question`
+    and `answer_text` still come from the parse -- they are the supervision label, not graph
+    input -- so the retrieved subgraph is independent of the gold answer/relation chain.
+
+    Returns (qid, question, topic_entity_mid, topic_entity_name, answer_text, triples).
+    `topic_entity_mid` is returned so callers can re-run `fetch_khop_triples` from a different
+    entity later (the iterative multi-hop reasoning loop in infer.py).
+    """
     parse = _first_parse(item)
     qid = str(item.get("QuestionId") or item.get("id") or "unknown")
     question = str(item.get("ProcessedQuestion") or item.get("RawQuestion") or item.get("question") or "")
-    topic_entity = (
+
+    topic_entity_mid = parse.get("TopicEntityMid") or next(iter((item.get("topic_entity") or {}).keys()), None)
+    topic_entity_name = (
         parse.get("TopicEntityName")
         or next(iter((item.get("topic_entity") or {}).values()), None)
         or next(iter((item.get("qid_topic_entity") or {}).values()), None)
+        or topic_entity_mid
         or "topic_entity"
     )
-    topic_entity = str(topic_entity).replace("\n", " ").strip()
+    topic_entity_name = str(topic_entity_name).replace("\n", " ").strip()
 
-    rel_chain = [str(r) for r in (parse.get("InferentialChain") or [])]
     answers = _answer_names(parse)
     answer_text = "; ".join(answers) if answers else "unknown"
 
-    triples: List[Triple] = []
-    if answers:
-        for ans in answers:
-            if len(rel_chain) <= 1:
-                rel = rel_chain[0] if rel_chain else "related_to"
-                triples.append((topic_entity, rel, ans))
-            else:
-                head = topic_entity
-                for hop_id, rel in enumerate(rel_chain[:-1], start=1):
-                    mid = f"intermediate_node_{hop_id}_for_{topic_entity}"
-                    triples.append((head, rel, mid))
-                    head = mid
-                triples.append((head, rel_chain[-1], ans))
-    else:
-        triples.append((topic_entity, "related_to", "unknown_answer"))
+    if not topic_entity_mid:
+        raise ValueError(f"No TopicEntityMid found for question {qid!r}; cannot query Freebase via SPARQL.")
+    topic_entity_mid = str(topic_entity_mid)
 
-    for c in parse.get("Constraints", []) or []:
-        pred = str(c.get("NodePredicate") or "constraint")
-        ent = str(c.get("EntityName") or c.get("Argument") or c.get("ValueType") or "constraint_value")
-        triples.append((topic_entity, pred, ent))
+    triples, _name_to_mid = fetch_khop_triples(
+        topic_entity_id=topic_entity_mid,
+        topic_entity_name=topic_entity_name,
+        question=question,
+        max_hops=max_hops,
+        max_relations_per_hop=max_relations_per_hop,
+        max_entities_per_relation=max_entities_per_relation,
+        max_triples=max_triples,
+        text_encoder=text_encoder,
+    )
+    if not triples:
+        triples = [(topic_entity_name, "related_to", "no_triples_retrieved")]
 
-    return qid, question, topic_entity, answer_text, triples
+    return qid, question, topic_entity_mid, topic_entity_name, answer_text, triples
 
 
 def format_triples(triples: Sequence[Triple], max_triples: Optional[int] = None) -> str:
@@ -181,18 +179,16 @@ def format_triples(triples: Sequence[Triple], max_triples: Optional[int] = None)
     return "\n".join(rows) if rows else "(no triples retrieved)"
 
 
-def build_evidence_target(question: str, triples: Sequence[Triple], answer_text: str) -> str:
-    return (
-        "Relevant graph information:\n"
-        + "\n".join(f"- ({h}, {r}, {t})" for h, r, t in triples)
-        + f"\nLikely answer from graph: {answer_text}"
-    )
+def format_entity_list(names: Sequence[str], max_entities: Optional[int] = None) -> str:
+    """Render the candidate entity list `E` (paper Eq. 6) for the light LLM's prompt."""
+    deduped = list(dict.fromkeys(names))[:max_entities]
+    return ", ".join(deduped) if deduped else "(no candidate entities)"
 
 
 def build_graph_from_triples(
     triples: Sequence[Triple],
     relation2id: Dict[str, int],
-    feature_dim: int = 256,
+    text_encoder: str = DEFAULT_TEXT_ENCODER,
     add_reverse_edges: bool = True,
     update_relation_vocab: bool = True,
 ) -> GraphData:
@@ -232,7 +228,7 @@ def build_graph_from_triples(
     for name, idx in node2id.items():
         names[idx] = name
 
-    x = torch.stack([hash_text_embedding(name, feature_dim) for name in names], dim=0)
+    x = encode(names, model_name=text_encoder)
     if edge_pairs:
         edge_index = torch.tensor(edge_pairs, dtype=torch.long).t().contiguous()
         edge_type = torch.tensor(edge_types, dtype=torch.long)
@@ -249,13 +245,18 @@ class KBQAGraphDataset(Dataset):
     def __init__(
         self,
         data_path: str,
-        feature_dim: int = 256,
+        text_encoder: str = DEFAULT_TEXT_ENCODER,
         max_examples: Optional[int] = None,
         relation2id: Optional[Dict[str, int]] = None,
         update_relation_vocab: bool = True,
+        max_hops: int = 2,
+        max_relations_per_hop: int = 8,
+        max_entities_per_relation: int = 10,
+        max_triples_per_example: int = 60,
     ) -> None:
         self.data_path = data_path
-        self.feature_dim = feature_dim
+        self.text_encoder = text_encoder
+        self.embedding_dim = embedding_dim(text_encoder)
         self.relation2id = relation2id if relation2id is not None else {"<unk>": 0}
         self.update_relation_vocab = update_relation_vocab
 
@@ -270,23 +271,29 @@ class KBQAGraphDataset(Dataset):
 
         self.examples: List[KBQAExample] = []
         for item in raw_items:
-            qid, question, topic, answer_text, triples = build_triples_from_kbqa_item(item)
+            qid, question, topic_mid, topic, answer_text, triples = build_triples_from_kbqa_item(
+                item,
+                max_hops=max_hops,
+                max_relations_per_hop=max_relations_per_hop,
+                max_entities_per_relation=max_entities_per_relation,
+                max_triples=max_triples_per_example,
+                text_encoder=text_encoder,
+            )
             graph = build_graph_from_triples(
                 triples,
                 relation2id=self.relation2id,
-                feature_dim=feature_dim,
+                text_encoder=text_encoder,
                 update_relation_vocab=update_relation_vocab,
             )
-            evidence_target = build_evidence_target(question, triples, answer_text)
             self.examples.append(
                 KBQAExample(
                     qid=qid,
                     question=question,
                     topic_entity=topic,
+                    topic_entity_mid=topic_mid,
                     answer_text=answer_text,
                     triples=triples,
                     graph=graph,
-                    evidence_target=evidence_target,
                 )
             )
 
@@ -303,10 +310,11 @@ def collate_kbqa_examples(examples: Sequence[KBQAExample]) -> dict:
         "qids": [ex.qid for ex in examples],
         "questions": [ex.question for ex in examples],
         "topic_entities": [ex.topic_entity for ex in examples],
+        "topic_entity_mids": [ex.topic_entity_mid for ex in examples],
         "answer_texts": [ex.answer_text for ex in examples],
         "triples": [ex.triples for ex in examples],
         "triples_texts": [format_triples(ex.triples) for ex in examples],
-        "evidence_targets": [ex.evidence_target for ex in examples],
+        "entity_lists": [format_entity_list(ex.graph.node_names) for ex in examples],
         "graph": graph_batch,
     }
 

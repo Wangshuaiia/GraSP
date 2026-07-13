@@ -1,10 +1,15 @@
 """Second-order GNN soft-prompt modules for GraSP.
 
 This file only handles graph encoding:
-    KG graph -> second-order relation-aware GNN -> graph embedding -> soft prompt tokens
+    KG graph + question query -> second-order relation-aware GNN -> graph embedding -> soft prompt
 
 The second-order part explicitly adds two-hop edges u->w whenever u->v and v->w exist.
 Those edges allow the GNN to encode neighbor-of-neighbor information as soft prompts.
+
+RelGraphLayer implements the paper's query-conditioned attention:
+    h_i^(l+1) = sigma( sum_j a_ij W^(l) h_j^(l) + b^(l) )
+    a_ij = softmax_j( f(W(q||h_i), W(h_j||r_ij)) ),  f = inner product
+See scatter_softmax for the per-target-node softmax normalization over neighbors.
 
 This implementation is pure PyTorch, so the repository can run without PyTorch Geometric.
 """
@@ -110,45 +115,60 @@ def global_max_pool(x: torch.Tensor, batch: torch.Tensor) -> torch.Tensor:
     return torch.stack(rows, dim=0)
 
 
-class RelGraphLayer(nn.Module):
-    """A simple relation-aware graph message-passing layer.
+def scatter_softmax(scores: torch.Tensor, index: torch.Tensor, num_nodes: int) -> torch.Tensor:
+    """Softmax of `scores` grouped by `index` (e.g. normalize attention over each target node's
+    incoming edges). Numerically stable via a per-group max subtraction."""
+    if scores.numel() == 0:
+        return scores
+    max_per_group = scores.new_full((num_nodes,), float("-inf"))
+    max_per_group.scatter_reduce_(0, index, scores, reduce="amax", include_self=True)
+    exp_scores = (scores - max_per_group[index]).exp()
+    sum_per_group = torch.zeros(num_nodes, dtype=exp_scores.dtype, device=exp_scores.device)
+    sum_per_group.index_add_(0, index, exp_scores)
+    return exp_scores / (sum_per_group[index] + 1e-12)
 
-    For edge u -> v, it sends a message from u to v using node and relation embeddings.
+
+class RelGraphLayer(nn.Module):
+    """Query-conditioned relation-attention layer.
+
+    For a target entity e_i and neighbor e_j (edge j -> i):
+        h_i^(l+1) = sigma( sum_j a_ij W^(l) h_j^(l) + b^(l) )
+        a_ij = softmax_j( f(W(q || h_i), W(h_j || r_ij)) ),  f = inner product
+
+    `attn_proj` is the shared W projecting both the (query, target) side and the
+    (neighbor, relation) side of the attention score. `msg_lin` is the layer-specific W^(l)
+    applied to the message value h_j.
     """
 
     def __init__(self, hidden_dim: int, dropout: float = 0.1) -> None:
         super().__init__()
-        self.msg_lin = nn.Linear(hidden_dim, hidden_dim)
-        self.rel_lin = nn.Linear(hidden_dim, hidden_dim)
-        self.gate_lin = nn.Linear(hidden_dim * 3, 1)
-        self.out_lin = nn.Linear(hidden_dim * 2, hidden_dim)
-        self.norm = nn.LayerNorm(hidden_dim)
+        self.attn_proj = nn.Linear(hidden_dim * 2, hidden_dim)
+        self.msg_lin = nn.Linear(hidden_dim, hidden_dim, bias=False)
+        self.bias = nn.Parameter(torch.zeros(hidden_dim))
         self.dropout = dropout
 
-    def forward(self, x: torch.Tensor, edge_index: torch.Tensor, edge_attr: torch.Tensor) -> torch.Tensor:
-        if edge_index.numel() == 0:
-            return x
-
+    def forward(
+        self,
+        x: torch.Tensor,
+        edge_index: torch.Tensor,
+        edge_attr: torch.Tensor,
+        query: torch.Tensor,
+    ) -> torch.Tensor:
+        num_nodes = x.size(0)
         src, dst = edge_index[0], edge_index[1]
-        src_x = x[src]
-        dst_x = x[dst]
-        rel_x = edge_attr
 
-        raw_msg = self.msg_lin(src_x) + self.rel_lin(rel_x)
-        gate = torch.sigmoid(self.gate_lin(torch.cat([src_x, rel_x, dst_x], dim=-1)))
-        msg = raw_msg * gate
+        target_side = self.attn_proj(torch.cat([query, x], dim=-1))             # W(q_i || h_i), per node
+        neighbor_side = self.attn_proj(torch.cat([x[src], edge_attr], dim=-1))  # W(h_j || r_ij), per edge
 
+        scores = (target_side[dst] * neighbor_side).sum(dim=-1)  # f(.,.) = inner product
+        attn = scatter_softmax(scores, dst, num_nodes)           # softmax over j in N(i)
+        attn = F.dropout(attn, p=self.dropout, training=self.training)
+
+        messages = self.msg_lin(x[src]) * attn.unsqueeze(-1)  # a_ij * W^(l) h_j
         agg = torch.zeros_like(x)
-        agg.index_add_(0, dst, msg)
+        agg.index_add_(0, dst, messages)  # sum_j
 
-        deg = torch.zeros((x.size(0), 1), dtype=x.dtype, device=x.device)
-        deg.index_add_(0, dst, torch.ones((dst.size(0), 1), dtype=x.dtype, device=x.device))
-        agg = agg / deg.clamp(min=1.0)
-
-        h = self.out_lin(torch.cat([x, agg], dim=-1))
-        h = F.relu(h)
-        h = F.dropout(h, p=self.dropout, training=self.training)
-        return self.norm(x + h)
+        return F.relu(agg + self.bias)  # sigma( ... + b^(l) )
 
 
 class SubgraphGNN(nn.Module):
@@ -160,7 +180,7 @@ class SubgraphGNN(nn.Module):
         hid_dim: int = 256,
         out_dim: int = 256,
         num_layers: int = 2,
-        heads: int = 4,  # kept for API compatibility; not used in this pure PyTorch layer
+        heads: int = 4,  # kept for API/checkpoint compatibility; the paper's attention is single-head
         num_relations: int = 512,
         dropout: float = 0.1,
         use_second_order: bool = True,
@@ -220,6 +240,7 @@ class SubgraphGNN(nn.Module):
         edge_index: torch.Tensor,
         batch: torch.Tensor,
         edge_type: Optional[torch.Tensor] = None,
+        query: Optional[torch.Tensor] = None,
     ) -> Tuple[torch.Tensor, torch.Tensor]:
         """Return node embeddings and graph embeddings.
 
@@ -228,13 +249,23 @@ class SubgraphGNN(nn.Module):
             edge_index: graph edges, [2, E], source -> destination
             batch: graph id for each node, [N]
             edge_type: relation id for each edge, [E]
+            query: per-graph query vector `q` in a_ij = softmax(f(W(q||h_i), W(h_j||r_ij))) --
+                typically the question's text-encoder embedding, shape [num_graphs, in_dim].
+                Defaults to zeros (attention degenerates to being question-agnostic) if omitted.
         """
+        num_graphs = int(batch.max().item()) + 1 if batch.numel() else 1
+        if query is None:
+            query = x.new_zeros((num_graphs, x.size(-1)))
+
         x = self.input_proj(x.float())
+        query = self.input_proj(query.float())
+        query_per_node = query[batch] if batch.numel() else x.new_zeros((x.size(0), query.size(-1)))
+
         edge_index, edge_type = self._prepare_edges(x, edge_index, edge_type)
         edge_attr = self.rel_emb(edge_type)
 
         for layer in self.layers:
-            x = layer(x, edge_index, edge_attr)
+            x = layer(x, edge_index, edge_attr, query_per_node)
 
         mean_pool = global_mean_pool(x, batch)
         max_pool = global_max_pool(x, batch)
@@ -242,42 +273,72 @@ class SubgraphGNN(nn.Module):
         return x, graph_emb
 
 
+def pad_node_embeddings(node_emb: torch.Tensor, batch: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+    """Unflatten a [N_total, d] node embedding matrix (many graphs concatenated, `batch` gives each
+    node's graph id) into a padded [B, max_n, d] tensor plus a boolean [B, max_n] validity mask,
+    since different subgraphs have different entity counts."""
+    num_graphs = int(batch.max().item()) + 1 if batch.numel() else 1
+    d = node_emb.size(-1)
+    counts = torch.bincount(batch, minlength=num_graphs) if batch.numel() else torch.zeros(num_graphs, dtype=torch.long)
+    max_n = int(counts.max().item()) if counts.numel() else 0
+    padded = node_emb.new_zeros((num_graphs, max_n, d))
+    mask = torch.zeros((num_graphs, max_n), dtype=torch.bool, device=node_emb.device)
+    if batch.numel() == 0:
+        return padded, mask
+
+    order = torch.argsort(batch, stable=True)
+    sorted_batch = batch[order]
+    first_occurrence = torch.searchsorted(sorted_batch, sorted_batch)
+    pos_in_sorted = torch.arange(sorted_batch.size(0), device=batch.device) - first_occurrence
+    pos = torch.empty_like(pos_in_sorted)
+    pos[order] = pos_in_sorted
+
+    padded[batch, pos] = node_emb
+    mask[batch, pos] = True
+    return padded, mask
+
+
 class Graph2Prefix(nn.Module):
-    """Map graph embeddings to virtual soft-prompt token embeddings."""
+    """Per-entity FFN projecting GNN node embeddings into the LLM's embedding space (paper Eq. 5):
+
+        H_hat = FFN(H),  H in R^{n x d} (one subgraph's entity embeddings), H_hat in R^{n x d_LLM}
+
+    Since subgraphs in a batch have different entity counts n, the output is padded to the batch's
+    max entity count and returned with a validity mask (analogous to a token attention mask).
+    """
 
     def __init__(
         self,
         graph_dim: int,
         llm_hidden: int,
-        prefix_len: int = 8,
         dropout: float = 0.1,
     ) -> None:
         super().__init__()
-        self.prefix_len = prefix_len
         self.llm_hidden = llm_hidden
         self.net = nn.Sequential(
             nn.Linear(graph_dim, graph_dim),
             nn.Tanh(),
             nn.Dropout(dropout),
-            nn.Linear(graph_dim, prefix_len * llm_hidden),
+            nn.Linear(graph_dim, llm_hidden),
         )
 
-    def forward(self, graph_emb: torch.Tensor) -> torch.Tensor:
-        bsz = graph_emb.size(0)
-        prefix = self.net(graph_emb)
-        return prefix.view(bsz, self.prefix_len, self.llm_hidden)
+    def forward(self, node_emb: torch.Tensor, batch: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
+        h_hat = self.net(node_emb)  # FFN(H), per-entity: [N_total, llm_hidden]
+        return pad_node_embeddings(h_hat, batch)
 
 
 def graph_to_soft_prompt(
     gnn: SubgraphGNN,
     graph2prefix: Graph2Prefix,
     graph_batch,
-) -> torch.Tensor:
-    """Convenience function: GraphBatch -> soft prompt."""
-    _, graph_emb = gnn(
+    query: Optional[torch.Tensor] = None,
+) -> Tuple[torch.Tensor, torch.Tensor]:
+    """Convenience function: GraphBatch -> (soft prompt embeddings, validity mask)."""
+    node_emb, _ = gnn(
         x=graph_batch.x,
         edge_index=graph_batch.edge_index,
         edge_type=getattr(graph_batch, "edge_type", None),
         batch=graph_batch.batch,
+        query=query,
     )
-    return graph2prefix(graph_emb)
+    return graph2prefix(node_emb, graph_batch.batch)
