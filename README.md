@@ -74,7 +74,7 @@ Final answer
 ### Requirements
 
 - Python ≥ 3.9
-- A Freebase-compatible SPARQL endpoint (e.g. a local Virtuoso instance loaded with a Freebase dump — see the ToG/RoG project READMEs for how to stand one up), **or** use `--mock_kg` for local smoke-testing without one
+- A Freebase-compatible SPARQL endpoint (e.g. a local Virtuoso instance loaded with a Freebase dump), **or** use `--mock_kg` for local smoke-testing without one
 - An OpenAI API key for the answer-generation stage
 
 ### Installation
